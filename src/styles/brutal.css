@@ -164,21 +164,23 @@ img { max-width: 100%; display: block; }
 .prose em { font-style: normal; border-bottom: var(--bw) solid var(--accent2); }
 .prose a { text-decoration: none; border-bottom: var(--bw) solid var(--accent); }
 
-/* ---- hidden easter egg: emoji confetti (triggered by the Konami code) ---- */
-.confetti-piece {
+/* ---- hidden easter egg: Konami "wrecking-ball" chaos mode ---- */
+body.chaos,
+body.chaos * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ctext y='32' font-size='32'%3E%F0%9F%8F%83%3C/text%3E%3C/svg%3E") 20 20, auto !important;
+}
+.chaos-hint {
   position: fixed;
-  top: -8vh;
-  z-index: 9999;
-  font-size: 1.7rem;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  z-index: 100000;
+  background: var(--ink);
+  color: var(--paper);
+  border: 2px solid var(--accent2);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  padding: 0.5rem 0.8rem;
+  white-space: nowrap;
   pointer-events: none;
-  user-select: none;
-  will-change: transform, opacity;
-  animation: confetti-fall linear forwards;
-}
-@keyframes confetti-fall {
-  0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
-  100% { transform: translateY(112vh) rotate(420deg); opacity: 0; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .confetti-piece { display: none; }
 }

@@ -40,7 +40,7 @@ const shellData = { name, role, tagline, links, streak: running.streakDays, mile
             {links.map((l: { label: string; href: string }) => <a href={l.href}>{l.label}</a>)}
           </div>
 
-          <p class="hint">Type <b>help</b> and press ⏎ — or try <b>run</b>, <b>links</b>, <b>ls</b>, <b>clear</b>.</p>
+          <p class="hint">Type <b>help</b> and press ⏎ — or try <b>run</b> | <b>links</b> | <b>ls</b> | <b>clear</b>.</p>
         </div>
 
         <div class="line input-line">
@@ -68,26 +68,18 @@ const shellData = { name, role, tagline, links, streak: running.streakDays, mile
   const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
   const commands: Record<string, () => string> = {
-    help: () =>
-      'available commands:\n' +
-      '  whoami    name and role\n' +
-      '  about     short bio\n' +
-      '  run       run streak + miles\n' +
-      '  links     ways to reach me\n' +
-      '  ls        what lives here\n' +
-      '  clear     wipe the screen\n' +
-      '  help      this list',
+    help: () => 'commands:  whoami | about | run | links | ls | clear',
     whoami: () => `${data.name} — ${data.role}`,
     about: () => aboutText,
     run: () => `🏃 ${Number(data.streak).toLocaleString('en-US')}-day run streak · ${Number(data.miles).toLocaleString('en-US')} mi · ${data.rest} rest days`,
-    ls: () => 'about.md   running   links   cv.md (soon)   writing/ (soon)',
+    ls: () => 'about.md | running | links | cv.md (soon) | writing/ (soon)',
     links: () =>
       data.links
         .map((l: { label: string; href: string }) => `  ${l.label.padEnd(10)} <a href="${esc(l.href)}">${esc(l.href)}</a>`)
         .join('\n'),
     contact: () => commands.links(),
     // hidden commands (not listed in `help`) — for the curious
-    coffee: () => 'brewing… ☕  Hario V60 daily driver; sometimes an Aeropress.\nbeans: Sweet Bloom Coffee — sweetbloomcoffee.com',
+    coffee: () => 'Hario V60 daily driver, sometimes an Aeropress.\nRoasters I like: Sweet Bloom | Little Waves | Brandywine | S&W Craft Roasting',
     sudo: () => 'nice try — you do not have root on fenn.md 🙂',
     fortune: () => '“The systems around the care can be as healing as the care itself.”',
   };

@@ -92,7 +92,13 @@ const hobbies = [
   {
     name: 'Coffee',
     body: 'Hario V60 as my daily driver, with the occasional Aeropress.',
-    links: [{ label: 'Sweet Bloom Coffee', href: 'https://sweetbloomcoffee.com/' }],
+    linksLabel: 'Roasters I like:',
+    links: [
+      { label: 'Sweet Bloom', href: 'https://sweetbloomcoffee.com/' },
+      { label: 'Little Waves', href: 'https://littlewaves.coffee/' },
+      { label: 'Brandywine', href: 'https://www.brandywinecoffeeroasters.com/' },
+      { label: 'S&W Craft Roasting', href: 'https://www.swroasting.coffee/' },
+    ],
   },
   {
     name: 'Gardening',
@@ -265,7 +271,10 @@ const hobbies = [
                   <Fragment>
                     <p>{h.body}</p>
                     {h.links && (
-                      <p class="h-links">{h.links.map((l) => <a href={l.href}>{l.label} ↗</a>)}</p>
+                      <p class="h-links">
+                        {h.linksLabel && <span class="h-links-label">{h.linksLabel}</span>}
+                        {h.links.map((l) => <a href={l.href}>{l.label} ↗</a>)}
+                      </p>
                     )}
                   </Fragment>
                 )}
@@ -297,7 +306,7 @@ const hobbies = [
     <div class="wrap foot-inner">
       <span>© 2026 Alex Fenn, MD</span>
       <span class="foot-eggs">
-        psst — <a href="/terminal">›_ terminal</a> · <a href="/markdown">.md source</a>
+        psst — <a href="/terminal">›_ terminal</a> · <a href="/markdown">.md source</a> · ↑↑↓↓←→←→ B A
       </span>
       <span class="foot-mark">FENN.MD</span>
     </div>
@@ -305,24 +314,82 @@ const hobbies = [
 
   <script>
     // Easter egg 1: tap the backtick key to drop into the shell.
-    // Easter egg 2: the Konami code (↑↑↓↓←→←→ B A) rains a few of my hobbies.
-    // Both stay quiet for visitors who prefer reduced motion.
+    // Easter egg 2: the Konami code (↑↑↓↓←→←→ B A) turns the page into a wrecking ball —
+    //   every element detaches and bounces, knocked around by a running-emoji cursor.
+    //   Click an element to smash it; press Esc to restore. Skipped for reduced-motion.
     const KONAMI = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
     let kIdx = 0;
+    let chaosOn = false;
 
-    function celebrate() {
-      if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      const emojis = ['🏃', '☕', '🌱', '🫙', '🍦', '🥖'];
-      for (let i = 0; i < 32; i++) {
-        const s = document.createElement('span');
-        s.className = 'confetti-piece';
-        s.textContent = emojis[i % emojis.length];
-        s.style.left = Math.random() * 100 + 'vw';
-        s.style.animationDuration = (2.6 + Math.random() * 2).toFixed(2) + 's';
-        s.style.animationDelay = (Math.random() * 0.7).toFixed(2) + 's';
-        document.body.appendChild(s);
-        setTimeout(() => s.remove(), 6000);
-      }
+    function chaosMode() {
+      if (chaosOn || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      chaosOn = true;
+      document.body.classList.add('chaos');
+
+      const SEL =
+        '.brand, .nav-links a, .egg, .eyebrow, .hero-name, .hero-tag, .hero-cta .b-btn, .sticker, ' +
+        '.section-title, .sub-title, .b-card, .edu, .pub, .hobby, .contact-btns .b-btn, .foot-inner > *';
+      let nodes = Array.from(document.querySelectorAll(SEL));
+      nodes = nodes.filter((n) => !nodes.some((o) => o !== n && o.contains(n)));
+
+      const bodies = nodes.map((el) => {
+        const e = el as HTMLElement;
+        const r = e.getBoundingClientRect();
+        Object.assign(e.style, {
+          position: 'fixed', left: '0', top: '0',
+          width: r.width + 'px', height: r.height + 'px',
+          margin: '0', zIndex: '5', willChange: 'transform',
+        });
+        const b = {
+          el: e, w: r.width, h: r.height, x: r.left, y: r.top,
+          vx: (Math.random() - 0.5) * 7, vy: (Math.random() - 0.5) * 7,
+          ang: 0, va: (Math.random() - 0.5) * 5, dead: false,
+        };
+        e.addEventListener('click', () => {
+          b.dead = true;
+          e.style.transition = 'transform .25s, opacity .25s';
+          e.style.opacity = '0';
+          e.style.transform += ' scale(0)';
+          setTimeout(() => e.remove(), 250);
+        });
+        return b;
+      });
+
+      let mx = -999, my = -999;
+      window.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; });
+
+      const hint = document.createElement('div');
+      hint.className = 'chaos-hint';
+      hint.textContent = '🏃 wrecking-ball mode — move to smash · click to destroy · Esc to restore';
+      document.body.appendChild(hint);
+
+      const R = 120; // cursor influence radius
+      (function tick() {
+        if (!chaosOn) return;
+        const w = window.innerWidth, h = window.innerHeight;
+        for (const b of bodies) {
+          if (b.dead) continue;
+          const dx = b.x + b.w / 2 - mx, dy = b.y + b.h / 2 - my, dist = Math.hypot(dx, dy);
+          if (dist < R && dist > 0.1) {
+            const f = ((R - dist) / R) * 9;
+            b.vx += (dx / dist) * f;
+            b.vy += (dy / dist) * f;
+            b.va += (Math.random() - 0.5) * 6;
+          }
+          b.x += b.vx; b.y += b.vy; b.ang += b.va;
+          b.vx *= 0.995; b.vy *= 0.995; b.va *= 0.97;
+          if (b.x < 0) { b.x = 0; b.vx = Math.abs(b.vx) * 0.86; }
+          if (b.x + b.w > w) { b.x = w - b.w; b.vx = -Math.abs(b.vx) * 0.86; }
+          if (b.y < 0) { b.y = 0; b.vy = Math.abs(b.vy) * 0.86; }
+          if (b.y + b.h > h) { b.y = h - b.h; b.vy = -Math.abs(b.vy) * 0.86; }
+          b.el.style.transform = `translate(${b.x}px, ${b.y}px) rotate(${b.ang}deg)`;
+        }
+        requestAnimationFrame(tick);
+      })();
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && chaosOn) location.reload();
+      });
     }
 
     document.addEventListener('keydown', (e) => {
@@ -331,7 +398,7 @@ const hobbies = [
       if (e.key === '`' && !typing) { window.location.href = '/terminal'; return; }
       const key = e.key.length === 1 ? e.key.toLowerCase() : e.key;
       kIdx = key === KONAMI[kIdx] ? kIdx + 1 : key === KONAMI[0] ? 1 : 0;
-      if (kIdx === KONAMI.length) { kIdx = 0; celebrate(); }
+      if (kIdx === KONAMI.length) { kIdx = 0; chaosMode(); }
     });
   </script>
 </Base>
@@ -482,6 +549,7 @@ const hobbies = [
   .h-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem; }
   .h-links a { font-family: var(--font-mono); font-size: 0.82rem; text-decoration: none; border-bottom: 2px solid var(--accent); }
   .h-links .auto { font-family: var(--font-mono); font-size: 0.74rem; opacity: 0.6; }
+  .h-links-label { font-family: var(--font-mono); font-size: 0.82rem; opacity: 0.7; width: 100%; }
   .h-ol { margin: 0; padding-left: 1.3rem; }
   .h-ol li { margin: 0.3rem 0; padding-left: 0.2rem; }
   .h-ol li::marker { font-family: var(--font-mono); font-weight: 700; color: var(--accent); }
