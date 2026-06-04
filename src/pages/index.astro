@@ -81,7 +81,10 @@ const publications = [
 ];
 
 const fmtN = (n: number) => n.toLocaleString('en-US');
-const lastRunMd = running.lastRun.date.slice(5).replace('-', '/'); // "2026-06-03" -> "06/03"
+const [sy, sm, sd] = running.streakStart.split('-');
+const streakStartShort = `${+sm}/${+sd}/${sy.slice(2)}`; // "2020-04-09" -> "4/9/20"
+const [, lm, ld] = running.lastRun.date.split('-');
+const lastRunMd = `${+lm}/${+ld}`; // "2026-06-03" -> "6/3"
 
 // Each hobby is an expandable card. Bodies are placeholder copy for now.
 const hobbies = [
@@ -243,9 +246,9 @@ const hobbies = [
                 {h.running ? (
                   <Fragment>
                     <p>
-                      <strong>{fmtN(running.streakDays)}-day run streak</strong> — {fmtN(running.streakMiles)} streak
-                      miles · {fmtN(running.totalMiles)} all-time · zero rest days since Apr 2020. My most recent run
-                      was on {lastRunMd} and was {running.lastRun.miles} miles.
+                      <strong>{fmtN(running.streakDays)}-day run streak</strong> · {fmtN(running.streakMiles)} streak miles
+                      · {fmtN(running.totalMiles)} all-time miles (since I started tracking) · Zero rest days since {streakStartShort}
+                      · Most recent run on {lastRunMd} · {running.lastRun.miles} miles{running.lastRun.pace ? ` at ${running.lastRun.pace} pace` : ''}
                     </p>
                     <p>Ultras, trails, backyard ultras, and timed events. And one Taco Bell 50k.</p>
                     <p class="h-links">

@@ -87,7 +87,18 @@ const main = async () => {
       for (let d = new Date(start); d <= end; d = addDays(d, 1)) covered.add(dayKey(d));
       const sk = dayKey(start);
       milesByStartDay.set(sk, (milesByStartDay.get(sk) || 0) + a.distance * META);
-      if (!lastRun) lastRun = { date: sk, name: a.name, miles: +(a.distance * META).toFixed(1) };
+      if (!lastRun) {
+        const mi = a.distance * META;
+        let pace = '';
+        if (mi > 0.05 && a.moving_time > 0) {
+          const secPerMi = a.moving_time / mi;
+          let m = Math.floor(secPerMi / 60);
+          let s = Math.round(secPerMi % 60);
+          if (s === 60) { m += 1; s = 0; }
+          pace = `${m}:${String(s).padStart(2, '0')}`; // min/mile, e.g. "7:26"
+        }
+        lastRun = { date: sk, name: a.name, miles: +mi.toFixed(1), pace };
+      }
       oldestFetched = sk;
     }
     // Stop once the streak-breaking day is newer than the oldest activity we've seen
