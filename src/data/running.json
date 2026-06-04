@@ -1,17 +1,17 @@
 {
-  "updated": "2026-06-03",
+  "updated": "2026-06-04",
   "source": "Strava",
   "streakDays": 2247,
   "streakStart": "2020-04-09",
-  "streakMiles": 19387,
+  "streakMiles": 19303,
   "restDays": 0,
-  "totalMiles": 23872,
+  "totalMiles": 23871,
   "totalRuns": 3327,
   "ytdMiles": 1551,
   "ytdRuns": 155,
   "lastRun": {
     "date": "2026-06-03",
-    "name": "What's in the box? What's in the box???!!!",
-    "miles": 9.0
+    "name": "What’s in the box? What’s in the box???!!!",
+    "miles": 9
   }
 }
