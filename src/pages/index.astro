@@ -342,8 +342,8 @@ const hobbies = [
         });
         const b = {
           el: e, w: r.width, h: r.height, x: r.left, y: r.top,
-          vx: (Math.random() - 0.5) * 7, vy: (Math.random() - 0.5) * 7,
-          ang: 0, va: (Math.random() - 0.5) * 5, dead: false,
+          vx: 0, vy: 0, // stay put until the cursor (wrecking ball) hits it
+          ang: 0, va: 0, dead: false,
         };
         e.addEventListener('click', () => {
           b.dead = true;
@@ -363,21 +363,30 @@ const hobbies = [
       hint.textContent = '🏃 wrecking-ball mode — move to smash · click to destroy · Esc to restore';
       document.body.appendChild(hint);
 
-      const R = 120; // cursor influence radius
+      let pmx = mx, pmy = my;
+      const HIT = 30; // the running-emoji "ball" radius
       (function tick() {
         if (!chaosOn) return;
         const w = window.innerWidth, h = window.innerHeight;
+        let cvx = mx - pmx, cvy = my - pmy; // cursor velocity this frame
+        pmx = mx; pmy = my;
+        cvx = Math.max(-60, Math.min(60, cvx));
+        cvy = Math.max(-60, Math.min(60, cvy));
+        const speed = Math.hypot(cvx, cvy);
         for (const b of bodies) {
           if (b.dead) continue;
-          const dx = b.x + b.w / 2 - mx, dy = b.y + b.h / 2 - my, dist = Math.hypot(dx, dy);
-          if (dist < R && dist > 0.1) {
-            const f = ((R - dist) / R) * 9;
-            b.vx += (dx / dist) * f;
-            b.vy += (dy / dist) * f;
-            b.va += (Math.random() - 0.5) * 6;
+          // knock only when the MOVING cursor touches the element's box (stays still otherwise)
+          const nx = Math.max(b.x, Math.min(mx, b.x + b.w));
+          const ny = Math.max(b.y, Math.min(my, b.y + b.h));
+          if (speed > 0.1 && Math.hypot(mx - nx, my - ny) < HIT) {
+            let ax = b.x + b.w / 2 - mx, ay = b.y + b.h / 2 - my;
+            const am = Math.hypot(ax, ay) || 1;
+            b.vx += cvx * 0.8 + (ax / am) * speed * 0.5; // momentum + push-away
+            b.vy += cvy * 0.8 + (ay / am) * speed * 0.5;
+            b.va += cvx * 0.25 + (Math.random() - 0.5) * 3;
           }
           b.x += b.vx; b.y += b.vy; b.ang += b.va;
-          b.vx *= 0.995; b.vy *= 0.995; b.va *= 0.97;
+          b.vx *= 0.99; b.vy *= 0.99; b.va *= 0.97;
           if (b.x < 0) { b.x = 0; b.vx = Math.abs(b.vx) * 0.86; }
           if (b.x + b.w > w) { b.x = w - b.w; b.vx = -Math.abs(b.vx) * 0.86; }
           if (b.y < 0) { b.y = 0; b.vy = Math.abs(b.vy) * 0.86; }
