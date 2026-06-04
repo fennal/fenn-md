@@ -136,8 +136,12 @@ const hobbies = [
         <a href="#contact">Contact</a>
       </nav>
       <div class="nav-eggs">
+        <button class="egg theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span class="th-icon th-moon">☾</span><span class="th-icon th-sun">☀</span>
+        </button>
         <a class="egg" href="/markdown" title="View the source (.md)">.md</a>
         <a class="egg" href="/terminal" title="Open a shell">›_</a>
+        <button class="egg cmdk-trigger" id="cmdk-open" type="button" aria-label="Open command menu" title="Command menu (⌘K)">⌘K</button>
       </div>
     </div>
   </header>
@@ -312,6 +316,18 @@ const hobbies = [
     </div>
   </footer>
 
+  <!-- ⌘K command palette -->
+  <div class="cmdk" id="cmdk" hidden>
+    <div class="cmdk-backdrop" data-cmdk-close></div>
+    <div class="cmdk-panel" role="dialog" aria-modal="true" aria-label="Command menu">
+      <input class="cmdk-input" id="cmdk-input" type="text" placeholder="Type a command or jump to a section…"
+        autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" />
+      <ul class="cmdk-list" id="cmdk-list" role="listbox" aria-label="Commands"></ul>
+      <div class="cmdk-foot"><span>↑↓ navigate</span><span>⏎ select</span><span>esc close</span></div>
+    </div>
+  </div>
+  <script type="application/json" id="cmdk-data" set:html={JSON.stringify({ linkedin, github })} />
+
   <script>
     // Easter egg 1: tap the backtick key to drop into the shell.
     // Easter egg 2: the Konami code (↑↑↓↓←→←→ B A) turns the page into a wrecking ball —
@@ -328,7 +344,7 @@ const hobbies = [
 
       const SEL =
         '.brand, .nav-links a, .egg, .eyebrow, .hero-name, .hero-tag, .hero-cta .b-btn, .sticker, ' +
-        '.section-title, .sub-title, .b-card, .edu, .pub, .hobby, .contact-btns .b-btn, .foot-inner > *';
+        '.section-title, .sub-title, .hobbies-intro, .b-card, .edu, .pub, .hobby, .contact-btns .b-btn, .foot-inner > *';
       let nodes = Array.from(document.querySelectorAll(SEL));
       nodes = nodes.filter((n) => !nodes.some((o) => o !== n && o.contains(n)));
       const els = nodes.map((n) => n as HTMLElement);
@@ -433,6 +449,126 @@ const hobbies = [
       if (kIdx === KONAMI.length) { kIdx = 0; chaosMode(); }
     });
   </script>
+
+  <script>
+    // ---- Dark-mode toggle (theme is set pre-paint in Base.astro) ----
+    const root = document.documentElement;
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    function applyTheme(t: string) {
+      root.dataset.theme = t;
+      if (metaTheme) metaTheme.setAttribute('content', t === 'dark' ? '#15141a' : '#f7f4ec');
+    }
+    const toggleTheme = () => applyTheme(root.dataset.theme === 'dark' ? 'light' : 'dark');
+    document.getElementById('theme-toggle')?.addEventListener('click', toggleTheme);
+    applyTheme(root.dataset.theme === 'dark' ? 'dark' : 'light'); // sync theme-color with the pre-paint choice
+    // The OS theme is the source of truth — follow it live; the button is a per-visit override.
+    matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', (e) => applyTheme(e.matches ? 'dark' : 'light'));
+
+    // ---- Scrollspy: highlight the nav link for the section you're reading ----
+    const navLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>('.nav-links a'));
+    const ids = ['about', 'work', 'research', 'hobbies', 'contact'];
+    const sections = ids.map((id) => document.getElementById(id)).filter(Boolean) as HTMLElement[];
+    if (sections.length) {
+      let ticking = false;
+      const updateSpy = () => {
+        ticking = false;
+        const line = window.innerHeight * 0.32; // a "reading line" near the top third
+        let current = '';
+        for (const s of sections) {
+          const r = s.getBoundingClientRect();
+          if (r.top <= line && r.bottom > line) { current = s.id; break; } // straddles the line
+          if (r.top <= line) current = s.id; // else remember the last one that's scrolled past it
+        }
+        // at the very bottom the last (short) section never reaches the line — force it active
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+          current = sections[sections.length - 1].id;
+        }
+        navLinks.forEach((a) => a.classList.toggle('is-active', a.getAttribute('href') === '#' + current));
+      };
+      const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(updateSpy); } };
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      updateSpy();
+    }
+
+    // ---- ⌘K command palette ----
+    const cmdk = document.getElementById('cmdk')!;
+    const cmdkInput = document.getElementById('cmdk-input') as HTMLInputElement;
+    const cmdkList = document.getElementById('cmdk-list')!;
+    const data = JSON.parse(document.getElementById('cmdk-data')?.textContent || '{}');
+    type Cmd = { label: string; hint: string; icon: string; run: () => void };
+    const jump = (hash: string) => { closeCmdk(); document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' }); };
+    const commands: Cmd[] = [
+      { label: 'About', hint: 'section', icon: '#', run: () => jump('#about') },
+      { label: 'Work & Experience', hint: 'section', icon: '#', run: () => jump('#work') },
+      { label: 'Research', hint: 'section', icon: '#', run: () => jump('#research') },
+      { label: 'Hobbies', hint: 'section', icon: '#', run: () => jump('#hobbies') },
+      { label: 'Contact', hint: 'section', icon: '#', run: () => jump('#contact') },
+      { label: 'Toggle dark mode', hint: 'theme', icon: '◐', run: () => { toggleTheme(); closeCmdk(); } },
+      { label: 'Copy email address', hint: 'alex@fenn.md', icon: '✉', run: async () => { try { await navigator.clipboard.writeText('alex@fenn.md'); } catch (e) {} flash('Copied alex@fenn.md'); closeCmdk(); } },
+      { label: 'Open the terminal', hint: '/terminal', icon: '›_', run: () => { location.href = '/terminal'; } },
+      { label: 'View the .md source', hint: '/markdown', icon: '.md', run: () => { location.href = '/markdown'; } },
+      { label: 'LinkedIn', hint: 'opens ↗', icon: 'in', run: () => { if (data.linkedin) window.open(data.linkedin, '_blank', 'noopener'); closeCmdk(); } },
+      { label: 'GitHub', hint: 'opens ↗', icon: '{ }', run: () => { if (data.github) window.open(data.github, '_blank', 'noopener'); closeCmdk(); } },
+    ];
+    let filtered = commands.slice();
+    let active = 0;
+
+    function render() {
+      cmdkList.innerHTML = '';
+      filtered.forEach((c, i) => {
+        const li = document.createElement('li');
+        li.className = 'cmdk-item' + (i === active ? ' is-active' : '');
+        li.setAttribute('role', 'option');
+        li.innerHTML = `<span class="ci-icon">${c.icon}</span><span class="ci-label"></span><span class="ci-hint"></span>`;
+        (li.querySelector('.ci-label') as HTMLElement).textContent = c.label;
+        (li.querySelector('.ci-hint') as HTMLElement).textContent = c.hint;
+        li.addEventListener('click', () => c.run());
+        li.addEventListener('mousemove', () => { if (active !== i) { active = i; paintActive(); } });
+        cmdkList.appendChild(li);
+      });
+    }
+    function paintActive() {
+      Array.from(cmdkList.children).forEach((el, i) => el.classList.toggle('is-active', i === active));
+      cmdkList.children[active]?.scrollIntoView({ block: 'nearest' });
+    }
+    function applyFilter(q: string) {
+      const s = q.trim().toLowerCase();
+      filtered = s ? commands.filter((c) => (c.label + ' ' + c.hint).toLowerCase().includes(s)) : commands.slice();
+      active = 0; render();
+    }
+    function openCmdk() {
+      cmdk.hidden = false;
+      cmdkInput.value = ''; applyFilter('');
+      requestAnimationFrame(() => cmdkInput.focus());
+    }
+    function closeCmdk() { cmdk.hidden = true; }
+
+    // tiny toast (reuses the chaos-hint styling)
+    function flash(msg: string) {
+      const el = document.createElement('div');
+      el.className = 'chaos-hint';
+      el.textContent = msg;
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 1600);
+    }
+
+    document.getElementById('cmdk-open')?.addEventListener('click', openCmdk);
+    cmdk.querySelectorAll('[data-cmdk-close]').forEach((el) => el.addEventListener('click', closeCmdk));
+    cmdkInput.addEventListener('input', () => applyFilter(cmdkInput.value));
+    cmdkInput.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') { e.preventDefault(); active = Math.min(active + 1, filtered.length - 1); paintActive(); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); active = Math.max(active - 1, 0); paintActive(); }
+      else if (e.key === 'Enter') { e.preventDefault(); filtered[active]?.run(); }
+      else if (e.key === 'Escape') { e.preventDefault(); closeCmdk(); }
+    });
+    document.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        cmdk.hidden ? openCmdk() : closeCmdk();
+      }
+    });
+  </script>
 </Base>
 
 <style>
@@ -448,15 +584,20 @@ const hobbies = [
   .brand { font-family: var(--font-sans); font-weight: 700; letter-spacing: -0.02em; font-size: 1.15rem; text-decoration: none; }
   .brand span { color: var(--accent); }
   .nav-links { display: flex; gap: 1.2rem; margin-left: auto; font-family: var(--font-mono); font-size: 0.82rem; }
-  .nav-links a { text-decoration: none; padding: 0.2rem 0; border-bottom: 2px solid transparent; }
+  .nav-links a { text-decoration: none; padding: 0.2rem 0; border-bottom: 2px solid transparent; transition: color 0.12s ease, border-color 0.12s ease; }
   .nav-links a:hover { border-bottom-color: var(--accent); }
+  .nav-links a.is-active { color: var(--accent); border-bottom-color: var(--accent); }
   .nav-eggs { display: flex; gap: 0.4rem; margin-left: 1.1rem; }
   .egg {
-    font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600;
+    font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; line-height: 1.4;
     border: 2px solid var(--ink); padding: 0.2rem 0.45rem; text-decoration: none;
-    background: var(--panel);
+    background: var(--panel); color: inherit; cursor: pointer;
   }
-  .egg:hover { background: var(--accent2); }
+  .egg:hover { background: var(--accent2); color: var(--ink); }
+  .theme-toggle { display: inline-grid; place-items: center; min-width: 1.9rem; }
+  .th-icon { display: none; font-size: 0.85rem; }
+  :global(:root:not([data-theme='dark'])) .th-moon { display: inline; }
+  :global(:root[data-theme='dark']) .th-sun { display: inline; }
 
   /* HERO */
   .hero { padding: clamp(2.5rem, 8vw, 5.5rem) 0 clamp(2rem, 5vw, 3.5rem); }
@@ -548,8 +689,8 @@ const hobbies = [
   .exp-note { margin: 0.6rem 0 0; }
 
   /* RUNNING */
-  .section--accent { background: var(--accent); color: var(--paper); border-top: var(--line); padding-block: clamp(2rem, 5vw, 3.25rem); }
-  .section--accent .section-title { color: var(--paper); }
+  .section--accent { background: var(--accent); color: var(--on-accent); border-top: var(--line); padding-block: clamp(2rem, 5vw, 3.25rem); }
+  .section--accent .section-title { color: var(--on-accent); }
   .eyebrow--invert { background: var(--paper); color: var(--ink); }
   .hobbies-intro { font-family: var(--font-mono); font-size: 0.8rem; opacity: 0.85; margin: 0 0 1.4rem; max-width: 36rem; }
   .hobby-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; align-items: start; }
@@ -577,7 +718,7 @@ const hobbies = [
   .h-body { padding: 0.8rem 1rem 1rem; border-top: 2px solid var(--ink); font-size: 0.92rem; line-height: 1.55; }
   .h-body p { margin: 0 0 0.6rem; }
   .h-body p:last-child { margin-bottom: 0; }
-  .h-body strong { background: var(--accent); color: var(--paper); padding: 0 0.2em; font-weight: 700; }
+  .h-body strong { background: var(--accent); color: var(--on-accent); padding: 0 0.2em; font-weight: 700; }
   .h-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem; }
   .h-links a { font-family: var(--font-mono); font-size: 0.82rem; text-decoration: none; border-bottom: 2px solid var(--accent); }
   .h-links .auto { font-family: var(--font-mono); font-size: 0.74rem; opacity: 0.6; }
@@ -596,9 +737,44 @@ const hobbies = [
 
   /* FOOTER */
   .foot { border-top: var(--line); background: var(--ink); color: var(--paper); }
+  /* in dark mode keep the footer a dark slab (not a bright inverted block) */
+  :global(:root[data-theme='dark']) .foot { background: #0d0c11; color: var(--ink); }
   .foot-inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding-top: 1.2rem; padding-bottom: 1.2rem; font-family: var(--font-mono); font-size: 0.78rem; }
   .foot a { text-decoration: none; border-bottom: 2px solid var(--accent); }
   .foot-mark { font-weight: 700; letter-spacing: 0.05em; }
+
+  /* ⌘K COMMAND PALETTE */
+  .cmdk { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: flex-start; justify-content: center; }
+  .cmdk[hidden] { display: none; }
+  .cmdk-backdrop { position: absolute; inset: 0; background: rgba(17, 17, 17, 0.45); backdrop-filter: blur(1.5px); }
+  .cmdk-panel {
+    position: relative; margin-top: 12vh; width: min(40rem, 92vw);
+    background: var(--panel); border: var(--line); box-shadow: var(--shadow);
+    animation: cmdk-pop 0.12s ease-out;
+  }
+  @media (prefers-reduced-motion: reduce) { .cmdk-panel { animation: none; } }
+  @keyframes cmdk-pop { from { transform: translateY(-8px); opacity: 0; } to { transform: none; opacity: 1; } }
+  .cmdk-input {
+    width: 100%; border: 0; border-bottom: var(--line); background: transparent; color: var(--ink);
+    font-family: var(--font-mono); font-size: 1rem; padding: 1rem 1.1rem; outline: none;
+  }
+  .cmdk-input::placeholder { color: var(--muted); }
+  .cmdk-list { list-style: none; margin: 0; padding: 0.4rem; max-height: 52vh; overflow-y: auto; }
+  /* palette rows are built in JS, so they don't get the scope hash — style them globally,
+     anchored under the (scoped) .cmdk-list so nothing leaks elsewhere. */
+  .cmdk-list :global(.cmdk-item) {
+    display: grid; grid-template-columns: 1.7rem 1fr auto; align-items: center; gap: 0.7rem;
+    padding: 0.6rem 0.7rem; cursor: pointer; border: 2px solid transparent;
+  }
+  .cmdk-list :global(.cmdk-item.is-active) { background: var(--accent); color: var(--on-accent); border-color: var(--ink); }
+  .cmdk-list :global(.ci-icon) { font-family: var(--font-mono); font-size: 0.78rem; text-align: center; opacity: 0.75; }
+  .cmdk-list :global(.ci-label) { font-family: var(--font-sans); font-weight: 600; }
+  .cmdk-list :global(.ci-hint) { font-family: var(--font-mono); font-size: 0.72rem; opacity: 0.55; white-space: nowrap; }
+  .cmdk-list :global(.cmdk-item.is-active .ci-icon), .cmdk-list :global(.cmdk-item.is-active .ci-hint) { opacity: 0.9; }
+  .cmdk-foot {
+    display: flex; gap: 1.1rem; padding: 0.55rem 0.95rem; border-top: 2px solid var(--ink);
+    font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted);
+  }
 
   /* RESPONSIVE */
   @media (max-width: 44rem) {

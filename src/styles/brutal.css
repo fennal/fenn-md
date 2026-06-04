@@ -10,6 +10,9 @@
   --accent3: #ffd23f; /* highlighter yellow */
   --muted: #5b554c;
 
+  --on-accent: #f7f4ec; /* light text that sits on accent/ink blocks — stays light in dark mode */
+  --dot: rgba(17, 17, 17, 0.16); /* dotted page background */
+
   --bw: 3px; /* border weight */
   --line: var(--bw) solid var(--ink);
   --shadow: 6px 6px 0 var(--ink);
@@ -22,6 +25,19 @@
   --font-serif: 'Newsreader', Georgia, serif;
 }
 
+/* Dark neo-brutalism: flip paper/ink, keep the accents. Shadows + borders use --ink,
+   so they become light strokes on a dark ground automatically. --on-accent stays light. */
+:root[data-theme='dark'] {
+  --paper: #15141a;
+  --panel: #201f29;
+  --ink: #f1eee4;
+  --muted: #9c9484;
+  --accent: #5b7bff;
+  --accent2: #ff6b88;
+  --accent3: #ffd23f;
+  --dot: rgba(241, 238, 228, 0.1);
+}
+
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -32,10 +48,11 @@ body {
   color: var(--ink);
   font-family: var(--font-sans);
   line-height: 1.5;
-  background-image: radial-gradient(rgba(17, 17, 17, 0.16) 1px, transparent 1px);
+  background-image: radial-gradient(var(--dot) 1px, transparent 1px);
   background-size: 22px 22px;
   background-position: -1px -1px;
 }
+html { background-color: var(--paper); } /* avoid a light flash behind the dotted body */
 
 a { color: inherit; }
 img { max-width: 100%; display: block; }
@@ -111,9 +128,9 @@ img { max-width: 100%; display: block; }
   cursor: pointer;
   transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.08s ease, color 0.08s ease;
 }
-.b-btn:hover { background: var(--accent); color: var(--paper); }
+.b-btn:hover { background: var(--accent); color: var(--on-accent); }
 .b-btn:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--ink); }
-.b-btn--accent { background: var(--accent); color: var(--paper); }
+.b-btn--accent { background: var(--accent); color: var(--on-accent); }
 .b-btn--accent:hover { background: var(--ink); color: var(--paper); }
 .b-btn--pink { background: var(--accent2); color: var(--ink); }
 .b-btn--pink:hover { background: var(--ink); color: var(--paper); }
@@ -136,7 +153,7 @@ img { max-width: 100%; display: block; }
   border-top: var(--line);
   border-bottom: var(--line);
   background: var(--accent);
-  color: var(--paper);
+  color: var(--on-accent);
   overflow: hidden;
 }
 .ticker-track {
@@ -160,7 +177,7 @@ img { max-width: 100%; display: block; }
 .prose { font-size: 1.05rem; line-height: 1.6; }
 .prose p { margin: 0 0 0.85rem; }
 .prose p:last-child { margin-bottom: 0; }
-.prose strong { background: var(--accent); color: var(--paper); padding: 0 0.2em; font-weight: 700; }
+.prose strong { background: var(--accent); color: var(--on-accent); padding: 0 0.2em; font-weight: 700; }
 .prose em { font-style: normal; border-bottom: var(--bw) solid var(--accent2); }
 .prose a { text-decoration: none; border-bottom: var(--bw) solid var(--accent); }
 
