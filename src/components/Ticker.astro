@@ -1,0 +1,13 @@
+---
+interface Props { items: string[]; }
+const { items } = Astro.props;
+// Tripled so the -33.333% scroll loops seamlessly.
+const loop = [...items, ...items, ...items];
+---
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    {loop.map((t) => (
+      <span>{t}<i>✦</i></span>
+    ))}
+  </div>
+</div>

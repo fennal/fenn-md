@@ -1,0 +1,196 @@
+---
+import Base from '../layouts/Base.astro';
+import { Content, frontmatter } from '../data/home.md';
+import running from '../data/running.json';
+import '../styles/brutal.css';
+
+const { name, role, tagline, links } = frontmatter;
+const shellData = { name, role, tagline, links, streak: running.streakDays, miles: running.streakMiles, rest: running.restDays };
+---
+
+<Base title={`${name} — shell`} description={tagline}>
+  <main class="wrap termwrap">
+    <a class="b-btn back" href="/">← back to fenn.md</a>
+
+    <section class="window" aria-label="Terminal">
+      <header class="winbar">
+        <span class="dots"><i></i><i></i><i></i></span>
+        <span class="wintitle">alex@fenn.md — zsh</span>
+        <span class="spacer"></span>
+      </header>
+
+      <div class="screen" id="screen">
+        <pre class="banner">  __                        _
+ / _| ___ _ __  _ __    _ __ ___   __| |
+| |_ / _ \ '_ \| '_ \  | '_ ` _ \ / _` |
+|  _|  __/ | | | | | | | | | | | | (_| |
+|_|  \___|_| |_|_| |_|(_)_| |_| |_|\__,_|   alex fenn, md</pre>
+
+        <div id="log">
+          <div class="line"><span class="prompt">alex@fenn.md ~ %</span> <span class="cmd">whoami</span></div>
+          <div class="out">{name} — {role}</div>
+
+          <div class="line"><span class="prompt">alex@fenn.md ~ %</span> <span class="cmd">cat about.md</span></div>
+          <div class="out prose-t" id="about-src"><Content /></div>
+
+          <div class="line"><span class="prompt">alex@fenn.md ~ %</span> <span class="cmd">run --streak</span></div>
+          <div class="out">🏃 {running.streakDays.toLocaleString('en-US')}-day streak · {running.streakMiles.toLocaleString('en-US')} mi · {running.restDays} rest days</div>
+
+          <div class="out links" id="links-src">
+            {links.map((l: { label: string; href: string }) => <a href={l.href}>{l.label}</a>)}
+          </div>
+
+          <p class="hint">Type <b>help</b> and press ⏎ — or try <b>run</b>, <b>links</b>, <b>ls</b>, <b>clear</b>.</p>
+        </div>
+
+        <div class="line input-line">
+          <span class="prompt">alex@fenn.md ~ %</span>
+          <input id="cmd" class="cmd-input" type="text" autocomplete="off" autocapitalize="off"
+            autocorrect="off" spellcheck="false" aria-label="Terminal command input" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="application/json" id="shell-data" set:html={JSON.stringify(shellData)} />
+</Base>
+
+<script>
+  const screen = document.getElementById('screen')!;
+  const log = document.getElementById('log')!;
+  const input = document.getElementById('cmd') as HTMLInputElement;
+  const data = JSON.parse(document.getElementById('shell-data')!.textContent || '{}');
+  const aboutText = document.getElementById('about-src')?.textContent?.trim() ?? '';
+
+  const PROMPT = 'alex@fenn.md ~ %';
+  const history: string[] = [];
+  let histIndex = -1;
+  const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+  const commands: Record<string, () => string> = {
+    help: () =>
+      'available commands:\n' +
+      '  whoami    name and role\n' +
+      '  about     short bio\n' +
+      '  run       run streak + miles\n' +
+      '  links     ways to reach me\n' +
+      '  ls        what lives here\n' +
+      '  clear     wipe the screen\n' +
+      '  help      this list',
+    whoami: () => `${data.name} — ${data.role}`,
+    about: () => aboutText,
+    run: () => `🏃 ${Number(data.streak).toLocaleString('en-US')}-day run streak · ${Number(data.miles).toLocaleString('en-US')} mi · ${data.rest} rest days`,
+    ls: () => 'about.md   running   links   cv.md (soon)   writing/ (soon)',
+    links: () =>
+      data.links
+        .map((l: { label: string; href: string }) => `  ${l.label.padEnd(10)} <a href="${esc(l.href)}">${esc(l.href)}</a>`)
+        .join('\n'),
+    contact: () => commands.links(),
+    // hidden commands (not listed in `help`) — for the curious
+    coffee: () => 'brewing… ☕  Hario V60 daily driver; sometimes an Aeropress.\nbeans: Sweet Bloom Coffee — sweetbloomcoffee.com',
+    sudo: () => 'nice try — you do not have root on fenn.md 🙂',
+    fortune: () => '“The systems around the care can be as healing as the care itself.”',
+  };
+
+  function emit(html: string, cls = 'out') {
+    const div = document.createElement('div');
+    div.className = cls;
+    div.innerHTML = html;
+    log.appendChild(div);
+  }
+
+  function run(raw: string) {
+    const cmd = raw.trim();
+    const echo = document.createElement('div');
+    echo.className = 'line';
+    echo.innerHTML = `<span class="prompt">${PROMPT}</span> <span class="cmd">${esc(cmd)}</span>`;
+    log.appendChild(echo);
+    if (!cmd) return;
+    history.push(cmd);
+    histIndex = history.length;
+    if (cmd === 'clear') { log.replaceChildren(); return; }
+    const fn = commands[cmd.toLowerCase()];
+    if (fn) {
+      const isHtml = ['links', 'contact'].includes(cmd.toLowerCase());
+      emit(isHtml ? fn() : esc(fn()));
+    } else {
+      emit(`zsh: command not found: ${esc(cmd)} — try <b>help</b>`, 'out err');
+    }
+  }
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      run(input.value);
+      input.value = '';
+      screen.scrollTop = screen.scrollHeight;
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (histIndex > 0) input.value = history[--histIndex] ?? '';
+    } else if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (histIndex < history.length - 1) input.value = history[++histIndex] ?? '';
+      else { histIndex = history.length; input.value = ''; }
+    }
+  });
+  screen.addEventListener('click', (e) => {
+    if ((e.target as HTMLElement).tagName !== 'A' && !window.getSelection()?.toString()) input.focus();
+  });
+  input.focus({ preventScroll: true });
+</script>
+
+<style>
+  .termwrap { padding-top: 2rem; padding-bottom: 4rem; max-width: 52rem; }
+  .back { margin-bottom: 1.5rem; }
+
+  .window {
+    border: var(--line);
+    box-shadow: var(--shadow);
+    background: #0c0e12;
+    overflow: hidden;
+  }
+  .winbar {
+    display: flex; align-items: center; gap: 0.75rem;
+    padding: 0.65rem 0.9rem;
+    background: var(--paper);
+    border-bottom: var(--line);
+  }
+  .dots { display: inline-flex; gap: 0.4rem; }
+  .dots i { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--ink); }
+  .dots i:nth-child(1) { background: #ff5f57; }
+  .dots i:nth-child(2) { background: #febc2e; }
+  .dots i:nth-child(3) { background: #28c840; }
+  .wintitle { font-family: var(--font-mono); font-size: 0.78rem; font-weight: 600; }
+  .spacer { flex: 1; }
+
+  .screen {
+    --t-accent: #7d9bff;
+    --t-pink: #ff7a93;
+    font-family: var(--font-mono);
+    font-size: clamp(0.82rem, 0.78rem + 0.2vw, 0.92rem);
+    line-height: 1.65;
+    color: #cdd3e0;
+    padding: 1.2rem 1.3rem 1.4rem;
+    height: min(66vh, 38rem);
+    overflow-y: auto;
+    cursor: text;
+  }
+  .banner { color: var(--t-accent); font-size: 0.66rem; line-height: 1.2; margin: 0 0 1.1rem; white-space: pre; overflow-x: auto; }
+  .line { white-space: pre-wrap; word-break: break-word; }
+  .prompt { color: var(--t-accent); user-select: none; }
+  .cmd { color: #fff; }
+  .out { white-space: pre-wrap; word-break: break-word; margin: 0.15rem 0 1rem; color: #aab2c5; }
+  .out.err { color: var(--t-pink); }
+  .prose-t :global(p) { margin: 0 0 0.7rem; }
+  .prose-t :global(p:last-child) { margin-bottom: 0; }
+  .prose-t :global(strong) { color: #fff; font-weight: 500; }
+  .prose-t :global(em) { color: var(--t-accent); font-style: normal; }
+  .links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.3rem; }
+  .out a, .links a { color: var(--t-accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  .out a:hover, .links a:hover { border-bottom-color: var(--t-accent); }
+  .hint { color: #6f7891; margin: 0.4rem 0 1.1rem; }
+  .hint b { color: var(--t-accent); font-weight: 500; }
+  .input-line { display: flex; align-items: baseline; gap: 0.5ch; }
+  .cmd-input { flex: 1; appearance: none; background: transparent; border: 0; outline: 0; color: #fff; font: inherit; caret-color: var(--t-pink); padding: 0; }
+  .screen::-webkit-scrollbar { width: 10px; }
+  .screen::-webkit-scrollbar-thumb { background: rgba(125, 155, 255, 0.3); }
+</style>

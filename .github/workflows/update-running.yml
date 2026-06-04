@@ -1,0 +1,37 @@
+name: Update running stats
+
+# Daily refresh of src/data/running.json from Strava. Committing the change
+# triggers the site's deploy workflow, so the run streak stays current.
+on:
+  schedule:
+    - cron: '17 11 * * *' # ~daily, 11:17 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Sync Strava stats
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+        run: node scripts/update-running.mjs
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain src/data/running.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add src/data/running.json
+            git commit -m "chore: update running stats"
+            git push
+          else
+            echo "No change."
+          fi

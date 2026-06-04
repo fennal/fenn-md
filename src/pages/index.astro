@@ -1,0 +1,503 @@
+---
+import Base from '../layouts/Base.astro';
+import Avatar from '../components/Avatar.astro';
+import Ticker from '../components/Ticker.astro';
+import { Content, frontmatter } from '../data/home.md';
+import running from '../data/running.json';
+import '../styles/brutal.css';
+
+const { name, role, tagline, links } = frontmatter;
+const byLabel = (l: string) => links.find((x: { label: string }) => x.label === l)?.href ?? '#';
+const email = byLabel('Email');
+const linkedin = byLabel('LinkedIn');
+const github = byLabel('GitHub');
+
+const focus = [
+  'Clinical Informatics Fellow at UNC — expected graduation June 2026',
+  'Clinical Integration @ Vega Health',
+];
+
+const experience = [
+  {
+    role: 'Clinical Informatics Fellow & Clinical Instructor in EM',
+    org: 'UNC School of Medicine',
+    when: '2024 — present',
+    note: 'Attending EM physician at a Level I trauma center while leading informatics work across UNC Health. EM clinical lead for clinical pathways now live at 10+ UNC Health entities statewide, and a member of the Responsible AI workgroup evaluating vendor tools.',
+  },
+  {
+    role: 'Clinical Integration Advisor',
+    org: 'Vega Health',
+    when: '2025 — present',
+    note: 'Actively-practicing clinical advisor for a vendor-neutral healthcare-AI platform. I translate between clinical workflow and technical architecture so AI tools behave correctly against messy, real-world EHR data.',
+  },
+  {
+    role: 'Medical Consultant',
+    org: 'Synapse Medicine',
+    when: '2022 — 2024',
+    note: 'US-based clinical consultant for a French health-tech company building safe-prescribing tools. Advised on US prescribing workflows and market dynamics, reviewed clinical content, and ran clinician-facing vendor evaluations.',
+  },
+  {
+    role: 'Emergency Medicine Resident',
+    org: 'UNC School of Medicine',
+    when: '2021 — 2024',
+    note: 'Administrative Chief Resident (voted by faculty + peers). Built an EHR clinical decision support tool for critical-care documentation (presented at Epic XGM). Honors: EM Research Award (2024), Cefalo House Officer Award (2023), Golden Glove most-valuable intern (2022).',
+  },
+  {
+    role: 'Bilingual 3rd-Grade Teacher',
+    org: 'Teach For America · Denver Public Schools',
+    when: '2012 — 2015',
+    note: 'Taught bilingual (Spanish) math & science at a Title I school as a TFA corps member for three years.',
+  },
+];
+
+const education = [
+  { what: 'Clinical Informatics Fellowship · ABPM Clinical Informatics board-eligible', where: 'UNC School of Medicine', when: '2026' },
+  { what: 'Emergency Medicine Residency · ABEM board-certified', where: 'UNC School of Medicine', when: '2024' },
+  { what: 'MD, Doctor of Medicine', where: 'Duke University School of Medicine', when: '2021' },
+  { what: 'Post-Baccalaureate Pre-Medical Program', where: 'CU Boulder', when: '2016' },
+  { what: 'MA, Curriculum & Instruction', where: 'CU Denver', when: '2014' },
+  { what: 'BA, English · Phi Beta Kappa', where: 'CU Boulder', when: '2011' },
+];
+
+const publications = [
+  {
+    title: 'Comparative Safety of Medications for Severe Agitation: A Geriatric ED Guidelines 2.0 Systematic Review',
+    venue: 'Journal of the American Geriatrics Society',
+    year: '2025',
+    href: 'https://doi.org/10.1111/jgs.19485',
+  },
+  {
+    title: 'Development and Validation of Machine Learning Models to Predict Admission From the ED to Inpatient and ICU',
+    venue: 'Annals of Emergency Medicine',
+    year: '2021',
+    href: 'https://doi.org/10.1016/j.annemergmed.2021.02.029',
+  },
+  {
+    title: 'Electronic Health Record Use by Sex Among Physicians in an Academic Health Care System',
+    venue: 'JAMA Internal Medicine',
+    year: '2021',
+    href: 'https://doi.org/10.1001/jamainternmed.2020.5036',
+  },
+];
+
+const fmtN = (n: number) => n.toLocaleString('en-US');
+
+// Each hobby is an expandable card. Bodies are placeholder copy for now.
+const hobbies = [
+  { name: 'Ultrarunning', running: true },
+  {
+    name: 'Coffee',
+    body: 'Hario V60 as my daily driver, with the occasional Aeropress.',
+    links: [{ label: 'Sweet Bloom Coffee', href: 'https://sweetbloomcoffee.com/' }],
+  },
+  {
+    name: 'Gardening',
+    body: 'Over 50 houseplants. Growing citrus in North Carolina! Currently working on a miracle berry plant.',
+  },
+  {
+    name: 'Fermenting Things',
+    body: 'Kombucha, kimchi, tepache — you name it.',
+  },
+  {
+    name: 'Ice Cream',
+    lead: 'My top three:',
+    items: [
+      'Salted Oreo — Little Man Ice Cream, Denver, CO',
+      'B3 — Toscanini’s, Cambridge, MA',
+      'Lemon Curd with Blueberry Basil Swirl — Milk Jawn, Philadelphia, PA',
+    ],
+  },
+  {
+    name: 'Baked Goods',
+    body: 'Recently out of the oven: rustic sourdough, banana chocolate-chip cookies, shokupan, and a spoof of Levain chocolate-chip walnut cookies.',
+  },
+];
+---
+
+<Base title={`${name} — ${role}`} description={tagline}>
+  <header class="nav">
+    <div class="nav-inner wrap">
+      <a class="brand" href="/">FENN<span>.MD</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-eggs">
+        <a class="egg" href="/markdown" title="View the source (.md)">.md</a>
+        <a class="egg" href="/terminal" title="Open a shell">›_</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <span class="eyebrow">{role}</span>
+        <h1 class="hero-name">ALEX<br />FENN<span class="md">, MD</span></h1>
+        <p class="hero-tag">{tagline}</p>
+        <div class="hero-cta">
+          <a class="b-btn b-btn--accent" href="#contact">Get in touch ↘</a>
+          <a class="b-btn" href="#work">See my work ↓</a>
+        </div>
+        <span class="sticker" aria-hidden="true">.md</span>
+      </div>
+    </section>
+
+    <Ticker items={['Emergency Medicine', 'Clinical Informatics', 'Responsible AI', 'Clinical Decision Support']} />
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <span class="eyebrow">About</span>
+        <h2 class="section-title">Who</h2>
+        <div class="about-grid">
+          <div class="b-card">
+            <span class="b-tab">BIO</span>
+            <div class="prose"><Content /></div>
+          </div>
+          <aside class="about-side">
+            <div class="b-card avatar-card">
+              <Avatar size={64} />
+              <div>
+                <strong class="ac-name">{name}</strong>
+                <span class="ac-loc">{frontmatter.location}</span>
+              </div>
+            </div>
+            <div class="b-card">
+              <span class="b-tab b-tab--accent">NOW</span>
+              <ul class="now-list">
+                {focus.map((f) => <li>{f}</li>)}
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="wrap">
+        <span class="eyebrow">Work</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="exp-list">
+          {experience.map((e) => (
+            <article class="b-card exp">
+              <div class="exp-head">
+                <h3>{e.role}</h3>
+                <span class="exp-when">{e.when}</span>
+              </div>
+              <span class="exp-org">{e.org}</span>
+              <p class="exp-note">{e.note}</p>
+            </article>
+          ))}
+        </div>
+
+        <h3 class="sub-title">Education</h3>
+        <ul class="edu-list">
+          {education.map((e) => (
+            <li class="edu">
+              <span class="edu-what">{e.what}</span>
+              <span class="edu-where">{e.where}</span>
+              <span class="edu-when">{e.when}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section">
+      <div class="wrap">
+        <span class="eyebrow">Research</span>
+        <h2 class="section-title">Selected publications</h2>
+        <ul class="pub-list">
+          {publications.map((p) => (
+            <li class="pub">
+              <a class="pub-title" href={p.href}>{p.title} <span class="pub-arr">↗</span></a>
+              <span class="pub-meta">{p.venue} · {p.year}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies" class="section section--accent">
+      <div class="wrap">
+        <span class="eyebrow eyebrow--invert">Off the clock</span>
+        <h2 class="section-title">Hobbies</h2>
+        <p class="hobbies-intro">Things I'm into outside of the hospital.</p>
+        <div class="hobby-grid">
+          {hobbies.map((h) => (
+            <details class="hobby">
+              <summary>
+                <span class="h-name">{h.name}</span>
+                <span class="h-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="h-body">
+                {h.running ? (
+                  <Fragment>
+                    <p>
+                      <strong>{fmtN(running.streakDays)}-day run streak</strong> — {fmtN(running.streakMiles)} streak
+                      miles · {fmtN(running.totalMiles)} all-time · zero rest days since Apr 2020.
+                    </p>
+                    <p>Ultras, trails, backyard ultras, and timed events.</p>
+                    <p class="h-links">
+                      <a href="https://www.strava.com/athletes/19875009">Strava ↗</a>
+                      <span class="auto">↻ auto-syncs daily</span>
+                    </p>
+                  </Fragment>
+                ) : h.items ? (
+                  <Fragment>
+                    {h.lead && <p>{h.lead}</p>}
+                    <ol class="h-ol">{h.items.map((it) => <li>{it}</li>)}</ol>
+                  </Fragment>
+                ) : (
+                  <Fragment>
+                    <p>{h.body}</p>
+                    {h.links && (
+                      <p class="h-links">{h.links.map((l) => <a href={l.href}>{l.label} ↗</a>)}</p>
+                    )}
+                  </Fragment>
+                )}
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <div class="b-card contact-card">
+          <span class="b-tab b-tab--pink">SAY HI</span>
+          <h2 class="contact-title">Let's talk.</h2>
+          <p class="contact-lead">Open to conversations about informatics research collaborations, AI in EM, vendor consultation, speaking, and mentorship.</p>
+          <div class="contact-btns">
+            <a class="b-btn b-btn--accent" href={email}>alex@fenn.md ↗</a>
+            <a class="b-btn" href={linkedin}>LinkedIn ↗</a>
+            <a class="b-btn" href={github}>GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <span>© 2026 Alex Fenn, MD</span>
+      <span class="foot-eggs">
+        psst — <a href="/terminal">›_ terminal</a> · <a href="/markdown">.md source</a>
+      </span>
+      <span class="foot-mark">FENN.MD</span>
+    </div>
+  </footer>
+
+  <script>
+    // Easter egg 1: tap the backtick key to drop into the shell.
+    // Easter egg 2: the Konami code (↑↑↓↓←→←→ B A) rains a few of my hobbies.
+    // Both stay quiet for visitors who prefer reduced motion.
+    const KONAMI = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    let kIdx = 0;
+
+    function celebrate() {
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const emojis = ['🏃', '☕', '🌱', '🫙', '🍦', '🥖'];
+      for (let i = 0; i < 32; i++) {
+        const s = document.createElement('span');
+        s.className = 'confetti-piece';
+        s.textContent = emojis[i % emojis.length];
+        s.style.left = Math.random() * 100 + 'vw';
+        s.style.animationDuration = (2.6 + Math.random() * 2).toFixed(2) + 's';
+        s.style.animationDelay = (Math.random() * 0.7).toFixed(2) + 's';
+        document.body.appendChild(s);
+        setTimeout(() => s.remove(), 6000);
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      const t = e.target as HTMLElement;
+      const typing = /^(INPUT|TEXTAREA)$/.test(t.tagName) || t.isContentEditable;
+      if (e.key === '`' && !typing) { window.location.href = '/terminal'; return; }
+      const key = e.key.length === 1 ? e.key.toLowerCase() : e.key;
+      kIdx = key === KONAMI[kIdx] ? kIdx + 1 : key === KONAMI[0] ? 1 : 0;
+      if (kIdx === KONAMI.length) { kIdx = 0; celebrate(); }
+    });
+  </script>
+</Base>
+
+<style>
+  /* NAV */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--paper);
+    border-bottom: var(--line);
+  }
+  .nav-inner { display: flex; align-items: center; gap: 1rem; height: 3.5rem; }
+  .brand { font-family: var(--font-sans); font-weight: 700; letter-spacing: -0.02em; font-size: 1.15rem; text-decoration: none; }
+  .brand span { color: var(--accent); }
+  .nav-links { display: flex; gap: 1.2rem; margin-left: auto; font-family: var(--font-mono); font-size: 0.82rem; }
+  .nav-links a { text-decoration: none; padding: 0.2rem 0; border-bottom: 2px solid transparent; }
+  .nav-links a:hover { border-bottom-color: var(--accent); }
+  .nav-eggs { display: flex; gap: 0.4rem; margin-left: 1.1rem; }
+  .egg {
+    font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600;
+    border: 2px solid var(--ink); padding: 0.2rem 0.45rem; text-decoration: none;
+    background: var(--panel);
+  }
+  .egg:hover { background: var(--accent2); }
+
+  /* HERO */
+  .hero { padding: clamp(2.5rem, 8vw, 5.5rem) 0 clamp(2rem, 5vw, 3.5rem); }
+  .hero-inner { position: relative; }
+  .hero-name {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(3.2rem, 1.5rem + 13vw, 9rem);
+    line-height: 0.86;
+    letter-spacing: -0.04em;
+    margin: 1rem 0 0;
+  }
+  .hero-name .md { color: var(--accent); }
+  .hero-tag { font-size: clamp(1.1rem, 0.95rem + 0.9vw, 1.6rem); font-weight: 500; max-width: 32rem; margin: 1.2rem 0 0; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.6rem; }
+  .sticker {
+    position: absolute; top: -0.5rem; right: 0.5rem; transform: rotate(9deg);
+    width: 4.6rem; height: 4.6rem; border-radius: 50%;
+    background: var(--accent2); border: var(--line); box-shadow: var(--shadow);
+    display: grid; place-items: center;
+    font-family: var(--font-mono); font-weight: 600; font-size: 1.3rem;
+    cursor: default;
+  }
+
+  /* whimsical, reduced-motion-safe touches: a staggered hero entrance + a wobbling sticker */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero .eyebrow, .hero-name, .hero-tag, .hero-cta {
+      opacity: 0;
+      animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+    }
+    .hero .eyebrow { animation-delay: 0.05s; }
+    .hero-name { animation-delay: 0.16s; }
+    .hero-tag { animation-delay: 0.36s; }
+    .hero-cta { animation-delay: 0.5s; }
+    .sticker { animation: wobble 5s ease-in-out infinite; }
+    .sticker:hover { animation: sticker-spin 0.7s ease; }
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+  @keyframes wobble { 0%, 100% { transform: rotate(9deg); } 50% { transform: rotate(3.5deg); } }
+  @keyframes sticker-spin { from { transform: rotate(9deg); } to { transform: rotate(369deg); } }
+
+  /* ABOUT */
+  .about-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 1.4rem; align-items: start; }
+  .about-side { display: grid; gap: 1.4rem; }
+  .avatar-card { display: flex; align-items: center; gap: 0.9rem; padding: 1rem 1.1rem; }
+  .ac-name { display: block; font-weight: 700; }
+  .ac-loc { font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); }
+  .now-list { margin: 0; padding-left: 1.1rem; font-size: 0.96rem; line-height: 1.5; }
+  .now-list li { margin: 0.3rem 0; }
+
+  /* WORK */
+  .sub-title {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    font-size: 1.3rem;
+    margin: 2.75rem 0 1rem;
+  }
+
+  /* education */
+  .edu-list { list-style: none; margin: 0; padding: 0; border-top: var(--bw) solid var(--ink); }
+  .edu {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: var(--bw) solid var(--ink);
+  }
+  .edu-what { grid-column: 1; grid-row: 1; font-weight: 600; }
+  .edu-where { grid-column: 1; grid-row: 2; font-family: var(--font-mono); font-size: 0.82rem; color: var(--muted); }
+  .edu-when { grid-column: 2; grid-row: 1 / span 2; align-self: center; font-family: var(--font-mono); font-size: 0.82rem; }
+
+  /* publications */
+  .pub-list { list-style: none; margin: 0; padding: 0; border-top: var(--bw) solid var(--ink); }
+  .pub { padding: 0.9rem 0; border-bottom: var(--bw) solid var(--ink); }
+  .pub-title { display: block; font-weight: 600; line-height: 1.35; text-decoration: none; }
+  .pub-title:hover { color: var(--accent); }
+  .pub-arr { color: var(--accent); }
+  .pub-meta { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); }
+  .pub-foot { font-family: var(--font-mono); font-size: 0.82rem; color: var(--muted); margin: 1.3rem 0 0; max-width: 40rem; line-height: 1.5; }
+  .pub-foot a { text-decoration: none; border-bottom: 2px solid var(--accent); }
+  .exp-list { display: grid; gap: 1.3rem; }
+  .exp-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+  .exp h3 { margin: 0; font-size: 1.25rem; }
+  .exp-when { font-family: var(--font-mono); font-size: 0.78rem; color: var(--muted); }
+  .exp-org { font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent); font-weight: 600; }
+  .exp-note { margin: 0.6rem 0 0; }
+
+  /* RUNNING */
+  .section--accent { background: var(--accent); color: var(--paper); border-top: var(--line); padding-block: clamp(2rem, 5vw, 3.25rem); }
+  .section--accent .section-title { color: var(--paper); }
+  .eyebrow--invert { background: var(--paper); color: var(--ink); }
+  .hobbies-intro { font-family: var(--font-mono); font-size: 0.8rem; opacity: 0.85; margin: 0 0 1.4rem; max-width: 36rem; }
+  .hobby-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; align-items: start; }
+  .hobby {
+    border: var(--line);
+    box-shadow: var(--shadow-sm);
+    background: var(--panel);
+    color: var(--ink); /* ink on white — fixes the cream-on-white text */
+  }
+  .hobby[open] { box-shadow: var(--shadow); }
+  .hobby summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+    font-family: var(--font-sans);
+    font-weight: 700;
+  }
+  .hobby summary::-webkit-details-marker { display: none; }
+  .h-plus { font-family: var(--font-mono); font-weight: 700; transition: transform 0.15s ease; }
+  .hobby[open] .h-plus { transform: rotate(45deg); }
+  .h-body { padding: 0.8rem 1rem 1rem; border-top: 2px solid var(--ink); font-size: 0.92rem; line-height: 1.55; }
+  .h-body p { margin: 0 0 0.6rem; }
+  .h-body p:last-child { margin-bottom: 0; }
+  .h-body strong { background: var(--accent); color: var(--paper); padding: 0 0.2em; font-weight: 700; }
+  .h-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem; }
+  .h-links a { font-family: var(--font-mono); font-size: 0.82rem; text-decoration: none; border-bottom: 2px solid var(--accent); }
+  .h-links .auto { font-family: var(--font-mono); font-size: 0.74rem; opacity: 0.6; }
+  .h-ol { margin: 0; padding-left: 1.3rem; }
+  .h-ol li { margin: 0.3rem 0; padding-left: 0.2rem; }
+  .h-ol li::marker { font-family: var(--font-mono); font-weight: 700; color: var(--accent); }
+  @media (max-width: 46rem) { .hobby-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 30rem) { .hobby-grid { grid-template-columns: 1fr; } }
+
+  /* CONTACT */
+  .contact-card { text-align: center; padding: 2.5rem 1.4rem 2rem; }
+  .contact-title { font-size: clamp(2rem, 1.4rem + 3vw, 3.2rem); text-transform: uppercase; letter-spacing: -0.02em; margin: 0.5rem 0 0.4rem; }
+  .contact-lead { color: var(--muted); margin: 0 auto 1.4rem; max-width: 28rem; }
+  .contact-btns { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; }
+
+  /* FOOTER */
+  .foot { border-top: var(--line); background: var(--ink); color: var(--paper); }
+  .foot-inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding-top: 1.2rem; padding-bottom: 1.2rem; font-family: var(--font-mono); font-size: 0.78rem; }
+  .foot a { text-decoration: none; border-bottom: 2px solid var(--accent); }
+  .foot-mark { font-weight: 700; letter-spacing: 0.05em; }
+
+  /* RESPONSIVE */
+  @media (max-width: 44rem) {
+    .nav-links { display: none; }
+    .about-grid { grid-template-columns: 1fr; }
+  }
+</style>
