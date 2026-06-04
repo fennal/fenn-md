@@ -1,0 +1,66 @@
+---
+import Base from '../layouts/Base.astro';
+import '../styles/brutal.css';
+---
+
+<Base title="404 — page not found · Alex Fenn, MD" description="That page wandered off.">
+  <header class="nf-nav">
+    <a class="brand" href="/">FENN<span>.MD</span></a>
+  </header>
+
+  <main class="nf wrap">
+    <span class="eyebrow">Error 404</span>
+    <h1 class="nf-code">4<span class="o">0</span>4</h1>
+    <p class="nf-msg">
+      This page took a rest day — the run streak didn't. The link you followed is
+      missing, renamed, or never existed.
+    </p>
+    <div class="nf-btns">
+      <a class="b-btn b-btn--accent" href="/">← Back home</a>
+      <a class="b-btn" href="/terminal">›_ terminal</a>
+      <a class="b-btn" href="/markdown">.md source</a>
+    </div>
+  </main>
+</Base>
+
+<style>
+  .nf-nav { border-bottom: var(--line); }
+  .nf-nav .brand {
+    display: inline-block;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem 1.1rem;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    font-size: 1.15rem;
+    text-decoration: none;
+  }
+  .nf-nav .brand span { color: var(--accent); }
+
+  .nf {
+    min-height: 74vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-block: 3rem 4rem;
+  }
+  .nf-code {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    font-size: clamp(6rem, 3rem + 22vw, 15rem);
+    margin: 0.7rem 0 0;
+  }
+  .nf-code .o { color: var(--accent2); }
+  .nf-msg {
+    font-size: clamp(1.05rem, 0.95rem + 0.6vw, 1.35rem);
+    font-weight: 500;
+    max-width: 34rem;
+    margin: 1.4rem 0 0;
+  }
+  .nf-btns { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.9rem; }
+</style>
