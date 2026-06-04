@@ -34,17 +34,18 @@ const addDays = (d, n) => { const x = new Date(d); x.setUTCDate(x.getUTCDate() +
 const localMidnight = (iso) => new Date(iso.slice(0, 10) + 'T00:00:00Z');
 
 async function getAccessToken() {
+  // Strava's /oauth/token expects application/x-www-form-urlencoded (URLSearchParams
+  // sets that header automatically), not JSON.
   const res = await fetch('https://www.strava.com/oauth/token', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
+    body: new URLSearchParams({
       client_id: STRAVA_CLIENT_ID,
       client_secret: STRAVA_CLIENT_SECRET,
       grant_type: 'refresh_token',
       refresh_token: STRAVA_REFRESH_TOKEN,
     }),
   });
-  if (!res.ok) throw new Error(`token exchange failed: ${res.status}`);
+  if (!res.ok) throw new Error(`token exchange failed: ${res.status} — ${await res.text()}`);
   return (await res.json()).access_token;
 }
 
