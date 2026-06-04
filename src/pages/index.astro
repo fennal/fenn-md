@@ -331,30 +331,42 @@ const hobbies = [
         '.section-title, .sub-title, .b-card, .edu, .pub, .hobby, .contact-btns .b-btn, .foot-inner > *';
       let nodes = Array.from(document.querySelectorAll(SEL));
       nodes = nodes.filter((n) => !nodes.some((o) => o !== n && o.contains(n)));
-
-      // Measure EVERY element first (against the intact layout), then pin them. Pinning as we
-      // go would reflow the page and corrupt later measurements (that's the layout jump).
       const els = nodes.map((n) => n as HTMLElement);
+
+      // Measure everything against the intact layout in ONE pass (no style writes yet).
       const rects = els.map((e) => e.getBoundingClientRect());
+
+      // Freeze the page exactly as it looks: lock scrolling so the viewport IS the arena.
+      document.documentElement.style.overflow = 'hidden';
+
+      // The key to "no layout change on trigger": we DON'T pull elements out of flow.
+      // position:relative with no offsets keeps each element in its exact spot, and we only
+      // ever move it with transform — so nothing around it reflows or collapses. On trigger
+      // every transform is the identity, so the page is pixel-identical until a hit lands.
       const bodies = els.map((e, i) => {
         const r = rects[i];
-        Object.assign(e.style, {
-          position: 'fixed', left: '0', top: '0',
-          width: r.width + 'px', height: r.height + 'px',
-          margin: '0', zIndex: '5', willChange: 'transform',
-          transform: `translate(${r.left}px, ${r.top}px)`, // pin in place immediately (no flash)
-        });
+        const style: Record<string, string> = {
+          zIndex: '5', willChange: 'transform',
+          animation: 'none', opacity: '1', // stop entrance/wobble anims from fighting transforms
+        };
+        // Only static elements need position:relative (to enable z-index) — and relative-with-no-
+        // offsets keeps them exactly in flow. Already-positioned elements (e.g. the absolute .md
+        // sticker) must be LEFT ALONE; forcing them to relative would drop them back into flow and
+        // shove the page down. transform moves them either way.
+        if (getComputedStyle(e).position === 'static') style.position = 'relative';
+        Object.assign(e.style, style);
         const b = {
-          el: e, w: r.width, h: r.height, x: r.left, y: r.top,
-          vx: 0, vy: 0, // stay put until the cursor (wrecking ball) hits it
-          ang: 0, va: 0, dead: false,
+          el: e, w: r.width, h: r.height,
+          bx: r.left, by: r.top, // flow anchor (viewport coords; scroll is locked)
+          x: r.left, y: r.top, // live position
+          vx: 0, vy: 0, ang: 0, va: 0, dead: false,
         };
         e.addEventListener('click', () => {
-          b.dead = true;
-          e.style.transition = 'transform .25s, opacity .25s';
+          if (b.dead) return;
+          b.dead = true; // keep it in flow (don't remove) so nothing else shifts — just shrink + fade
+          e.style.transition = 'opacity .3s, transform .3s';
           e.style.opacity = '0';
-          e.style.transform += ' scale(0)';
-          setTimeout(() => e.remove(), 250);
+          e.style.transform = `translate(${b.x - b.bx}px, ${b.y - b.by}px) rotate(${b.ang}deg) scale(0)`;
         });
         return b;
       });
@@ -392,14 +404,17 @@ const hobbies = [
             if (sp > MAXV) { b.vx = (b.vx / sp) * MAXV; b.vy = (b.vy / sp) * MAXV; }
             b.va = Math.max(-4.5, Math.min(4.5, b.va)); // cap spin speed
           }
-          b.x += b.vx; b.y += b.vy; b.ang += b.va;
-          b.vx *= 0.99; b.vy *= 0.99; b.va *= 0.97;
-          // bounce only when actually moving INTO a wall — never yank a resting/off-screen element in
-          if (b.x < 0 && b.vx < 0) { b.x = 0; b.vx = -b.vx * 0.86; }
-          else if (b.x + b.w > w && b.vx > 0) { b.x = w - b.w; b.vx = -b.vx * 0.86; }
-          if (b.y < 0 && b.vy < 0) { b.y = 0; b.vy = -b.vy * 0.86; }
-          else if (b.y + b.h > h && b.vy > 0) { b.y = h - b.h; b.vy = -b.vy * 0.86; }
-          b.el.style.transform = `translate(${b.x}px, ${b.y}px) rotate(${b.ang}deg)`;
+          // only touched elements ever move — resting ones keep an identity transform (never drift)
+          if (b.vx || b.vy || b.va) {
+            b.x += b.vx; b.y += b.vy; b.ang += b.va;
+            b.vx *= 0.99; b.vy *= 0.99; b.va *= 0.97;
+            // bounce only when actually moving INTO a wall — never yank a resting element in
+            if (b.x < 0 && b.vx < 0) { b.x = 0; b.vx = -b.vx * 0.86; }
+            else if (b.x + b.w > w && b.vx > 0) { b.x = w - b.w; b.vx = -b.vx * 0.86; }
+            if (b.y < 0 && b.vy < 0) { b.y = 0; b.vy = -b.vy * 0.86; }
+            else if (b.y + b.h > h && b.vy > 0) { b.y = h - b.h; b.vy = -b.vy * 0.86; }
+            b.el.style.transform = `translate(${b.x - b.bx}px, ${b.y - b.by}px) rotate(${b.ang}deg)`;
+          }
         }
         requestAnimationFrame(tick);
       })();
