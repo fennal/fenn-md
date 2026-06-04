@@ -332,13 +332,17 @@ const hobbies = [
       let nodes = Array.from(document.querySelectorAll(SEL));
       nodes = nodes.filter((n) => !nodes.some((o) => o !== n && o.contains(n)));
 
-      const bodies = nodes.map((el) => {
-        const e = el as HTMLElement;
-        const r = e.getBoundingClientRect();
+      // Measure EVERY element first (against the intact layout), then pin them. Pinning as we
+      // go would reflow the page and corrupt later measurements (that's the layout jump).
+      const els = nodes.map((n) => n as HTMLElement);
+      const rects = els.map((e) => e.getBoundingClientRect());
+      const bodies = els.map((e, i) => {
+        const r = rects[i];
         Object.assign(e.style, {
           position: 'fixed', left: '0', top: '0',
           width: r.width + 'px', height: r.height + 'px',
           margin: '0', zIndex: '5', willChange: 'transform',
+          transform: `translate(${r.left}px, ${r.top}px)`, // pin in place immediately (no flash)
         });
         const b = {
           el: e, w: r.width, h: r.height, x: r.left, y: r.top,
@@ -370,8 +374,8 @@ const hobbies = [
         const w = window.innerWidth, h = window.innerHeight;
         let cvx = mx - pmx, cvy = my - pmy; // cursor velocity this frame
         pmx = mx; pmy = my;
-        cvx = Math.max(-60, Math.min(60, cvx));
-        cvy = Math.max(-60, Math.min(60, cvy));
+        cvx = Math.max(-45, Math.min(45, cvx));
+        cvy = Math.max(-45, Math.min(45, cvy));
         const speed = Math.hypot(cvx, cvy);
         for (const b of bodies) {
           if (b.dead) continue;
@@ -379,18 +383,22 @@ const hobbies = [
           const nx = Math.max(b.x, Math.min(mx, b.x + b.w));
           const ny = Math.max(b.y, Math.min(my, b.y + b.h));
           if (speed > 0.1 && Math.hypot(mx - nx, my - ny) < HIT) {
-            let ax = b.x + b.w / 2 - mx, ay = b.y + b.h / 2 - my;
+            const ax = b.x + b.w / 2 - mx, ay = b.y + b.h / 2 - my;
             const am = Math.hypot(ax, ay) || 1;
-            b.vx += cvx * 0.8 + (ax / am) * speed * 0.5; // momentum + push-away
-            b.vy += cvy * 0.8 + (ay / am) * speed * 0.5;
-            b.va += cvx * 0.25 + (Math.random() - 0.5) * 3;
+            b.vx += cvx * 0.45 + (ax / am) * speed * 0.3; // gentler momentum + push-away
+            b.vy += cvy * 0.45 + (ay / am) * speed * 0.3;
+            b.va += cvx * 0.1 + (Math.random() - 0.5) * 1.2;
+            const sp = Math.hypot(b.vx, b.vy), MAXV = 11; // cap so things drift, not rocket
+            if (sp > MAXV) { b.vx = (b.vx / sp) * MAXV; b.vy = (b.vy / sp) * MAXV; }
+            b.va = Math.max(-4.5, Math.min(4.5, b.va)); // cap spin speed
           }
           b.x += b.vx; b.y += b.vy; b.ang += b.va;
           b.vx *= 0.99; b.vy *= 0.99; b.va *= 0.97;
-          if (b.x < 0) { b.x = 0; b.vx = Math.abs(b.vx) * 0.86; }
-          if (b.x + b.w > w) { b.x = w - b.w; b.vx = -Math.abs(b.vx) * 0.86; }
-          if (b.y < 0) { b.y = 0; b.vy = Math.abs(b.vy) * 0.86; }
-          if (b.y + b.h > h) { b.y = h - b.h; b.vy = -Math.abs(b.vy) * 0.86; }
+          // bounce only when actually moving INTO a wall — never yank a resting/off-screen element in
+          if (b.x < 0 && b.vx < 0) { b.x = 0; b.vx = -b.vx * 0.86; }
+          else if (b.x + b.w > w && b.vx > 0) { b.x = w - b.w; b.vx = -b.vx * 0.86; }
+          if (b.y < 0 && b.vy < 0) { b.y = 0; b.vy = -b.vy * 0.86; }
+          else if (b.y + b.h > h && b.vy > 0) { b.y = h - b.h; b.vy = -b.vy * 0.86; }
           b.el.style.transform = `translate(${b.x}px, ${b.y}px) rotate(${b.ang}deg)`;
         }
         requestAnimationFrame(tick);
