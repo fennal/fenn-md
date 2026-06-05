@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-04",
+  "updated": "2026-06-05",
   "source": "Strava",
-  "streakDays": 2247,
+  "streakDays": 2248,
   "streakStart": "2020-04-09",
-  "streakMiles": 19303,
+  "streakMiles": 19311,
   "restDays": 0,
-  "totalMiles": 23871,
-  "totalRuns": 3327,
-  "ytdMiles": 1551,
-  "ytdRuns": 155,
+  "totalMiles": 23879,
+  "totalRuns": 3328,
+  "ytdMiles": 1559,
+  "ytdRuns": 156,
   "lastRun": {
-    "date": "2026-06-03",
-    "name": "What’s in the box? What’s in the box???!!!",
-    "miles": 9,
-    "pace": "7:29"
+    "date": "2026-06-04",
+    "name": "Need a Claude skill to make me a better runner",
+    "miles": 8,
+    "pace": "7:48"
   }
 }
