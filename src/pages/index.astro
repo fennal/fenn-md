@@ -723,9 +723,10 @@ const hobbies = [
   .h-links a { font-family: var(--font-mono); font-size: 0.82rem; text-decoration: none; border-bottom: 2px solid var(--accent); }
   .h-links .auto { font-family: var(--font-mono); font-size: 0.74rem; opacity: 0.6; }
   .h-links-label { font-family: var(--font-mono); font-size: 0.82rem; opacity: 0.7; width: 100%; }
-  .h-ol { margin: 0; padding-left: 1.3rem; }
-  .h-ol li { margin: 0.3rem 0; padding-left: 0.2rem; }
-  .h-ol li::marker { font-family: var(--font-mono); font-weight: 700; color: var(--accent); }
+  /* numbered list (Ice Cream): grid keeps the marker tight + wrapped lines aligned under the text */
+  .h-ol { margin: 0; padding: 0; list-style: none; counter-reset: ic; }
+  .h-ol li { counter-increment: ic; display: grid; grid-template-columns: 1.5rem 1fr; align-items: baseline; margin: 0.35rem 0; }
+  .h-ol li::before { content: counter(ic) "."; font-family: var(--font-mono); font-weight: 700; color: var(--accent); }
   @media (max-width: 46rem) { .hobby-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 30rem) { .hobby-grid { grid-template-columns: 1fr; } }
 

@@ -1,14 +1,16 @@
 name: Update running stats
 
-# Daily refresh of src/data/running.json from Strava. Committing the change
-# triggers the site's deploy workflow, so the run streak stays current.
+# Daily refresh of src/data/running.json from Strava. The commit is pushed with the
+# built-in GITHUB_TOKEN, which (by design) does NOT trigger deploy.yml's push event —
+# so after committing we explicitly dispatch the deploy so the live site rebuilds.
 on:
   schedule:
-    - cron: '17 */12 * * *' # every 12 hours (00:17 and 12:17 UTC) — the streak changes at most once/day
+    - cron: '17 */12 * * *' # every 12 hours (00:17 and 12:17 UTC; GitHub may delay it) — the streak changes at most once/day
   workflow_dispatch: {}
 
 permissions:
   contents: write
+  actions: write # needed to dispatch deploy.yml after a data change
 
 jobs:
   update:
@@ -24,7 +26,9 @@ jobs:
           STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
           STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
         run: node scripts/update-running.mjs
-      - name: Commit if changed
+      - name: Commit and redeploy if changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -n "$(git status --porcelain src/data/running.json)" ]; then
             git config user.name "github-actions[bot]"
@@ -32,6 +36,8 @@ jobs:
             git add src/data/running.json
             git commit -m "chore: update running stats"
             git push
+            # GITHUB_TOKEN pushes don't fire deploy.yml's push trigger, so kick it ourselves
+            gh workflow run deploy.yml
           else
             echo "No change."
           fi
