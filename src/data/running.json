@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-05",
+  "updated": "2026-06-06",
   "source": "Strava",
-  "streakDays": 2248,
+  "streakDays": 2249,
   "streakStart": "2020-04-09",
-  "streakMiles": 19311,
+  "streakMiles": 19320,
   "restDays": 0,
-  "totalMiles": 23879,
-  "totalRuns": 3328,
-  "ytdMiles": 1559,
-  "ytdRuns": 156,
+  "totalMiles": 23888,
+  "totalRuns": 3329,
+  "ytdMiles": 1568,
+  "ytdRuns": 157,
   "lastRun": {
-    "date": "2026-06-04",
-    "name": "Need a Claude skill to make me a better runner",
-    "miles": 8,
-    "pace": "7:48"
+    "date": "2026-06-05",
+    "name": "Lizarding",
+    "miles": 9,
+    "pace": "7:23"
   }
 }
