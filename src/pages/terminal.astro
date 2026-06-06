@@ -3,10 +3,11 @@ import Base from '../layouts/Base.astro';
 import { Content, frontmatter } from '../data/home.md';
 import running from '../data/running.json';
 import bannerArt from '../data/banner.txt?raw'; // figlet "Standard" of "fenn.md" (see src/data/banner.txt)
+import coconutArt from '../data/coconut.txt?raw'; // `cat cat` easter egg — ASCII of Coconut the cat
 import '../styles/brutal.css';
 
 const { name, role, tagline, links } = frontmatter;
-const shellData = { name, role, tagline, links, streak: running.streakDays, miles: running.streakMiles, rest: running.restDays };
+const shellData = { name, role, tagline, links, streak: running.streakDays, miles: running.streakMiles, rest: running.restDays, coconut: coconutArt };
 ---
 
 <Base title={`${name} — shell`} description={tagline}>
@@ -75,6 +76,7 @@ const shellData = { name, role, tagline, links, streak: running.streakDays, mile
       const f = (args[0] || '').toLowerCase().replace(/^\.\//, '');
       if (!f) return 'usage: cat <file>   (try: cat about.md)';
       if (f === 'about.md' || f === 'about') return aboutText;
+      // (cat cat / cat coconut is intercepted in run() so it can render as pre-formatted art)
       return `cat: ${args[0]}: No such file or directory`;
     },
     run: () =>
@@ -138,6 +140,11 @@ const shellData = { name, role, tagline, links, streak: running.streakDays, mile
 
     if (key === 'clear') { log.replaceChildren(); return; }
     if (key === 'sl' || (key === 'run' && /--(far|ultra|forever)/.test(args.join(' ')))) { runnerEgg(); return; }
+    // `cat cat` (or cat.md / coconut) → ASCII art of Coconut, rendered pre-formatted
+    if (key === 'cat' && ['cat', 'cat.md', 'coconut', 'coconut.md'].includes((args[0] || '').toLowerCase().replace(/^\.\//, ''))) {
+      emit(esc(data.coconut), 'out art');
+      return;
+    }
 
     const fn = commands[key];
     if (fn) {
@@ -205,18 +212,22 @@ const shellData = { name, role, tagline, links, streak: running.streakDays, mile
   }
   .banner { color: var(--t-accent); font-size: 0.66rem; line-height: 1.2; margin: 0 0 0.5rem; white-space: pre; overflow-x: auto; }
   .banner-sub { color: var(--t-accent); opacity: 0.65; font-size: 0.72rem; margin: 0 0 1.2rem; }
-  .line { white-space: pre-wrap; word-break: break-word; }
-  .prompt { color: var(--t-accent); user-select: none; }
-  .cmd { color: #fff; }
-  .out { white-space: pre-wrap; word-break: break-word; margin: 0.15rem 0 1rem; color: #aab2c5; }
-  .out.err { color: var(--t-pink); }
+  /* Output is appended by JS, so those nodes don't carry Astro's scope hash —
+     anchor the styles globally under the (scoped) #screen so typed-command output
+     gets the same treatment as the server-rendered transcript. */
+  #screen :global(.line) { white-space: pre-wrap; word-break: break-word; }
+  #screen :global(.prompt) { color: var(--t-accent); user-select: none; }
+  #screen :global(.cmd) { color: #fff; }
+  #screen :global(.out) { white-space: pre-wrap; word-break: break-word; margin: 0.15rem 0 1rem; color: #aab2c5; }
+  #screen :global(.out.err) { color: var(--t-pink); }
+  #screen :global(.out.art) { white-space: pre; overflow-x: auto; line-height: 1.25; color: var(--t-accent); }
   .prose-t :global(p) { margin: 0 0 0.7rem; }
   .prose-t :global(p:last-child) { margin-bottom: 0; }
   .prose-t :global(strong) { color: #fff; font-weight: 500; }
   .prose-t :global(em) { color: var(--t-accent); font-style: normal; }
   .links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.3rem; }
-  .out a, .links a { color: var(--t-accent); text-decoration: none; border-bottom: 1px solid transparent; }
-  .out a:hover, .links a:hover { border-bottom-color: var(--t-accent); }
+  #screen :global(.out a), .links a { color: var(--t-accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  #screen :global(.out a:hover), .links a:hover { border-bottom-color: var(--t-accent); }
   .hint { color: #6f7891; margin: 0.4rem 0 1.1rem; }
   .hint b { color: var(--t-accent); font-weight: 500; }
   .input-line { display: flex; align-items: baseline; gap: 0.5ch; }
