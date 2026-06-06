@@ -33,10 +33,38 @@ const addDays = (d, n) => { const x = new Date(d); x.setUTCDate(x.getUTCDate() +
 // Midnight (UTC frame) of a Strava local timestamp, e.g. "2026-02-07T09:00:00Z".
 const localMidnight = (iso) => new Date(iso.slice(0, 10) + 'T00:00:00Z');
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// Strava occasionally hiccups (e.g. CloudFront returns a 5xx HTML error page during
+// token refresh). Retry transient failures — server errors, rate limits, and network
+// errors — with backoff, but fail fast on real 4xx (bad token/credentials).
+async function fetchRetry(url, opts = {}, label = 'request', tries = 4) {
+  let lastErr;
+  for (let i = 0; i < tries; i++) {
+    try {
+      const res = await fetch(url, opts);
+      if (res.ok) return res;
+      const body = (await res.text()).slice(0, 200);
+      if (res.status === 429 || res.status >= 500) {
+        lastErr = new Error(`${label}: ${res.status} (transient) — ${body}`);
+      } else {
+        throw new Error(`${label}: ${res.status} — ${body}`); // 4xx: don't retry
+      }
+    } catch (e) {
+      lastErr = e; // network error — retryable
+    }
+    if (i < tries - 1) {
+      console.warn(`${label} attempt ${i + 1} failed, retrying… (${lastErr.message})`);
+      await sleep(2000 * (i + 1)); // 2s, 4s, 6s
+    }
+  }
+  throw lastErr;
+}
+
 async function getAccessToken() {
   // Strava's /oauth/token expects application/x-www-form-urlencoded (URLSearchParams
   // sets that header automatically), not JSON.
-  const res = await fetch('https://www.strava.com/oauth/token', {
+  const res = await fetchRetry('https://www.strava.com/oauth/token', {
     method: 'POST',
     body: new URLSearchParams({
       client_id: STRAVA_CLIENT_ID,
@@ -44,16 +72,14 @@ async function getAccessToken() {
       grant_type: 'refresh_token',
       refresh_token: STRAVA_REFRESH_TOKEN,
     }),
-  });
-  if (!res.ok) throw new Error(`token exchange failed: ${res.status} — ${await res.text()}`);
+  }, 'token exchange');
   return (await res.json()).access_token;
 }
 
 const api = async (path, token) => {
-  const res = await fetch(`https://www.strava.com/api/v3${path}`, {
+  const res = await fetchRetry(`https://www.strava.com/api/v3${path}`, {
     headers: { Authorization: `Bearer ${token}` },
-  });
-  if (!res.ok) throw new Error(`GET ${path} -> ${res.status}`);
+  }, `GET ${path}`);
   return res.json();
 };
 
