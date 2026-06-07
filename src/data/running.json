@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-06",
+  "updated": "2026-06-07",
   "source": "Strava",
-  "streakDays": 2249,
+  "streakDays": 2250,
   "streakStart": "2020-04-09",
-  "streakMiles": 19320,
+  "streakMiles": 19330,
   "restDays": 0,
-  "totalMiles": 23888,
-  "totalRuns": 3329,
-  "ytdMiles": 1568,
-  "ytdRuns": 157,
+  "totalMiles": 23899,
+  "totalRuns": 3330,
+  "ytdMiles": 1578,
+  "ytdRuns": 158,
   "lastRun": {
-    "date": "2026-06-05",
-    "name": "Lizarding",
-    "miles": 9,
-    "pace": "7:23"
+    "date": "2026-06-06",
+    "name": "Small new nature area off the ATT!",
+    "miles": 10.1,
+    "pace": "7:37"
   }
 }
