@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-07",
+  "updated": "2026-06-08",
   "source": "Strava",
-  "streakDays": 2250,
+  "streakDays": 2251,
   "streakStart": "2020-04-09",
-  "streakMiles": 19330,
+  "streakMiles": 19345,
   "restDays": 0,
-  "totalMiles": 23899,
-  "totalRuns": 3330,
-  "ytdMiles": 1578,
-  "ytdRuns": 158,
+  "totalMiles": 23914,
+  "totalRuns": 3331,
+  "ytdMiles": 1594,
+  "ytdRuns": 159,
   "lastRun": {
-    "date": "2026-06-06",
-    "name": "Small new nature area off the ATT!",
-    "miles": 10.1,
-    "pace": "7:37"
+    "date": "2026-06-07",
+    "name": "Replete lytes",
+    "miles": 15.6,
+    "pace": "7:50"
   }
 }
