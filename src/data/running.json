@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-08",
+  "updated": "2026-06-09",
   "source": "Strava",
-  "streakDays": 2251,
+  "streakDays": 2252,
   "streakStart": "2020-04-09",
-  "streakMiles": 19345,
+  "streakMiles": 19355,
   "restDays": 0,
-  "totalMiles": 23914,
-  "totalRuns": 3331,
-  "ytdMiles": 1594,
-  "ytdRuns": 159,
+  "totalMiles": 23923,
+  "totalRuns": 3332,
+  "ytdMiles": 1603,
+  "ytdRuns": 160,
   "lastRun": {
-    "date": "2026-06-07",
-    "name": "Replete lytes",
-    "miles": 15.6,
-    "pace": "7:50"
+    "date": "2026-06-08",
+    "name": "Playing Chicken with a heron",
+    "miles": 9.3,
+    "pace": "7:29"
   }
 }
