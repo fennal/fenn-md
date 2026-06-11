@@ -80,6 +80,25 @@ const publications = [
   },
 ];
 
+// Structured data (schema.org Person) — helps search engines connect the site,
+// publications, and profiles to the same person.
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Alex Fenn, MD',
+  url: 'https://fenn.md',
+  image: 'https://fenn.md/og.png',
+  jobTitle: ['Emergency Medicine Physician', 'Clinical Informatics Fellow'],
+  worksFor: { '@type': 'Organization', name: 'UNC Health' },
+  alumniOf: [
+    { '@type': 'CollegeOrUniversity', name: 'Duke University School of Medicine' },
+    { '@type': 'CollegeOrUniversity', name: 'University of Colorado Boulder' },
+  ],
+  knowsAbout: ['Emergency Medicine', 'Clinical Informatics', 'Clinical Decision Support', 'Responsible AI in Healthcare'],
+  email: 'mailto:alex@fenn.md',
+  sameAs: [linkedin, github],
+};
+
 const fmtN = (n: number) => n.toLocaleString('en-US');
 const [sy, sm, sd] = running.streakStart.split('-');
 const streakStartShort = `${+sm}/${+sd}/${sy.slice(2)}`; // "2020-04-09" -> "4/9/20"
@@ -125,6 +144,7 @@ const hobbies = [
 ---
 
 <Base title={`${name} — ${role}`} description={tagline}>
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
   <header class="nav">
     <div class="nav-inner wrap">
       <a class="brand" href="/">FENN<span>.MD</span></a>

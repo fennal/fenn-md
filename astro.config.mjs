@@ -1,8 +1,9 @@
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 
-// Concept-phase config. `site` is the eventual custom domain so canonical URLs
-// and sitemap are correct once we deploy to GitHub Pages.
+// `site` is the custom domain so canonical URLs and the sitemap are correct
+// on GitHub Pages. Static output is the default.
 export default defineConfig({
   site: 'https://fenn.md',
-  // Static output is the default; nothing else needed for GitHub Pages.
+  integrations: [sitemap()],
 });
