@@ -1,18 +1,18 @@
 {
   "updated": "2026-06-11",
   "source": "Strava",
-  "streakDays": 2254,
+  "streakDays": 2255,
   "streakStart": "2020-04-09",
-  "streakMiles": 19370,
+  "streakMiles": 19378,
   "restDays": 0,
-  "totalMiles": 23939,
-  "totalRuns": 3334,
-  "ytdMiles": 1619,
-  "ytdRuns": 162,
+  "totalMiles": 23947,
+  "totalRuns": 3335,
+  "ytdMiles": 1627,
+  "ytdRuns": 163,
   "lastRun": {
-    "date": "2026-06-10",
-    "name": "Decompression loops",
+    "date": "2026-06-11",
+    "name": "This finals series is ruining my sleep",
     "miles": 8,
-    "pace": "7:38"
+    "pace": "7:53"
   }
 }
