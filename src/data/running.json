@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-10",
+  "updated": "2026-06-11",
   "source": "Strava",
-  "streakDays": 2253,
+  "streakDays": 2254,
   "streakStart": "2020-04-09",
-  "streakMiles": 19362,
+  "streakMiles": 19370,
   "restDays": 0,
-  "totalMiles": 23931,
-  "totalRuns": 3333,
-  "ytdMiles": 1611,
-  "ytdRuns": 161,
+  "totalMiles": 23939,
+  "totalRuns": 3334,
+  "ytdMiles": 1619,
+  "ytdRuns": 162,
   "lastRun": {
-    "date": "2026-06-09",
-    "name": "Trash collection day loops",
-    "miles": 7.4,
-    "pace": "7:44"
+    "date": "2026-06-10",
+    "name": "Decompression loops",
+    "miles": 8,
+    "pace": "7:38"
   }
 }
