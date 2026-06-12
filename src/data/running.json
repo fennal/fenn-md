@@ -1,18 +1,18 @@
 {
   "updated": "2026-06-12",
   "source": "Strava",
-  "streakDays": 2255,
+  "streakDays": 2256,
   "streakStart": "2020-04-09",
-  "streakMiles": 19378,
+  "streakMiles": 19387,
   "restDays": 0,
-  "totalMiles": 23947,
-  "totalRuns": 3335,
-  "ytdMiles": 1627,
-  "ytdRuns": 163,
+  "totalMiles": 23956,
+  "totalRuns": 3336,
+  "ytdMiles": 1636,
+  "ytdRuns": 164,
   "lastRun": {
-    "date": "2026-06-11",
-    "name": "This finals series is ruining my sleep",
-    "miles": 8,
-    "pace": "7:53"
+    "date": "2026-06-12",
+    "name": "Thought Asheville might be a little chillier",
+    "miles": 9.1,
+    "pace": "7:20"
   }
 }
