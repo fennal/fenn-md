@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-14",
+  "updated": "2026-06-15",
   "source": "Strava",
-  "streakDays": 2257,
+  "streakDays": 2258,
   "streakStart": "2020-04-09",
-  "streakMiles": 19395,
+  "streakMiles": 19405,
   "restDays": 0,
-  "totalMiles": 23964,
-  "totalRuns": 3337,
-  "ytdMiles": 1644,
-  "ytdRuns": 165,
+  "totalMiles": 23974,
+  "totalRuns": 3338,
+  "ytdMiles": 1654,
+  "ytdRuns": 166,
   "lastRun": {
-    "date": "2026-06-13",
-    "name": "Bird with speech bubble route",
-    "miles": 8,
-    "pace": "7:48"
+    "date": "2026-06-14",
+    "name": "Hydration break",
+    "miles": 10.3,
+    "pace": "7:10"
   }
 }
