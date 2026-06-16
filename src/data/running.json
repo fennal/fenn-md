@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-15",
+  "updated": "2026-06-16",
   "source": "Strava",
-  "streakDays": 2258,
+  "streakDays": 2259,
   "streakStart": "2020-04-09",
-  "streakMiles": 19405,
+  "streakMiles": 19416,
   "restDays": 0,
-  "totalMiles": 23974,
-  "totalRuns": 3338,
-  "ytdMiles": 1654,
-  "ytdRuns": 166,
+  "totalMiles": 23985,
+  "totalRuns": 3339,
+  "ytdMiles": 1664,
+  "ytdRuns": 167,
   "lastRun": {
-    "date": "2026-06-14",
-    "name": "Hydration break",
-    "miles": 10.3,
-    "pace": "7:10"
+    "date": "2026-06-15",
+    "name": "Short track night",
+    "miles": 10.4,
+    "pace": "7:00"
   }
 }
