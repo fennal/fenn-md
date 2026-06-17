@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-16",
+  "updated": "2026-06-17",
   "source": "Strava",
-  "streakDays": 2259,
+  "streakDays": 2260,
   "streakStart": "2020-04-09",
-  "streakMiles": 19416,
+  "streakMiles": 19426,
   "restDays": 0,
-  "totalMiles": 23985,
-  "totalRuns": 3339,
-  "ytdMiles": 1664,
-  "ytdRuns": 167,
+  "totalMiles": 23995,
+  "totalRuns": 3340,
+  "ytdMiles": 1674,
+  "ytdRuns": 168,
   "lastRun": {
-    "date": "2026-06-15",
-    "name": "Short track night",
-    "miles": 10.4,
-    "pace": "7:00"
+    "date": "2026-06-16",
+    "name": "Need to figure out how to time my runs in between World Cup games 🤔",
+    "miles": 10,
+    "pace": "7:47"
   }
 }
