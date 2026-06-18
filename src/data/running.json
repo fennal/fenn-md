@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-17",
+  "updated": "2026-06-18",
   "source": "Strava",
-  "streakDays": 2260,
+  "streakDays": 2261,
   "streakStart": "2020-04-09",
-  "streakMiles": 19426,
+  "streakMiles": 19434,
   "restDays": 0,
-  "totalMiles": 23995,
-  "totalRuns": 3340,
-  "ytdMiles": 1674,
-  "ytdRuns": 168,
+  "totalMiles": 24003,
+  "totalRuns": 3341,
+  "ytdMiles": 1683,
+  "ytdRuns": 169,
   "lastRun": {
-    "date": "2026-06-16",
-    "name": "Need to figure out how to time my runs in between World Cup games 🤔",
-    "miles": 10,
-    "pace": "7:47"
+    "date": "2026-06-17",
+    "name": "Third fork during the hottest part of the day 👌🏼",
+    "miles": 8.7,
+    "pace": "7:28"
   }
 }
