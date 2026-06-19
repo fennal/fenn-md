@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-18",
+  "updated": "2026-06-19",
   "source": "Strava",
-  "streakDays": 2261,
+  "streakDays": 2262,
   "streakStart": "2020-04-09",
-  "streakMiles": 19434,
+  "streakMiles": 19443,
   "restDays": 0,
-  "totalMiles": 24003,
-  "totalRuns": 3341,
-  "ytdMiles": 1683,
-  "ytdRuns": 169,
+  "totalMiles": 24012,
+  "totalRuns": 3342,
+  "ytdMiles": 1692,
+  "ytdRuns": 170,
   "lastRun": {
-    "date": "2026-06-17",
-    "name": "Third fork during the hottest part of the day 👌🏼",
-    "miles": 8.7,
-    "pace": "7:28"
+    "date": "2026-06-18",
+    "name": "It’s getting sticky",
+    "miles": 9,
+    "pace": "7:36"
   }
 }
