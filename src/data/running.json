@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-19",
+  "updated": "2026-06-20",
   "source": "Strava",
-  "streakDays": 2262,
+  "streakDays": 2263,
   "streakStart": "2020-04-09",
-  "streakMiles": 19443,
+  "streakMiles": 19452,
   "restDays": 0,
-  "totalMiles": 24012,
-  "totalRuns": 3342,
-  "ytdMiles": 1692,
-  "ytdRuns": 170,
+  "totalMiles": 24021,
+  "totalRuns": 3343,
+  "ytdMiles": 1701,
+  "ytdRuns": 171,
   "lastRun": {
-    "date": "2026-06-18",
-    "name": "It’s getting sticky",
+    "date": "2026-06-19",
+    "name": "FreddyLA7 is a government psyop",
     "miles": 9,
-    "pace": "7:36"
+    "pace": "7:29"
   }
 }
