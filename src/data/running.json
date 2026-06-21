@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-20",
+  "updated": "2026-06-21",
   "source": "Strava",
-  "streakDays": 2263,
+  "streakDays": 2264,
   "streakStart": "2020-04-09",
-  "streakMiles": 19452,
+  "streakMiles": 19463,
   "restDays": 0,
-  "totalMiles": 24021,
-  "totalRuns": 3343,
-  "ytdMiles": 1701,
-  "ytdRuns": 171,
+  "totalMiles": 24031,
+  "totalRuns": 3344,
+  "ytdMiles": 1711,
+  "ytdRuns": 172,
   "lastRun": {
-    "date": "2026-06-19",
-    "name": "FreddyLA7 is a government psyop",
-    "miles": 9,
-    "pace": "7:29"
+    "date": "2026-06-20",
+    "name": "The Dome sounds pretty nice right now",
+    "miles": 10,
+    "pace": "7:24"
   }
 }
