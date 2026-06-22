@@ -1,18 +1,18 @@
 {
   "updated": "2026-06-22",
   "source": "Strava",
-  "streakDays": 2265,
+  "streakDays": 2266,
   "streakStart": "2020-04-09",
-  "streakMiles": 19479,
+  "streakMiles": 19487,
   "restDays": 0,
-  "totalMiles": 24047,
-  "totalRuns": 3345,
-  "ytdMiles": 1727,
-  "ytdRuns": 173,
+  "totalMiles": 24055,
+  "totalRuns": 3346,
+  "ytdMiles": 1735,
+  "ytdRuns": 174,
   "lastRun": {
-    "date": "2026-06-21",
-    "name": "Every day is Zaddy Day in my house",
-    "miles": 16.1,
-    "pace": "7:27"
+    "date": "2026-06-22",
+    "name": "Saved a box turtle",
+    "miles": 8,
+    "pace": "8:00"
   }
 }
