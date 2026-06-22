@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-21",
+  "updated": "2026-06-22",
   "source": "Strava",
-  "streakDays": 2264,
+  "streakDays": 2265,
   "streakStart": "2020-04-09",
-  "streakMiles": 19463,
+  "streakMiles": 19479,
   "restDays": 0,
-  "totalMiles": 24031,
-  "totalRuns": 3344,
-  "ytdMiles": 1711,
-  "ytdRuns": 172,
+  "totalMiles": 24047,
+  "totalRuns": 3345,
+  "ytdMiles": 1727,
+  "ytdRuns": 173,
   "lastRun": {
-    "date": "2026-06-20",
-    "name": "The Dome sounds pretty nice right now",
-    "miles": 10,
-    "pace": "7:24"
+    "date": "2026-06-21",
+    "name": "Every day is Zaddy Day in my house",
+    "miles": 16.1,
+    "pace": "7:27"
   }
 }
