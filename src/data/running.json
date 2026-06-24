@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-23",
+  "updated": "2026-06-24",
   "source": "Strava",
-  "streakDays": 2266,
+  "streakDays": 2267,
   "streakStart": "2020-04-09",
-  "streakMiles": 19487,
+  "streakMiles": 19496,
   "restDays": 0,
-  "totalMiles": 24055,
-  "totalRuns": 3346,
-  "ytdMiles": 1735,
-  "ytdRuns": 174,
+  "totalMiles": 24064,
+  "totalRuns": 3347,
+  "ytdMiles": 1744,
+  "ytdRuns": 175,
   "lastRun": {
-    "date": "2026-06-22",
-    "name": "Saved a box turtle",
-    "miles": 8,
-    "pace": "8:00"
+    "date": "2026-06-23",
+    "name": "My job is beach",
+    "miles": 9,
+    "pace": "7:21"
   }
 }
