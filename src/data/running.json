@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-24",
+  "updated": "2026-06-25",
   "source": "Strava",
-  "streakDays": 2267,
+  "streakDays": 2268,
   "streakStart": "2020-04-09",
-  "streakMiles": 19496,
+  "streakMiles": 19504,
   "restDays": 0,
-  "totalMiles": 24064,
-  "totalRuns": 3347,
-  "ytdMiles": 1744,
-  "ytdRuns": 175,
+  "totalMiles": 24073,
+  "totalRuns": 3348,
+  "ytdMiles": 1753,
+  "ytdRuns": 176,
   "lastRun": {
-    "date": "2026-06-23",
-    "name": "My job is beach",
-    "miles": 9,
-    "pace": "7:21"
+    "date": "2026-06-24",
+    "name": "If I ever had a beach house would definitely name it The Seaward",
+    "miles": 8.6,
+    "pace": "7:26"
   }
 }
