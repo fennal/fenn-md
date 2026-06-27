@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-26",
+  "updated": "2026-06-27",
   "source": "Strava",
-  "streakDays": 2269,
+  "streakDays": 2270,
   "streakStart": "2020-04-09",
-  "streakMiles": 19512,
+  "streakMiles": 19522,
   "restDays": 0,
-  "totalMiles": 24081,
-  "totalRuns": 3349,
-  "ytdMiles": 1761,
-  "ytdRuns": 177,
+  "totalMiles": 24091,
+  "totalRuns": 3350,
+  "ytdMiles": 1771,
+  "ytdRuns": 178,
   "lastRun": {
-    "date": "2026-06-25",
-    "name": "Not enough hours in the day",
-    "miles": 8,
-    "pace": "7:32"
+    "date": "2026-06-26",
+    "name": "88 and cloudy feels cool?",
+    "miles": 10,
+    "pace": "7:27"
   }
 }
