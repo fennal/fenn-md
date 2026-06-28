@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-27",
+  "updated": "2026-06-28",
   "source": "Strava",
-  "streakDays": 2270,
+  "streakDays": 2271,
   "streakStart": "2020-04-09",
-  "streakMiles": 19522,
+  "streakMiles": 19532,
   "restDays": 0,
-  "totalMiles": 24091,
-  "totalRuns": 3350,
-  "ytdMiles": 1771,
-  "ytdRuns": 178,
+  "totalMiles": 24101,
+  "totalRuns": 3351,
+  "ytdMiles": 1781,
+  "ytdRuns": 179,
   "lastRun": {
-    "date": "2026-06-26",
-    "name": "88 and cloudy feels cool?",
+    "date": "2026-06-27",
+    "name": "Western States + World Cup break",
     "miles": 10,
-    "pace": "7:27"
+    "pace": "7:46"
   }
 }
