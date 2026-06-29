@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-28",
+  "updated": "2026-06-29",
   "source": "Strava",
-  "streakDays": 2271,
+  "streakDays": 2272,
   "streakStart": "2020-04-09",
-  "streakMiles": 19532,
+  "streakMiles": 19549,
   "restDays": 0,
-  "totalMiles": 24101,
-  "totalRuns": 3351,
-  "ytdMiles": 1781,
-  "ytdRuns": 179,
+  "totalMiles": 24117,
+  "totalRuns": 3352,
+  "ytdMiles": 1797,
+  "ytdRuns": 180,
   "lastRun": {
-    "date": "2026-06-27",
-    "name": "Western States + World Cup break",
-    "miles": 10,
-    "pace": "7:46"
+    "date": "2026-06-28",
+    "name": "Brisket pace",
+    "miles": 16.4,
+    "pace": "7:55"
   }
 }
