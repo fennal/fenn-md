@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-29",
+  "updated": "2026-06-30",
   "source": "Strava",
-  "streakDays": 2272,
+  "streakDays": 2273,
   "streakStart": "2020-04-09",
-  "streakMiles": 19549,
+  "streakMiles": 19559,
   "restDays": 0,
-  "totalMiles": 24117,
-  "totalRuns": 3352,
-  "ytdMiles": 1797,
-  "ytdRuns": 180,
+  "totalMiles": 24127,
+  "totalRuns": 3353,
+  "ytdMiles": 1807,
+  "ytdRuns": 181,
   "lastRun": {
-    "date": "2026-06-28",
-    "name": "Brisket pace",
-    "miles": 16.4,
-    "pace": "7:55"
+    "date": "2026-06-29",
+    "name": "Death by 400s",
+    "miles": 10,
+    "pace": "7:23"
   }
 }
