@@ -1,18 +1,18 @@
 {
-  "updated": "2026-06-30",
+  "updated": "2026-07-01",
   "source": "Strava",
-  "streakDays": 2273,
+  "streakDays": 2274,
   "streakStart": "2020-04-09",
-  "streakMiles": 19559,
+  "streakMiles": 19567,
   "restDays": 0,
-  "totalMiles": 24127,
-  "totalRuns": 3353,
-  "ytdMiles": 1807,
-  "ytdRuns": 181,
+  "totalMiles": 24135,
+  "totalRuns": 3354,
+  "ytdMiles": 1815,
+  "ytdRuns": 182,
   "lastRun": {
-    "date": "2026-06-29",
-    "name": "Death by 400s",
-    "miles": 10,
-    "pace": "7:23"
+    "date": "2026-06-30",
+    "name": "Do I need to get warriors vs. hornets tickets now?",
+    "miles": 8,
+    "pace": "7:54"
   }
 }
