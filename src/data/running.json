@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-01",
+  "updated": "2026-07-02",
   "source": "Strava",
-  "streakDays": 2274,
+  "streakDays": 2275,
   "streakStart": "2020-04-09",
-  "streakMiles": 19567,
+  "streakMiles": 19576,
   "restDays": 0,
-  "totalMiles": 24135,
-  "totalRuns": 3354,
-  "ytdMiles": 1815,
-  "ytdRuns": 182,
+  "totalMiles": 24145,
+  "totalRuns": 3355,
+  "ytdMiles": 1825,
+  "ytdRuns": 183,
   "lastRun": {
-    "date": "2026-06-30",
-    "name": "Do I need to get warriors vs. hornets tickets now?",
-    "miles": 8,
-    "pace": "7:54"
+    "date": "2026-07-01",
+    "name": "Atoning for my sins",
+    "miles": 9.8,
+    "pace": "7:58"
   }
 }
