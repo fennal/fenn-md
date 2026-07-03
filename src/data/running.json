@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-02",
+  "updated": "2026-07-03",
   "source": "Strava",
-  "streakDays": 2275,
+  "streakDays": 2276,
   "streakStart": "2020-04-09",
-  "streakMiles": 19576,
+  "streakMiles": 19585,
   "restDays": 0,
-  "totalMiles": 24145,
-  "totalRuns": 3355,
-  "ytdMiles": 1825,
-  "ytdRuns": 183,
+  "totalMiles": 24154,
+  "totalRuns": 3356,
+  "ytdMiles": 1834,
+  "ytdRuns": 184,
   "lastRun": {
-    "date": "2026-07-01",
-    "name": "Atoning for my sins",
-    "miles": 9.8,
-    "pace": "7:58"
+    "date": "2026-07-02",
+    "name": "Free Flo Balogun",
+    "miles": 8.6,
+    "pace": "7:50"
   }
 }
