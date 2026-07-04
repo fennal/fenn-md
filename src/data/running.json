@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-03",
+  "updated": "2026-07-04",
   "source": "Strava",
-  "streakDays": 2276,
+  "streakDays": 2277,
   "streakStart": "2020-04-09",
-  "streakMiles": 19585,
+  "streakMiles": 19593,
   "restDays": 0,
-  "totalMiles": 24154,
-  "totalRuns": 3356,
-  "ytdMiles": 1834,
-  "ytdRuns": 184,
+  "totalMiles": 24162,
+  "totalRuns": 3357,
+  "ytdMiles": 1842,
+  "ytdRuns": 185,
   "lastRun": {
-    "date": "2026-07-02",
-    "name": "Free Flo Balogun",
-    "miles": 8.6,
-    "pace": "7:50"
+    "date": "2026-07-03",
+    "name": "Exploring Warren Wilson",
+    "miles": 8,
+    "pace": "8:00"
   }
 }
