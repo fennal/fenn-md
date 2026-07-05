@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-04",
+  "updated": "2026-07-05",
   "source": "Strava",
-  "streakDays": 2277,
+  "streakDays": 2278,
   "streakStart": "2020-04-09",
-  "streakMiles": 19593,
+  "streakMiles": 19602,
   "restDays": 0,
-  "totalMiles": 24162,
-  "totalRuns": 3357,
-  "ytdMiles": 1842,
-  "ytdRuns": 185,
+  "totalMiles": 24171,
+  "totalRuns": 3358,
+  "ytdMiles": 1851,
+  "ytdRuns": 186,
   "lastRun": {
-    "date": "2026-07-03",
-    "name": "Exploring Warren Wilson",
-    "miles": 8,
-    "pace": "8:00"
+    "date": "2026-07-04",
+    "name": "No better way to celebrate America’s 250th than by running mid-afternoon in a heat dome",
+    "miles": 9,
+    "pace": "7:34"
   }
 }
