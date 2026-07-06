@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-05",
+  "updated": "2026-07-06",
   "source": "Strava",
-  "streakDays": 2278,
+  "streakDays": 2279,
   "streakStart": "2020-04-09",
-  "streakMiles": 19602,
+  "streakMiles": 19610,
   "restDays": 0,
-  "totalMiles": 24171,
-  "totalRuns": 3358,
-  "ytdMiles": 1851,
-  "ytdRuns": 186,
+  "totalMiles": 24179,
+  "totalRuns": 3359,
+  "ytdMiles": 1859,
+  "ytdRuns": 187,
   "lastRun": {
-    "date": "2026-07-04",
-    "name": "No better way to celebrate America’s 250th than by running mid-afternoon in a heat dome",
-    "miles": 9,
-    "pace": "7:34"
+    "date": "2026-07-05",
+    "name": "‘Why sleep when you can just wail and attempt to eat your own hands all night?’ - my daughter (if she could talk)",
+    "miles": 8,
+    "pace": "7:02"
   }
 }
