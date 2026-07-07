@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-06",
+  "updated": "2026-07-07",
   "source": "Strava",
-  "streakDays": 2279,
+  "streakDays": 2280,
   "streakStart": "2020-04-09",
-  "streakMiles": 19610,
+  "streakMiles": 19622,
   "restDays": 0,
-  "totalMiles": 24179,
-  "totalRuns": 3359,
-  "ytdMiles": 1859,
-  "ytdRuns": 187,
+  "totalMiles": 24191,
+  "totalRuns": 3360,
+  "ytdMiles": 1870,
+  "ytdRuns": 188,
   "lastRun": {
-    "date": "2026-07-05",
-    "name": "‘Why sleep when you can just wail and attempt to eat your own hands all night?’ - my daughter (if she could talk)",
-    "miles": 8,
-    "pace": "7:02"
+    "date": "2026-07-06",
+    "name": "MNTC thicc bois edition",
+    "miles": 11.7,
+    "pace": "7:27"
   }
 }
