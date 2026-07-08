@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-07",
+  "updated": "2026-07-08",
   "source": "Strava",
-  "streakDays": 2280,
+  "streakDays": 2281,
   "streakStart": "2020-04-09",
-  "streakMiles": 19622,
+  "streakMiles": 19629,
   "restDays": 0,
-  "totalMiles": 24191,
-  "totalRuns": 3360,
-  "ytdMiles": 1870,
-  "ytdRuns": 188,
+  "totalMiles": 24198,
+  "totalRuns": 3361,
+  "ytdMiles": 1877,
+  "ytdRuns": 189,
   "lastRun": {
-    "date": "2026-07-06",
-    "name": "MNTC thicc bois edition",
-    "miles": 11.7,
-    "pace": "7:27"
+    "date": "2026-07-07",
+    "name": "Absolute soup",
+    "miles": 7,
+    "pace": "8:04"
   }
 }
