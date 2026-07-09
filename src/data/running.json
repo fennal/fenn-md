@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-08",
+  "updated": "2026-07-09",
   "source": "Strava",
-  "streakDays": 2281,
+  "streakDays": 2282,
   "streakStart": "2020-04-09",
-  "streakMiles": 19629,
+  "streakMiles": 19638,
   "restDays": 0,
-  "totalMiles": 24198,
-  "totalRuns": 3361,
-  "ytdMiles": 1877,
-  "ytdRuns": 189,
+  "totalMiles": 24207,
+  "totalRuns": 3362,
+  "ytdMiles": 1886,
+  "ytdRuns": 190,
   "lastRun": {
-    "date": "2026-07-07",
-    "name": "Absolute soup",
-    "miles": 7,
-    "pace": "8:04"
+    "date": "2026-07-08",
+    "name": "Sleep would be nice",
+    "miles": 8.9,
+    "pace": "7:59"
   }
 }
