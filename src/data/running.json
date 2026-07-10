@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-09",
+  "updated": "2026-07-10",
   "source": "Strava",
-  "streakDays": 2282,
+  "streakDays": 2283,
   "streakStart": "2020-04-09",
-  "streakMiles": 19638,
+  "streakMiles": 19648,
   "restDays": 0,
-  "totalMiles": 24207,
-  "totalRuns": 3362,
-  "ytdMiles": 1886,
-  "ytdRuns": 190,
+  "totalMiles": 24217,
+  "totalRuns": 3363,
+  "ytdMiles": 1896,
+  "ytdRuns": 191,
   "lastRun": {
-    "date": "2026-07-08",
-    "name": "Sleep would be nice",
-    "miles": 8.9,
-    "pace": "7:59"
+    "date": "2026-07-09",
+    "name": "Just spoke to Mitch McConnell, he says Durham is cold compared to where he ended up",
+    "miles": 10,
+    "pace": "8:06"
   }
 }
