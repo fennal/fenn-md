@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-10",
+  "updated": "2026-07-11",
   "source": "Strava",
-  "streakDays": 2283,
+  "streakDays": 2284,
   "streakStart": "2020-04-09",
   "streakMiles": 19656,
   "restDays": 0,
-  "totalMiles": 24217,
-  "totalRuns": 3363,
-  "ytdMiles": 1896,
-  "ytdRuns": 191,
+  "totalMiles": 24225,
+  "totalRuns": 3364,
+  "ytdMiles": 1905,
+  "ytdRuns": 192,
   "lastRun": {
-    "date": "2026-07-09",
-    "name": "Just spoke to Mitch McConnell, he says Durham is cold compared to where he ended up",
-    "miles": 10,
-    "pace": "8:06"
+    "date": "2026-07-10",
+    "name": "Bugs everywhere",
+    "miles": 8.7,
+    "pace": "7:43"
   }
 }
