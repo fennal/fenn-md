@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-11",
+  "updated": "2026-07-12",
   "source": "Strava",
-  "streakDays": 2284,
+  "streakDays": 2285,
   "streakStart": "2020-04-09",
-  "streakMiles": 19656,
+  "streakMiles": 19665,
   "restDays": 0,
-  "totalMiles": 24225,
-  "totalRuns": 3364,
-  "ytdMiles": 1905,
-  "ytdRuns": 192,
+  "totalMiles": 24234,
+  "totalRuns": 3365,
+  "ytdMiles": 1914,
+  "ytdRuns": 193,
   "lastRun": {
-    "date": "2026-07-10",
-    "name": "Bugs everywhere",
-    "miles": 8.7,
-    "pace": "7:43"
+    "date": "2026-07-11",
+    "name": "Ended this run with a free slurpee",
+    "miles": 8.5,
+    "pace": "8:01"
   }
 }
