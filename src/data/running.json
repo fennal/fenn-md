@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-12",
+  "updated": "2026-07-13",
   "source": "Strava",
-  "streakDays": 2285,
+  "streakDays": 2286,
   "streakStart": "2020-04-09",
-  "streakMiles": 19665,
+  "streakMiles": 19673,
   "restDays": 0,
-  "totalMiles": 24234,
-  "totalRuns": 3365,
-  "ytdMiles": 1914,
-  "ytdRuns": 193,
+  "totalMiles": 24242,
+  "totalRuns": 3366,
+  "ytdMiles": 1922,
+  "ytdRuns": 194,
   "lastRun": {
-    "date": "2026-07-11",
-    "name": "Ended this run with a free slurpee",
-    "miles": 8.5,
-    "pace": "8:01"
+    "date": "2026-07-12",
+    "name": "I-95 traffic gotta be one of the circles of hell",
+    "miles": 8,
+    "pace": "8:19"
   }
 }
