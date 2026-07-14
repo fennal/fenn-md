@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-13",
+  "updated": "2026-07-14",
   "source": "Strava",
-  "streakDays": 2286,
+  "streakDays": 2287,
   "streakStart": "2020-04-09",
-  "streakMiles": 19673,
+  "streakMiles": 19682,
   "restDays": 0,
-  "totalMiles": 24242,
-  "totalRuns": 3366,
-  "ytdMiles": 1922,
-  "ytdRuns": 194,
+  "totalMiles": 24251,
+  "totalRuns": 3367,
+  "ytdMiles": 1931,
+  "ytdRuns": 195,
   "lastRun": {
-    "date": "2026-07-12",
-    "name": "I-95 traffic gotta be one of the circles of hell",
-    "miles": 8,
-    "pace": "8:19"
+    "date": "2026-07-13",
+    "name": "Before dad duty",
+    "miles": 9,
+    "pace": "7:00"
   }
 }
