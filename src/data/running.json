@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-14",
+  "updated": "2026-07-15",
   "source": "Strava",
-  "streakDays": 2287,
+  "streakDays": 2288,
   "streakStart": "2020-04-09",
-  "streakMiles": 19682,
+  "streakMiles": 19692,
   "restDays": 0,
-  "totalMiles": 24251,
-  "totalRuns": 3367,
-  "ytdMiles": 1931,
-  "ytdRuns": 195,
+  "totalMiles": 24261,
+  "totalRuns": 3368,
+  "ytdMiles": 1940,
+  "ytdRuns": 196,
   "lastRun": {
-    "date": "2026-07-13",
-    "name": "Before dad duty",
-    "miles": 9,
-    "pace": "7:00"
+    "date": "2026-07-14",
+    "name": "Benadryl hangover",
+    "miles": 9.7,
+    "pace": "7:48"
   }
 }
