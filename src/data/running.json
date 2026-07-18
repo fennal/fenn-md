@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-17",
+  "updated": "2026-07-18",
   "source": "Strava",
-  "streakDays": 2290,
+  "streakDays": 2291,
   "streakStart": "2020-04-09",
-  "streakMiles": 19710,
+  "streakMiles": 19720,
   "restDays": 0,
-  "totalMiles": 24279,
-  "totalRuns": 3370,
-  "ytdMiles": 1959,
-  "ytdRuns": 198,
+  "totalMiles": 24289,
+  "totalRuns": 3371,
+  "ytdMiles": 1969,
+  "ytdRuns": 199,
   "lastRun": {
-    "date": "2026-07-16",
-    "name": "If the feels like is >=100 I give myself permission to not think about pace",
-    "miles": 10.6,
-    "pace": "8:13"
+    "date": "2026-07-17",
+    "name": "The slogs shall continue",
+    "miles": 10,
+    "pace": "8:09"
   }
 }
