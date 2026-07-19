@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-18",
+  "updated": "2026-07-19",
   "source": "Strava",
-  "streakDays": 2291,
+  "streakDays": 2292,
   "streakStart": "2020-04-09",
-  "streakMiles": 19720,
+  "streakMiles": 19732,
   "restDays": 0,
-  "totalMiles": 24289,
-  "totalRuns": 3371,
-  "ytdMiles": 1969,
-  "ytdRuns": 199,
+  "totalMiles": 24301,
+  "totalRuns": 3372,
+  "ytdMiles": 1981,
+  "ytdRuns": 200,
   "lastRun": {
-    "date": "2026-07-17",
-    "name": "The slogs shall continue",
-    "miles": 10,
-    "pace": "8:09"
+    "date": "2026-07-18",
+    "name": "Passed by a penny-farthing",
+    "miles": 12.2,
+    "pace": "8:11"
   }
 }
