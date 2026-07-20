@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-19",
+  "updated": "2026-07-20",
   "source": "Strava",
-  "streakDays": 2292,
+  "streakDays": 2293,
   "streakStart": "2020-04-09",
-  "streakMiles": 19732,
+  "streakMiles": 19750,
   "restDays": 0,
-  "totalMiles": 24301,
-  "totalRuns": 3372,
-  "ytdMiles": 1981,
-  "ytdRuns": 200,
+  "totalMiles": 24319,
+  "totalRuns": 3373,
+  "ytdMiles": 1998,
+  "ytdRuns": 201,
   "lastRun": {
-    "date": "2026-07-18",
-    "name": "Passed by a penny-farthing",
-    "miles": 12.2,
-    "pace": "8:11"
+    "date": "2026-07-19",
+    "name": "Sing to me, O Muse, of a man who ran loops",
+    "miles": 17.4,
+    "pace": "7:44"
   }
 }
