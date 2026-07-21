@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-20",
+  "updated": "2026-07-21",
   "source": "Strava",
-  "streakDays": 2293,
+  "streakDays": 2294,
   "streakStart": "2020-04-09",
-  "streakMiles": 19750,
+  "streakMiles": 19762,
   "restDays": 0,
-  "totalMiles": 24319,
-  "totalRuns": 3373,
-  "ytdMiles": 1998,
-  "ytdRuns": 201,
+  "totalMiles": 24330,
+  "totalRuns": 3374,
+  "ytdMiles": 2010,
+  "ytdRuns": 202,
   "lastRun": {
-    "date": "2026-07-19",
-    "name": "Sing to me, O Muse, of a man who ran loops",
-    "miles": 17.4,
-    "pace": "7:44"
+    "date": "2026-07-20",
+    "name": "Muggy muggy track",
+    "miles": 11.8,
+    "pace": "7:13"
   }
 }
