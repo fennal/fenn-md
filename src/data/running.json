@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-21",
+  "updated": "2026-07-22",
   "source": "Strava",
-  "streakDays": 2294,
+  "streakDays": 2295,
   "streakStart": "2020-04-09",
-  "streakMiles": 19762,
+  "streakMiles": 19771,
   "restDays": 0,
-  "totalMiles": 24330,
-  "totalRuns": 3374,
-  "ytdMiles": 2010,
-  "ytdRuns": 202,
+  "totalMiles": 24339,
+  "totalRuns": 3375,
+  "ytdMiles": 2019,
+  "ytdRuns": 203,
   "lastRun": {
-    "date": "2026-07-20",
-    "name": "Muggy muggy track",
-    "miles": 11.8,
-    "pace": "7:13"
+    "date": "2026-07-21",
+    "name": "Costco run",
+    "miles": 8.9,
+    "pace": "8:14"
   }
 }
