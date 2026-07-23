@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-22",
+  "updated": "2026-07-23",
   "source": "Strava",
-  "streakDays": 2295,
+  "streakDays": 2296,
   "streakStart": "2020-04-09",
-  "streakMiles": 19771,
+  "streakMiles": 19779,
   "restDays": 0,
-  "totalMiles": 24339,
-  "totalRuns": 3375,
-  "ytdMiles": 2019,
-  "ytdRuns": 203,
+  "totalMiles": 24348,
+  "totalRuns": 3376,
+  "ytdMiles": 2028,
+  "ytdRuns": 204,
   "lastRun": {
-    "date": "2026-07-21",
-    "name": "Costco run",
-    "miles": 8.9,
-    "pace": "8:14"
+    "date": "2026-07-22",
+    "name": "Supersaturation",
+    "miles": 8.8,
+    "pace": "7:56"
   }
 }
