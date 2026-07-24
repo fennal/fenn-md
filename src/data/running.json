@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-23",
+  "updated": "2026-07-24",
   "source": "Strava",
-  "streakDays": 2296,
+  "streakDays": 2297,
   "streakStart": "2020-04-09",
-  "streakMiles": 19779,
+  "streakMiles": 19787,
   "restDays": 0,
-  "totalMiles": 24348,
-  "totalRuns": 3376,
-  "ytdMiles": 2028,
-  "ytdRuns": 204,
+  "totalMiles": 24356,
+  "totalRuns": 3377,
+  "ytdMiles": 2036,
+  "ytdRuns": 205,
   "lastRun": {
-    "date": "2026-07-22",
-    "name": "Supersaturation",
-    "miles": 8.8,
-    "pace": "7:56"
+    "date": "2026-07-23",
+    "name": "Rain glorious rain",
+    "miles": 8,
+    "pace": "7:57"
   }
 }
