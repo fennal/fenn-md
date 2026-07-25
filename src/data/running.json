@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-24",
+  "updated": "2026-07-25",
   "source": "Strava",
-  "streakDays": 2297,
+  "streakDays": 2298,
   "streakStart": "2020-04-09",
-  "streakMiles": 19787,
+  "streakMiles": 19799,
   "restDays": 0,
-  "totalMiles": 24356,
-  "totalRuns": 3377,
-  "ytdMiles": 2036,
-  "ytdRuns": 205,
+  "totalMiles": 24367,
+  "totalRuns": 3378,
+  "ytdMiles": 2047,
+  "ytdRuns": 206,
   "lastRun": {
-    "date": "2026-07-23",
-    "name": "Rain glorious rain",
-    "miles": 8,
-    "pace": "7:57"
+    "date": "2026-07-24",
+    "name": "Eardrum recovery after The Odyssey",
+    "miles": 11.3,
+    "pace": "7:59"
   }
 }
