@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-25",
+  "updated": "2026-07-26",
   "source": "Strava",
-  "streakDays": 2298,
+  "streakDays": 2299,
   "streakStart": "2020-04-09",
-  "streakMiles": 19799,
+  "streakMiles": 19815,
   "restDays": 0,
-  "totalMiles": 24367,
-  "totalRuns": 3378,
-  "ytdMiles": 2047,
-  "ytdRuns": 206,
+  "totalMiles": 24383,
+  "totalRuns": 3379,
+  "ytdMiles": 2063,
+  "ytdRuns": 207,
   "lastRun": {
-    "date": "2026-07-24",
-    "name": "Eardrum recovery after The Odyssey",
-    "miles": 11.3,
-    "pace": "7:59"
+    "date": "2026-07-25",
+    "name": "One must remember the Loop never floods",
+    "miles": 16,
+    "pace": "7:50"
   }
 }
