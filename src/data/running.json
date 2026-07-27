@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-26",
+  "updated": "2026-07-27",
   "source": "Strava",
-  "streakDays": 2299,
+  "streakDays": 2300,
   "streakStart": "2020-04-09",
-  "streakMiles": 19815,
+  "streakMiles": 19830,
   "restDays": 0,
-  "totalMiles": 24383,
-  "totalRuns": 3379,
-  "ytdMiles": 2063,
-  "ytdRuns": 207,
+  "totalMiles": 24399,
+  "totalRuns": 3380,
+  "ytdMiles": 2078,
+  "ytdRuns": 208,
   "lastRun": {
-    "date": "2026-07-25",
-    "name": "One must remember the Loop never floods",
-    "miles": 16,
-    "pace": "7:50"
+    "date": "2026-07-26",
+    "name": "Save me gas station Vanilla Coke and payday",
+    "miles": 15.3,
+    "pace": "7:47"
   }
 }
