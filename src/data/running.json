@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-27",
+  "updated": "2026-07-28",
   "source": "Strava",
-  "streakDays": 2300,
+  "streakDays": 2301,
   "streakStart": "2020-04-09",
-  "streakMiles": 19830,
+  "streakMiles": 19838,
   "restDays": 0,
-  "totalMiles": 24399,
-  "totalRuns": 3380,
-  "ytdMiles": 2078,
-  "ytdRuns": 208,
+  "totalMiles": 24407,
+  "totalRuns": 3381,
+  "ytdMiles": 2086,
+  "ytdRuns": 209,
   "lastRun": {
-    "date": "2026-07-26",
-    "name": "Save me gas station Vanilla Coke and payday",
-    "miles": 15.3,
-    "pace": "7:47"
+    "date": "2026-07-27",
+    "name": "Sleepy Recovery",
+    "miles": 8,
+    "pace": "8:13"
   }
 }
