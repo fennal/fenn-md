@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-28",
+  "updated": "2026-07-29",
   "source": "Strava",
-  "streakDays": 2301,
+  "streakDays": 2302,
   "streakStart": "2020-04-09",
-  "streakMiles": 19838,
+  "streakMiles": 19847,
   "restDays": 0,
-  "totalMiles": 24407,
-  "totalRuns": 3381,
-  "ytdMiles": 2086,
-  "ytdRuns": 209,
+  "totalMiles": 24416,
+  "totalRuns": 3382,
+  "ytdMiles": 2096,
+  "ytdRuns": 210,
   "lastRun": {
-    "date": "2026-07-27",
-    "name": "Sleepy Recovery",
-    "miles": 8,
-    "pace": "8:13"
+    "date": "2026-07-28",
+    "name": "So many sneks",
+    "miles": 9.3,
+    "pace": "7:31"
   }
 }
