@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-29",
+  "updated": "2026-07-30",
   "source": "Strava",
-  "streakDays": 2302,
+  "streakDays": 2303,
   "streakStart": "2020-04-09",
-  "streakMiles": 19847,
+  "streakMiles": 19856,
   "restDays": 0,
-  "totalMiles": 24416,
-  "totalRuns": 3382,
-  "ytdMiles": 2096,
-  "ytdRuns": 210,
+  "totalMiles": 24425,
+  "totalRuns": 3383,
+  "ytdMiles": 2105,
+  "ytdRuns": 211,
   "lastRun": {
-    "date": "2026-07-28",
-    "name": "So many sneks",
-    "miles": 9.3,
-    "pace": "7:31"
+    "date": "2026-07-29",
+    "name": "Loop intervals",
+    "miles": 9,
+    "pace": "6:43"
   }
 }
