@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-30",
+  "updated": "2026-07-31",
   "source": "Strava",
-  "streakDays": 2303,
+  "streakDays": 2304,
   "streakStart": "2020-04-09",
-  "streakMiles": 19856,
+  "streakMiles": 19868,
   "restDays": 0,
-  "totalMiles": 24425,
-  "totalRuns": 3383,
-  "ytdMiles": 2105,
-  "ytdRuns": 211,
+  "totalMiles": 24436,
+  "totalRuns": 3384,
+  "ytdMiles": 2116,
+  "ytdRuns": 212,
   "lastRun": {
-    "date": "2026-07-29",
-    "name": "Loop intervals",
-    "miles": 9,
-    "pace": "6:43"
+    "date": "2026-07-30",
+    "name": "Deacon Blues",
+    "miles": 11.5,
+    "pace": "7:58"
   }
 }
