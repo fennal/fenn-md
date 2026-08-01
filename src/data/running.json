@@ -1,18 +1,18 @@
 {
-  "updated": "2026-07-31",
+  "updated": "2026-08-01",
   "source": "Strava",
-  "streakDays": 2304,
+  "streakDays": 2305,
   "streakStart": "2020-04-09",
-  "streakMiles": 19868,
+  "streakMiles": 19885,
   "restDays": 0,
-  "totalMiles": 24436,
-  "totalRuns": 3384,
-  "ytdMiles": 2116,
-  "ytdRuns": 212,
+  "totalMiles": 24453,
+  "totalRuns": 3385,
+  "ytdMiles": 2133,
+  "ytdRuns": 213,
   "lastRun": {
-    "date": "2026-07-30",
-    "name": "Deacon Blues",
-    "miles": 11.5,
-    "pace": "7:58"
+    "date": "2026-07-31",
+    "name": "Befriending the neighborhood stray",
+    "miles": 17,
+    "pace": "7:47"
   }
 }
