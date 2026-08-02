@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-01",
+  "updated": "2026-08-02",
   "source": "Strava",
-  "streakDays": 2305,
+  "streakDays": 2306,
   "streakStart": "2020-04-09",
-  "streakMiles": 19885,
+  "streakMiles": 19895,
   "restDays": 0,
-  "totalMiles": 24453,
-  "totalRuns": 3385,
-  "ytdMiles": 2133,
-  "ytdRuns": 213,
+  "totalMiles": 24463,
+  "totalRuns": 3386,
+  "ytdMiles": 2143,
+  "ytdRuns": 214,
   "lastRun": {
-    "date": "2026-07-31",
-    "name": "Befriending the neighborhood stray",
-    "miles": 17,
-    "pace": "7:47"
+    "date": "2026-08-01",
+    "name": "Ramble on",
+    "miles": 10,
+    "pace": "8:12"
   }
 }
