@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-02",
+  "updated": "2026-08-03",
   "source": "Strava",
-  "streakDays": 2306,
+  "streakDays": 2307,
   "streakStart": "2020-04-09",
-  "streakMiles": 19895,
+  "streakMiles": 19914,
   "restDays": 0,
-  "totalMiles": 24463,
-  "totalRuns": 3386,
-  "ytdMiles": 2143,
-  "ytdRuns": 214,
+  "totalMiles": 24483,
+  "totalRuns": 3388,
+  "ytdMiles": 2163,
+  "ytdRuns": 216,
   "lastRun": {
-    "date": "2026-08-01",
-    "name": "Ramble on",
-    "miles": 10,
-    "pace": "8:12"
+    "date": "2026-08-02",
+    "name": "My main gripe with doubles is the amount of laundry they generate",
+    "miles": 11,
+    "pace": "7:59"
   }
 }
