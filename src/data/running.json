@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-03",
+  "updated": "2026-08-04",
   "source": "Strava",
-  "streakDays": 2307,
+  "streakDays": 2308,
   "streakStart": "2020-04-09",
-  "streakMiles": 19914,
+  "streakMiles": 19925,
   "restDays": 0,
-  "totalMiles": 24483,
-  "totalRuns": 3388,
-  "ytdMiles": 2163,
-  "ytdRuns": 216,
+  "totalMiles": 24494,
+  "totalRuns": 3389,
+  "ytdMiles": 2174,
+  "ytdRuns": 217,
   "lastRun": {
-    "date": "2026-08-02",
-    "name": "My main gripe with doubles is the amount of laundry they generate",
-    "miles": 11,
+    "date": "2026-08-03",
+    "name": "Monday Night Hill Club",
+    "miles": 10.7,
     "pace": "7:59"
   }
 }
