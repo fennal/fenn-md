@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-04",
+  "updated": "2026-08-05",
   "source": "Strava",
-  "streakDays": 2308,
+  "streakDays": 2309,
   "streakStart": "2020-04-09",
-  "streakMiles": 19925,
+  "streakMiles": 19935,
   "restDays": 0,
-  "totalMiles": 24494,
-  "totalRuns": 3389,
-  "ytdMiles": 2174,
-  "ytdRuns": 217,
+  "totalMiles": 24504,
+  "totalRuns": 3390,
+  "ytdMiles": 2184,
+  "ytdRuns": 218,
   "lastRun": {
-    "date": "2026-08-03",
-    "name": "Monday Night Hill Club",
-    "miles": 10.7,
-    "pace": "7:59"
+    "date": "2026-08-04",
+    "name": "Another swampy one",
+    "miles": 10,
+    "pace": "8:05"
   }
 }
