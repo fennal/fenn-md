@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-05",
+  "updated": "2026-08-06",
   "source": "Strava",
-  "streakDays": 2309,
+  "streakDays": 2310,
   "streakStart": "2020-04-09",
-  "streakMiles": 19935,
+  "streakMiles": 19943,
   "restDays": 0,
-  "totalMiles": 24504,
-  "totalRuns": 3390,
-  "ytdMiles": 2184,
-  "ytdRuns": 218,
+  "totalMiles": 24512,
+  "totalRuns": 3391,
+  "ytdMiles": 2192,
+  "ytdRuns": 219,
   "lastRun": {
-    "date": "2026-08-04",
-    "name": "Another swampy one",
-    "miles": 10,
-    "pace": "8:05"
+    "date": "2026-08-05",
+    "name": "Imagining a world without humidity",
+    "miles": 8,
+    "pace": "7:45"
   }
 }
