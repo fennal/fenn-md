@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-06",
+  "updated": "2026-08-07",
   "source": "Strava",
-  "streakDays": 2310,
+  "streakDays": 2311,
   "streakStart": "2020-04-09",
-  "streakMiles": 19943,
+  "streakMiles": 19951,
   "restDays": 0,
-  "totalMiles": 24512,
-  "totalRuns": 3391,
-  "ytdMiles": 2192,
-  "ytdRuns": 219,
+  "totalMiles": 24520,
+  "totalRuns": 3392,
+  "ytdMiles": 2200,
+  "ytdRuns": 220,
   "lastRun": {
-    "date": "2026-08-05",
-    "name": "Imagining a world without humidity",
+    "date": "2026-08-06",
+    "name": "Sugar Magnolia",
     "miles": 8,
-    "pace": "7:45"
+    "pace": "7:42"
   }
 }
