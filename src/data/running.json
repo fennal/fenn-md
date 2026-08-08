@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-07",
+  "updated": "2026-08-08",
   "source": "Strava",
-  "streakDays": 2311,
+  "streakDays": 2312,
   "streakStart": "2020-04-09",
-  "streakMiles": 19951,
+  "streakMiles": 19967,
   "restDays": 0,
-  "totalMiles": 24520,
-  "totalRuns": 3392,
-  "ytdMiles": 2200,
-  "ytdRuns": 220,
+  "totalMiles": 24536,
+  "totalRuns": 3393,
+  "ytdMiles": 2215,
+  "ytdRuns": 221,
   "lastRun": {
-    "date": "2026-08-06",
-    "name": "Sugar Magnolia",
-    "miles": 8,
-    "pace": "7:42"
+    "date": "2026-08-07",
+    "name": "Freaking out the neighborhood",
+    "miles": 15.7,
+    "pace": "7:51"
   }
 }
