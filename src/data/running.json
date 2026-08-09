@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-08",
+  "updated": "2026-08-09",
   "source": "Strava",
-  "streakDays": 2312,
+  "streakDays": 2313,
   "streakStart": "2020-04-09",
-  "streakMiles": 19967,
+  "streakMiles": 19977,
   "restDays": 0,
-  "totalMiles": 24536,
-  "totalRuns": 3393,
-  "ytdMiles": 2215,
-  "ytdRuns": 221,
+  "totalMiles": 24546,
+  "totalRuns": 3394,
+  "ytdMiles": 2225,
+  "ytdRuns": 222,
   "lastRun": {
-    "date": "2026-08-07",
-    "name": "Freaking out the neighborhood",
-    "miles": 15.7,
-    "pace": "7:51"
+    "date": "2026-08-08",
+    "name": "Amazonian",
+    "miles": 10,
+    "pace": "8:02"
   }
 }
