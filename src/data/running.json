@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-09",
+  "updated": "2026-08-10",
   "source": "Strava",
-  "streakDays": 2313,
+  "streakDays": 2314,
   "streakStart": "2020-04-09",
-  "streakMiles": 19977,
+  "streakMiles": 19990,
   "restDays": 0,
-  "totalMiles": 24546,
-  "totalRuns": 3394,
-  "ytdMiles": 2225,
-  "ytdRuns": 222,
+  "totalMiles": 24559,
+  "totalRuns": 3395,
+  "ytdMiles": 2238,
+  "ytdRuns": 223,
   "lastRun": {
-    "date": "2026-08-08",
-    "name": "Amazonian",
-    "miles": 10,
-    "pace": "8:02"
+    "date": "2026-08-09",
+    "name": "Exhibitionist turtles",
+    "miles": 13.1,
+    "pace": "8:01"
   }
 }
