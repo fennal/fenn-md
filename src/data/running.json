@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-10",
+  "updated": "2026-08-11",
   "source": "Strava",
-  "streakDays": 2314,
+  "streakDays": 2315,
   "streakStart": "2020-04-09",
-  "streakMiles": 20000,
+  "streakMiles": 20008,
   "restDays": 0,
-  "totalMiles": 24569,
-  "totalRuns": 3396,
-  "ytdMiles": 2249,
-  "ytdRuns": 224,
+  "totalMiles": 24577,
+  "totalRuns": 3397,
+  "ytdMiles": 2257,
+  "ytdRuns": 225,
   "lastRun": {
-    "date": "2026-08-09",
-    "name": "The miles won’t run themselves",
-    "miles": 10.5,
-    "pace": "8:12"
+    "date": "2026-08-10",
+    "name": "Soft hourish",
+    "miles": 8,
+    "pace": "8:35"
   }
 }
