@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-12",
+  "updated": "2026-08-13",
   "source": "Strava",
-  "streakDays": 2316,
+  "streakDays": 2317,
   "streakStart": "2020-04-09",
-  "streakMiles": 20018,
+  "streakMiles": 20030,
   "restDays": 0,
-  "totalMiles": 24587,
-  "totalRuns": 3398,
-  "ytdMiles": 2267,
-  "ytdRuns": 226,
+  "totalMiles": 24599,
+  "totalRuns": 3399,
+  "ytdMiles": 2279,
+  "ytdRuns": 227,
   "lastRun": {
-    "date": "2026-08-11",
-    "name": "Fresh asphalt smell ☹️",
-    "miles": 10,
-    "pace": "7:57"
+    "date": "2026-08-12",
+    "name": "Heavy Metal Drummer",
+    "miles": 12,
+    "pace": "6:57"
   }
 }
