@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-13",
+  "updated": "2026-08-14",
   "source": "Strava",
-  "streakDays": 2317,
+  "streakDays": 2318,
   "streakStart": "2020-04-09",
-  "streakMiles": 20030,
+  "streakMiles": 20040,
   "restDays": 0,
-  "totalMiles": 24599,
-  "totalRuns": 3399,
-  "ytdMiles": 2279,
-  "ytdRuns": 227,
+  "totalMiles": 24609,
+  "totalRuns": 3400,
+  "ytdMiles": 2289,
+  "ytdRuns": 228,
   "lastRun": {
-    "date": "2026-08-12",
-    "name": "Heavy Metal Drummer",
-    "miles": 12,
-    "pace": "6:57"
+    "date": "2026-08-13",
+    "name": "Procrastination station",
+    "miles": 10,
+    "pace": "7:53"
   }
 }
