@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-14",
+  "updated": "2026-08-15",
   "source": "Strava",
-  "streakDays": 2318,
+  "streakDays": 2319,
   "streakStart": "2020-04-09",
-  "streakMiles": 20040,
+  "streakMiles": 20053,
   "restDays": 0,
-  "totalMiles": 24609,
-  "totalRuns": 3400,
-  "ytdMiles": 2289,
-  "ytdRuns": 228,
+  "totalMiles": 24622,
+  "totalRuns": 3401,
+  "ytdMiles": 2301,
+  "ytdRuns": 229,
   "lastRun": {
-    "date": "2026-08-13",
-    "name": "Procrastination station",
-    "miles": 10,
-    "pace": "7:53"
+    "date": "2026-08-14",
+    "name": "‘How do you do, fellow sad girls?’",
+    "miles": 12.5,
+    "pace": "7:54"
   }
 }
