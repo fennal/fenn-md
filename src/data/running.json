@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-15",
+  "updated": "2026-08-16",
   "source": "Strava",
-  "streakDays": 2319,
+  "streakDays": 2320,
   "streakStart": "2020-04-09",
-  "streakMiles": 20053,
+  "streakMiles": 20069,
   "restDays": 0,
-  "totalMiles": 24622,
-  "totalRuns": 3401,
-  "ytdMiles": 2301,
-  "ytdRuns": 229,
+  "totalMiles": 24638,
+  "totalRuns": 3402,
+  "ytdMiles": 2318,
+  "ytdRuns": 230,
   "lastRun": {
-    "date": "2026-08-14",
-    "name": "‘How do you do, fellow sad girls?’",
-    "miles": 12.5,
-    "pace": "7:54"
+    "date": "2026-08-15",
+    "name": "Slammed some farmer’s market sungolds before this",
+    "miles": 16.2,
+    "pace": "7:56"
   }
 }
