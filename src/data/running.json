@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-16",
+  "updated": "2026-08-17",
   "source": "Strava",
-  "streakDays": 2320,
+  "streakDays": 2321,
   "streakStart": "2020-04-09",
-  "streakMiles": 20069,
+  "streakMiles": 20091,
   "restDays": 0,
-  "totalMiles": 24638,
-  "totalRuns": 3402,
-  "ytdMiles": 2318,
-  "ytdRuns": 230,
+  "totalMiles": 24660,
+  "totalRuns": 3404,
+  "ytdMiles": 2339,
+  "ytdRuns": 232,
   "lastRun": {
-    "date": "2026-08-15",
-    "name": "Slammed some farmer’s market sungolds before this",
-    "miles": 16.2,
-    "pace": "7:56"
+    "date": "2026-08-16",
+    "name": "Evening Run",
+    "miles": 6.2,
+    "pace": "8:13"
   }
 }
