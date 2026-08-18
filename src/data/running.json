@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-08-18",
   "source": "Strava",
-  "streakDays": 2321,
+  "streakDays": 2322,
   "streakStart": "2020-04-09",
-  "streakMiles": 20091,
+  "streakMiles": 20098,
   "restDays": 0,
-  "totalMiles": 24660,
-  "totalRuns": 3404,
-  "ytdMiles": 2339,
-  "ytdRuns": 232,
+  "totalMiles": 24667,
+  "totalRuns": 3405,
+  "ytdMiles": 2347,
+  "ytdRuns": 233,
   "lastRun": {
-    "date": "2026-08-16",
-    "name": "Bark at the Moon",
-    "miles": 6.2,
-    "pace": "8:13"
+    "date": "2026-08-17",
+    "name": "One of those weather days where I question why I live in the south",
+    "miles": 7.3,
+    "pace": "8:15"
   }
 }
