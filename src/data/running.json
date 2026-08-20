@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-19",
+  "updated": "2026-08-20",
   "source": "Strava",
-  "streakDays": 2323,
+  "streakDays": 2324,
   "streakStart": "2020-04-09",
-  "streakMiles": 20108,
+  "streakMiles": 20118,
   "restDays": 0,
-  "totalMiles": 24677,
-  "totalRuns": 3406,
-  "ytdMiles": 2357,
-  "ytdRuns": 234,
+  "totalMiles": 24687,
+  "totalRuns": 3407,
+  "ytdMiles": 2367,
+  "ytdRuns": 235,
   "lastRun": {
-    "date": "2026-08-18",
-    "name": "Frolic",
+    "date": "2026-08-19",
+    "name": "Tabula rasa",
     "miles": 10,
-    "pace": "7:56"
+    "pace": "7:07"
   }
 }
