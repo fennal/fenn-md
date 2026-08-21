@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-20",
+  "updated": "2026-08-21",
   "source": "Strava",
-  "streakDays": 2324,
+  "streakDays": 2325,
   "streakStart": "2020-04-09",
-  "streakMiles": 20118,
+  "streakMiles": 20129,
   "restDays": 0,
-  "totalMiles": 24687,
-  "totalRuns": 3407,
-  "ytdMiles": 2367,
-  "ytdRuns": 235,
+  "totalMiles": 24698,
+  "totalRuns": 3408,
+  "ytdMiles": 2378,
+  "ytdRuns": 236,
   "lastRun": {
-    "date": "2026-08-19",
-    "name": "Tabula rasa",
-    "miles": 10,
-    "pace": "7:07"
+    "date": "2026-08-20",
+    "name": "Keeping it steamy",
+    "miles": 10.9,
+    "pace": "7:53"
   }
 }
