@@ -3,16 +3,16 @@
   "source": "Strava",
   "streakDays": 2325,
   "streakStart": "2020-04-09",
-  "streakMiles": 20129,
+  "streakMiles": 20136,
   "restDays": 0,
-  "totalMiles": 24698,
-  "totalRuns": 3408,
-  "ytdMiles": 2378,
-  "ytdRuns": 236,
+  "totalMiles": 24705,
+  "totalRuns": 3409,
+  "ytdMiles": 2385,
+  "ytdRuns": 237,
   "lastRun": {
     "date": "2026-08-20",
-    "name": "Keeping it steamy",
-    "miles": 10.9,
-    "pace": "7:53"
+    "name": "Girls sleep, Alex runs",
+    "miles": 7,
+    "pace": "8:00"
   }
 }
