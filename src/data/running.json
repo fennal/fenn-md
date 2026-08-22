@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-21",
+  "updated": "2026-08-22",
   "source": "Strava",
-  "streakDays": 2325,
+  "streakDays": 2326,
   "streakStart": "2020-04-09",
-  "streakMiles": 20136,
+  "streakMiles": 20149,
   "restDays": 0,
-  "totalMiles": 24705,
-  "totalRuns": 3409,
-  "ytdMiles": 2385,
-  "ytdRuns": 237,
+  "totalMiles": 24718,
+  "totalRuns": 3410,
+  "ytdMiles": 2398,
+  "ytdRuns": 238,
   "lastRun": {
-    "date": "2026-08-20",
-    "name": "Girls sleep, Alex runs",
-    "miles": 7,
-    "pace": "8:00"
+    "date": "2026-08-21",
+    "name": "Aggressive house anthropomorphizing",
+    "miles": 13,
+    "pace": "7:56"
   }
 }
