@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-22",
+  "updated": "2026-08-23",
   "source": "Strava",
-  "streakDays": 2326,
+  "streakDays": 2327,
   "streakStart": "2020-04-09",
-  "streakMiles": 20149,
+  "streakMiles": 20167,
   "restDays": 0,
-  "totalMiles": 24718,
-  "totalRuns": 3410,
-  "ytdMiles": 2398,
-  "ytdRuns": 238,
+  "totalMiles": 24736,
+  "totalRuns": 3411,
+  "ytdMiles": 2416,
+  "ytdRuns": 239,
   "lastRun": {
-    "date": "2026-08-21",
-    "name": "Aggressive house anthropomorphizing",
-    "miles": 13,
-    "pace": "7:56"
+    "date": "2026-08-22",
+    "name": "80 and muggy is better than 90 and muggy",
+    "miles": 18,
+    "pace": "7:39"
   }
 }
