@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-23",
+  "updated": "2026-08-24",
   "source": "Strava",
-  "streakDays": 2327,
+  "streakDays": 2328,
   "streakStart": "2020-04-09",
-  "streakMiles": 20167,
+  "streakMiles": 20185,
   "restDays": 0,
-  "totalMiles": 24736,
-  "totalRuns": 3411,
-  "ytdMiles": 2416,
-  "ytdRuns": 239,
+  "totalMiles": 24754,
+  "totalRuns": 3412,
+  "ytdMiles": 2434,
+  "ytdRuns": 240,
   "lastRun": {
-    "date": "2026-08-22",
-    "name": "80 and muggy is better than 90 and muggy",
+    "date": "2026-08-23",
+    "name": "Cranking through UTMB coverage",
     "miles": 18,
-    "pace": "7:39"
+    "pace": "7:19"
   }
 }
