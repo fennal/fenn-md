@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-24",
+  "updated": "2026-08-25",
   "source": "Strava",
-  "streakDays": 2328,
+  "streakDays": 2329,
   "streakStart": "2020-04-09",
-  "streakMiles": 20185,
+  "streakMiles": 20196,
   "restDays": 0,
-  "totalMiles": 24754,
-  "totalRuns": 3412,
-  "ytdMiles": 2434,
-  "ytdRuns": 240,
+  "totalMiles": 24765,
+  "totalRuns": 3413,
+  "ytdMiles": 2444,
+  "ytdRuns": 241,
   "lastRun": {
-    "date": "2026-08-23",
-    "name": "Cranking through UTMB coverage",
-    "miles": 18,
-    "pace": "7:19"
+    "date": "2026-08-24",
+    "name": "Monday Night Pond Club",
+    "miles": 10.7,
+    "pace": "7:06"
   }
 }
