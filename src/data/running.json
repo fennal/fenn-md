@@ -1,18 +1,18 @@
 {
   "updated": "2026-08-25",
   "source": "Strava",
-  "streakDays": 2329,
+  "streakDays": 2330,
   "streakStart": "2020-04-09",
-  "streakMiles": 20196,
+  "streakMiles": 20206,
   "restDays": 0,
-  "totalMiles": 24765,
-  "totalRuns": 3413,
-  "ytdMiles": 2444,
-  "ytdRuns": 241,
+  "totalMiles": 24774,
+  "totalRuns": 3414,
+  "ytdMiles": 2454,
+  "ytdRuns": 242,
   "lastRun": {
-    "date": "2026-08-24",
-    "name": "Monday Night Pond Club",
-    "miles": 10.7,
-    "pace": "7:06"
+    "date": "2026-08-25",
+    "name": "Man I hate running in the morning",
+    "miles": 9.7,
+    "pace": "8:14"
   }
 }
