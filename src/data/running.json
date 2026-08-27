@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-26",
+  "updated": "2026-08-27",
   "source": "Strava",
-  "streakDays": 2330,
+  "streakDays": 2331,
   "streakStart": "2020-04-09",
-  "streakMiles": 20206,
+  "streakMiles": 20214,
   "restDays": 0,
-  "totalMiles": 24774,
-  "totalRuns": 3414,
-  "ytdMiles": 2454,
-  "ytdRuns": 242,
+  "totalMiles": 24783,
+  "totalRuns": 3415,
+  "ytdMiles": 2463,
+  "ytdRuns": 243,
   "lastRun": {
-    "date": "2026-08-25",
-    "name": "Man I hate running in the morning",
-    "miles": 9.7,
-    "pace": "8:14"
+    "date": "2026-08-26",
+    "name": "Stonefruit",
+    "miles": 8.7,
+    "pace": "7:34"
   }
 }
