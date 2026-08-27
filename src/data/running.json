@@ -1,18 +1,18 @@
 {
   "updated": "2026-08-27",
   "source": "Strava",
-  "streakDays": 2331,
+  "streakDays": 2332,
   "streakStart": "2020-04-09",
-  "streakMiles": 20214,
+  "streakMiles": 20224,
   "restDays": 0,
-  "totalMiles": 24783,
-  "totalRuns": 3415,
-  "ytdMiles": 2463,
-  "ytdRuns": 243,
+  "totalMiles": 24793,
+  "totalRuns": 3416,
+  "ytdMiles": 2473,
+  "ytdRuns": 244,
   "lastRun": {
-    "date": "2026-08-26",
-    "name": "Stonefruit",
-    "miles": 8.7,
-    "pace": "7:34"
+    "date": "2026-08-27",
+    "name": "Stoked on that OCC finish",
+    "miles": 10,
+    "pace": "7:44"
   }
 }
