@@ -1,18 +1,18 @@
 {
   "updated": "2026-08-28",
   "source": "Strava",
-  "streakDays": 2332,
+  "streakDays": 2333,
   "streakStart": "2020-04-09",
-  "streakMiles": 20224,
+  "streakMiles": 20234,
   "restDays": 0,
-  "totalMiles": 24793,
-  "totalRuns": 3416,
-  "ytdMiles": 2473,
-  "ytdRuns": 244,
+  "totalMiles": 24803,
+  "totalRuns": 3417,
+  "ytdMiles": 2483,
+  "ytdRuns": 245,
   "lastRun": {
-    "date": "2026-08-27",
-    "name": "Stoked on that OCC finish",
+    "date": "2026-08-28",
+    "name": "Back to being a swamp creature",
     "miles": 10,
-    "pace": "7:44"
+    "pace": "7:34"
   }
 }
