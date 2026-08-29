@@ -1,18 +1,18 @@
 {
   "updated": "2026-08-29",
   "source": "Strava",
-  "streakDays": 2333,
+  "streakDays": 2334,
   "streakStart": "2020-04-09",
-  "streakMiles": 20234,
+  "streakMiles": 20247,
   "restDays": 0,
-  "totalMiles": 24803,
-  "totalRuns": 3417,
-  "ytdMiles": 2483,
-  "ytdRuns": 245,
+  "totalMiles": 24816,
+  "totalRuns": 3418,
+  "ytdMiles": 2496,
+  "ytdRuns": 246,
   "lastRun": {
-    "date": "2026-08-28",
-    "name": "Back to being a swamp creature",
-    "miles": 10,
-    "pace": "7:34"
+    "date": "2026-08-29",
+    "name": "Boys run",
+    "miles": 12.7,
+    "pace": "7:59"
   }
 }
