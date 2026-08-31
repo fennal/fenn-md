@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-30",
+  "updated": "2026-08-31",
   "source": "Strava",
-  "streakDays": 2334,
+  "streakDays": 2335,
   "streakStart": "2020-04-09",
-  "streakMiles": 20247,
+  "streakMiles": 20257,
   "restDays": 0,
-  "totalMiles": 24816,
-  "totalRuns": 3418,
-  "ytdMiles": 2496,
-  "ytdRuns": 246,
+  "totalMiles": 24825,
+  "totalRuns": 3419,
+  "ytdMiles": 2505,
+  "ytdRuns": 247,
   "lastRun": {
-    "date": "2026-08-29",
-    "name": "Boys run",
-    "miles": 12.7,
-    "pace": "7:59"
+    "date": "2026-08-30",
+    "name": "Plotting on how to qualify for UTMB",
+    "miles": 9.5,
+    "pace": "7:50"
   }
 }
