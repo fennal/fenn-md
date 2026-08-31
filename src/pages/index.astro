@@ -13,16 +13,22 @@ const linkedin = byLabel('LinkedIn');
 const github = byLabel('GitHub');
 
 const focus = [
-  'Clinical Informatics Fellow at UNC — expected graduation June 2026',
+  'Clinical Assistant Professor of Emergency Medicine at UNC',
   'Clinical Integration @ Vega Health',
 ];
 
 const experience = [
   {
+    role: 'Clinical Assistant Professor of Emergency Medicine',
+    org: 'UNC School of Medicine',
+    when: '2026 — present',
+    note: 'Attending EM physician at a Level I trauma center while leading informatics work across UNC Health. EM clinical lead for clinical pathways now live at 10+ UNC Health entities statewide, and a member of the Responsible AI workgroup evaluating vendor tools.',
+  },
+  {
     role: 'Clinical Informatics Fellow & Clinical Instructor in EM',
     org: 'UNC School of Medicine',
-    when: '2024 — present',
-    note: 'Attending EM physician at a Level I trauma center while leading informatics work across UNC Health. EM clinical lead for clinical pathways now live at 10+ UNC Health entities statewide, and a member of the Responsible AI workgroup evaluating vendor tools.',
+    when: '2024 — 2026',
+    note: 'Completed the Clinical Informatics fellowship at UNC while practicing as an attending in the Emergency Department, holding a Clinical Instructor appointment in Emergency Medicine throughout training.',
   },
   {
     role: 'Clinical Integration Advisor',
@@ -88,7 +94,7 @@ const personSchema = {
   name: 'Alex Fenn, MD',
   url: 'https://fenn.md',
   image: 'https://fenn.md/og.png',
-  jobTitle: ['Emergency Medicine Physician', 'Clinical Informatics Fellow'],
+  jobTitle: ['Emergency Medicine Physician', 'Clinical Assistant Professor of Emergency Medicine'],
   worksFor: { '@type': 'Organization', name: 'UNC Health' },
   alumniOf: [
     { '@type': 'CollegeOrUniversity', name: 'Duke University School of Medicine' },
