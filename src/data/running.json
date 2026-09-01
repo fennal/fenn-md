@@ -1,18 +1,18 @@
 {
-  "updated": "2026-08-31",
+  "updated": "2026-09-01",
   "source": "Strava",
-  "streakDays": 2335,
+  "streakDays": 2336,
   "streakStart": "2020-04-09",
-  "streakMiles": 20257,
+  "streakMiles": 20267,
   "restDays": 0,
-  "totalMiles": 24825,
-  "totalRuns": 3419,
-  "ytdMiles": 2505,
-  "ytdRuns": 247,
+  "totalMiles": 24836,
+  "totalRuns": 3420,
+  "ytdMiles": 2516,
+  "ytdRuns": 248,
   "lastRun": {
-    "date": "2026-08-30",
-    "name": "Plotting on how to qualify for UTMB",
-    "miles": 9.5,
-    "pace": "7:50"
+    "date": "2026-08-31",
+    "name": "More pond",
+    "miles": 10.5,
+    "pace": "7:46"
   }
 }
