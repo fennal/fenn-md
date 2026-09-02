@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "source": "Strava",
-  "streakDays": 2336,
+  "streakDays": 2337,
   "streakStart": "2020-04-09",
-  "streakMiles": 20267,
+  "streakMiles": 20275,
   "restDays": 0,
-  "totalMiles": 24836,
-  "totalRuns": 3420,
-  "ytdMiles": 2516,
-  "ytdRuns": 248,
+  "totalMiles": 24844,
+  "totalRuns": 3421,
+  "ytdMiles": 2524,
+  "ytdRuns": 249,
   "lastRun": {
-    "date": "2026-08-31",
-    "name": "More pond",
-    "miles": 10.5,
-    "pace": "7:46"
+    "date": "2026-09-01",
+    "name": "Fall is a liberal hoax",
+    "miles": 8,
+    "pace": "7:45"
   }
 }
