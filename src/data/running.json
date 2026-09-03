@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-03",
   "source": "Strava",
-  "streakDays": 2337,
+  "streakDays": 2338,
   "streakStart": "2020-04-09",
-  "streakMiles": 20275,
+  "streakMiles": 20285,
   "restDays": 0,
-  "totalMiles": 24844,
-  "totalRuns": 3421,
-  "ytdMiles": 2524,
-  "ytdRuns": 249,
+  "totalMiles": 24854,
+  "totalRuns": 3422,
+  "ytdMiles": 2534,
+  "ytdRuns": 250,
   "lastRun": {
-    "date": "2026-09-01",
-    "name": "Fall is a liberal hoax",
-    "miles": 8,
-    "pace": "7:45"
+    "date": "2026-09-02",
+    "name": "lol feels like 106",
+    "miles": 10.5,
+    "pace": "7:30"
   }
 }
