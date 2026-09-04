@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-03",
+  "updated": "2026-09-04",
   "source": "Strava",
-  "streakDays": 2338,
+  "streakDays": 2339,
   "streakStart": "2020-04-09",
-  "streakMiles": 20285,
+  "streakMiles": 20298,
   "restDays": 0,
-  "totalMiles": 24854,
-  "totalRuns": 3422,
-  "ytdMiles": 2534,
-  "ytdRuns": 250,
+  "totalMiles": 24867,
+  "totalRuns": 3423,
+  "ytdMiles": 2546,
+  "ytdRuns": 251,
   "lastRun": {
-    "date": "2026-09-02",
-    "name": "lol feels like 106",
-    "miles": 10.5,
-    "pace": "7:30"
+    "date": "2026-09-03",
+    "name": "Shower LMNT",
+    "miles": 12.5,
+    "pace": "7:49"
   }
 }
