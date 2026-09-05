@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "source": "Strava",
-  "streakDays": 2339,
+  "streakDays": 2340,
   "streakStart": "2020-04-09",
-  "streakMiles": 20298,
+  "streakMiles": 20306,
   "restDays": 0,
-  "totalMiles": 24867,
-  "totalRuns": 3423,
-  "ytdMiles": 2546,
-  "ytdRuns": 251,
+  "totalMiles": 24875,
+  "totalRuns": 3424,
+  "ytdMiles": 2555,
+  "ytdRuns": 252,
   "lastRun": {
-    "date": "2026-09-03",
-    "name": "Shower LMNT",
-    "miles": 12.5,
-    "pace": "7:49"
+    "date": "2026-09-04",
+    "name": "Miserable out there",
+    "miles": 8.5,
+    "pace": "8:03"
   }
 }
