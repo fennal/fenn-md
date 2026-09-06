@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-05",
+  "updated": "2026-09-06",
   "source": "Strava",
-  "streakDays": 2340,
+  "streakDays": 2341,
   "streakStart": "2020-04-09",
-  "streakMiles": 20306,
+  "streakMiles": 20322,
   "restDays": 0,
-  "totalMiles": 24875,
-  "totalRuns": 3424,
-  "ytdMiles": 2555,
-  "ytdRuns": 252,
+  "totalMiles": 24891,
+  "totalRuns": 3425,
+  "ytdMiles": 2570,
+  "ytdRuns": 253,
   "lastRun": {
-    "date": "2026-09-04",
-    "name": "Miserable out there",
-    "miles": 8.5,
-    "pace": "8:03"
+    "date": "2026-09-05",
+    "name": "‘That’s hot’ - Paris Hilton",
+    "miles": 15.5,
+    "pace": "8:12"
   }
 }
