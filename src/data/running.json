@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-06",
+  "updated": "2026-09-07",
   "source": "Strava",
-  "streakDays": 2341,
+  "streakDays": 2342,
   "streakStart": "2020-04-09",
-  "streakMiles": 20322,
+  "streakMiles": 20338,
   "restDays": 0,
-  "totalMiles": 24891,
-  "totalRuns": 3425,
-  "ytdMiles": 2570,
-  "ytdRuns": 253,
+  "totalMiles": 24907,
+  "totalRuns": 3426,
+  "ytdMiles": 2586,
+  "ytdRuns": 254,
   "lastRun": {
-    "date": "2026-09-05",
-    "name": "‘That’s hot’ - Paris Hilton",
-    "miles": 15.5,
-    "pace": "8:12"
+    "date": "2026-09-06",
+    "name": "The bros love a good zone 2 run",
+    "miles": 16,
+    "pace": "8:20"
   }
 }
