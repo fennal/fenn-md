@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-07",
+  "updated": "2026-09-08",
   "source": "Strava",
-  "streakDays": 2342,
+  "streakDays": 2343,
   "streakStart": "2020-04-09",
-  "streakMiles": 20338,
+  "streakMiles": 20346,
   "restDays": 0,
-  "totalMiles": 24907,
-  "totalRuns": 3426,
-  "ytdMiles": 2586,
-  "ytdRuns": 254,
+  "totalMiles": 24915,
+  "totalRuns": 3427,
+  "ytdMiles": 2595,
+  "ytdRuns": 255,
   "lastRun": {
-    "date": "2026-09-06",
-    "name": "The bros love a good zone 2 run",
-    "miles": 16,
-    "pace": "8:20"
+    "date": "2026-09-07",
+    "name": "Run before laboring",
+    "miles": 8.1,
+    "pace": "7:32"
   }
 }
