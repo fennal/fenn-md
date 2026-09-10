@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-09",
+  "updated": "2026-09-10",
   "source": "Strava",
-  "streakDays": 2344,
+  "streakDays": 2345,
   "streakStart": "2020-04-09",
-  "streakMiles": 20356,
+  "streakMiles": 20373,
   "restDays": 0,
-  "totalMiles": 24925,
-  "totalRuns": 3428,
-  "ytdMiles": 2605,
-  "ytdRuns": 256,
+  "totalMiles": 24942,
+  "totalRuns": 3429,
+  "ytdMiles": 2621,
+  "ytdRuns": 257,
   "lastRun": {
-    "date": "2026-09-08",
-    "name": "Shaking off the 5-1",
-    "miles": 10,
-    "pace": "7:37"
+    "date": "2026-09-09",
+    "name": "Summer Breeze",
+    "miles": 16.7,
+    "pace": "7:48"
   }
 }
