@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "source": "Strava",
-  "streakDays": 2345,
+  "streakDays": 2346,
   "streakStart": "2020-04-09",
-  "streakMiles": 20373,
+  "streakMiles": 20382,
   "restDays": 0,
-  "totalMiles": 24942,
-  "totalRuns": 3429,
-  "ytdMiles": 2621,
-  "ytdRuns": 257,
+  "totalMiles": 24951,
+  "totalRuns": 3430,
+  "ytdMiles": 2631,
+  "ytdRuns": 258,
   "lastRun": {
-    "date": "2026-09-09",
-    "name": "Summer Breeze",
-    "miles": 16.7,
-    "pace": "7:48"
+    "date": "2026-09-10",
+    "name": "What does a man have to do to get an Aspiration deal?",
+    "miles": 9.8,
+    "pace": "7:46"
   }
 }
