@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-11",
+  "updated": "2026-09-12",
   "source": "Strava",
-  "streakDays": 2346,
+  "streakDays": 2347,
   "streakStart": "2020-04-09",
-  "streakMiles": 20382,
+  "streakMiles": 20402,
   "restDays": 0,
-  "totalMiles": 24951,
-  "totalRuns": 3430,
-  "ytdMiles": 2631,
-  "ytdRuns": 258,
+  "totalMiles": 24971,
+  "totalRuns": 3431,
+  "ytdMiles": 2651,
+  "ytdRuns": 259,
   "lastRun": {
-    "date": "2026-09-10",
-    "name": "What does a man have to do to get an Aspiration deal?",
-    "miles": 9.8,
-    "pace": "7:46"
+    "date": "2026-09-11",
+    "name": "Clear liquid diet",
+    "miles": 20,
+    "pace": "7:40"
   }
 }
