@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-12",
+  "updated": "2026-09-13",
   "source": "Strava",
-  "streakDays": 2347,
+  "streakDays": 2348,
   "streakStart": "2020-04-09",
-  "streakMiles": 20402,
+  "streakMiles": 20418,
   "restDays": 0,
-  "totalMiles": 24971,
-  "totalRuns": 3431,
-  "ytdMiles": 2651,
-  "ytdRuns": 259,
+  "totalMiles": 24987,
+  "totalRuns": 3432,
+  "ytdMiles": 2667,
+  "ytdRuns": 260,
   "lastRun": {
-    "date": "2026-09-11",
-    "name": "Clear liquid diet",
-    "miles": 20,
-    "pace": "7:40"
+    "date": "2026-09-12",
+    "name": "Blue Ridge Relay FOMO",
+    "miles": 15.8,
+    "pace": "7:36"
   }
 }
