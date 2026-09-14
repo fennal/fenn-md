@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-13",
+  "updated": "2026-09-14",
   "source": "Strava",
-  "streakDays": 2348,
+  "streakDays": 2349,
   "streakStart": "2020-04-09",
-  "streakMiles": 20418,
+  "streakMiles": 20438,
   "restDays": 0,
-  "totalMiles": 24987,
-  "totalRuns": 3432,
-  "ytdMiles": 2667,
-  "ytdRuns": 260,
+  "totalMiles": 25007,
+  "totalRuns": 3433,
+  "ytdMiles": 2687,
+  "ytdRuns": 261,
   "lastRun": {
-    "date": "2026-09-12",
-    "name": "Blue Ridge Relay FOMO",
-    "miles": 15.8,
-    "pace": "7:36"
+    "date": "2026-09-13",
+    "name": "Maybe if I run enough loops I’ll forget about Camille posting about swinging",
+    "miles": 20,
+    "pace": "7:31"
   }
 }
