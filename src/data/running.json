@@ -1,18 +1,18 @@
 {
   "updated": "2026-09-14",
   "source": "Strava",
-  "streakDays": 2349,
+  "streakDays": 2350,
   "streakStart": "2020-04-09",
-  "streakMiles": 20438,
+  "streakMiles": 20448,
   "restDays": 0,
-  "totalMiles": 25007,
-  "totalRuns": 3433,
-  "ytdMiles": 2687,
-  "ytdRuns": 261,
+  "totalMiles": 25017,
+  "totalRuns": 3434,
+  "ytdMiles": 2697,
+  "ytdRuns": 262,
   "lastRun": {
-    "date": "2026-09-13",
-    "name": "Maybe if I run enough loops I’ll forget about Camille posting about swinging",
-    "miles": 20,
-    "pace": "7:31"
+    "date": "2026-09-14",
+    "name": "One of these days it’ll cool down",
+    "miles": 10,
+    "pace": "8:08"
   }
 }
