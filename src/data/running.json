@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-15",
+  "updated": "2026-09-16",
   "source": "Strava",
-  "streakDays": 2350,
+  "streakDays": 2351,
   "streakStart": "2020-04-09",
-  "streakMiles": 20448,
+  "streakMiles": 20459,
   "restDays": 0,
-  "totalMiles": 25017,
-  "totalRuns": 3434,
-  "ytdMiles": 2697,
-  "ytdRuns": 262,
+  "totalMiles": 25028,
+  "totalRuns": 3435,
+  "ytdMiles": 2707,
+  "ytdRuns": 263,
   "lastRun": {
-    "date": "2026-09-14",
-    "name": "One of these days it’ll cool down",
-    "miles": 10,
-    "pace": "8:08"
+    "date": "2026-09-15",
+    "name": "Instant Crush",
+    "miles": 10.6,
+    "pace": "7:43"
   }
 }
