@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "source": "Strava",
-  "streakDays": 2351,
+  "streakDays": 2352,
   "streakStart": "2020-04-09",
-  "streakMiles": 20459,
+  "streakMiles": 20467,
   "restDays": 0,
-  "totalMiles": 25028,
-  "totalRuns": 3435,
-  "ytdMiles": 2707,
-  "ytdRuns": 263,
+  "totalMiles": 25036,
+  "totalRuns": 3436,
+  "ytdMiles": 2715,
+  "ytdRuns": 264,
   "lastRun": {
-    "date": "2026-09-15",
-    "name": "Instant Crush",
-    "miles": 10.6,
-    "pace": "7:43"
+    "date": "2026-09-16",
+    "name": "Foiled by bug in the eye",
+    "miles": 8,
+    "pace": "6:30"
   }
 }
