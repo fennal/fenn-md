@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "source": "Strava",
-  "streakDays": 2352,
+  "streakDays": 2353,
   "streakStart": "2020-04-09",
-  "streakMiles": 20467,
+  "streakMiles": 20476,
   "restDays": 0,
-  "totalMiles": 25036,
-  "totalRuns": 3436,
-  "ytdMiles": 2715,
-  "ytdRuns": 264,
+  "totalMiles": 25045,
+  "totalRuns": 3437,
+  "ytdMiles": 2724,
+  "ytdRuns": 265,
   "lastRun": {
-    "date": "2026-09-16",
-    "name": "Foiled by bug in the eye",
-    "miles": 8,
-    "pace": "6:30"
+    "date": "2026-09-17",
+    "name": "Heavyweight",
+    "miles": 9,
+    "pace": "7:23"
   }
 }
