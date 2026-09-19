@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "source": "Strava",
-  "streakDays": 2353,
+  "streakDays": 2354,
   "streakStart": "2020-04-09",
-  "streakMiles": 20476,
+  "streakMiles": 20486,
   "restDays": 0,
-  "totalMiles": 25045,
-  "totalRuns": 3437,
-  "ytdMiles": 2724,
-  "ytdRuns": 265,
+  "totalMiles": 25055,
+  "totalRuns": 3438,
+  "ytdMiles": 2734,
+  "ytdRuns": 266,
   "lastRun": {
-    "date": "2026-09-17",
-    "name": "Heavyweight",
-    "miles": 9,
-    "pace": "7:23"
+    "date": "2026-09-18",
+    "name": "My kingdom for a road shoulder",
+    "miles": 10,
+    "pace": "7:44"
   }
 }
