@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "source": "Strava",
-  "streakDays": 2356,
+  "streakDays": 2357,
   "streakStart": "2020-04-09",
-  "streakMiles": 20519,
+  "streakMiles": 20528,
   "restDays": 0,
-  "totalMiles": 25087,
-  "totalRuns": 3440,
-  "ytdMiles": 2767,
-  "ytdRuns": 268,
+  "totalMiles": 25097,
+  "totalRuns": 3441,
+  "ytdMiles": 2777,
+  "ytdRuns": 269,
   "lastRun": {
-    "date": "2026-09-20",
-    "name": "Strawberry ice cream in Malibu",
-    "miles": 20.6,
-    "pace": "7:37"
+    "date": "2026-09-21",
+    "name": "Back on track",
+    "miles": 9.6,
+    "pace": "7:16"
   }
 }
