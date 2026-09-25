@@ -1,18 +1,18 @@
 {
   "updated": "2026-09-25",
   "source": "Strava",
-  "streakDays": 2360,
+  "streakDays": 2361,
   "streakStart": "2020-04-09",
-  "streakMiles": 20555,
+  "streakMiles": 20563,
   "restDays": 0,
-  "totalMiles": 25123,
-  "totalRuns": 3444,
-  "ytdMiles": 2803,
-  "ytdRuns": 272,
+  "totalMiles": 25132,
+  "totalRuns": 3445,
+  "ytdMiles": 2812,
+  "ytdRuns": 273,
   "lastRun": {
-    "date": "2026-09-24",
-    "name": "Proud member of the fart left",
-    "miles": 8,
-    "pace": "6:29"
+    "date": "2026-09-25",
+    "name": "Lunch Run",
+    "miles": 8.6,
+    "pace": "7:18"
   }
 }
