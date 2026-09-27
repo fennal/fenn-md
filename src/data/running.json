@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "source": "Strava",
-  "streakDays": 2361,
+  "streakDays": 2362,
   "streakStart": "2020-04-09",
-  "streakMiles": 20563,
+  "streakMiles": 20576,
   "restDays": 0,
-  "totalMiles": 25132,
-  "totalRuns": 3445,
-  "ytdMiles": 2812,
-  "ytdRuns": 273,
+  "totalMiles": 25145,
+  "totalRuns": 3446,
+  "ytdMiles": 2825,
+  "ytdRuns": 274,
   "lastRun": {
-    "date": "2026-09-25",
-    "name": "‘Oooh, it’s Patrick’ - ~4 year old I ran by",
-    "miles": 8.6,
-    "pace": "7:18"
+    "date": "2026-09-26",
+    "name": "Just what I needed",
+    "miles": 13,
+    "pace": "7:28"
   }
 }
