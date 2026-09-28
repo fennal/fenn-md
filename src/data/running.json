@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "source": "Strava",
-  "streakDays": 2362,
+  "streakDays": 2363,
   "streakStart": "2020-04-09",
-  "streakMiles": 20576,
+  "streakMiles": 20589,
   "restDays": 0,
-  "totalMiles": 25145,
-  "totalRuns": 3446,
-  "ytdMiles": 2825,
-  "ytdRuns": 274,
+  "totalMiles": 25158,
+  "totalRuns": 3447,
+  "ytdMiles": 2838,
+  "ytdRuns": 275,
   "lastRun": {
-    "date": "2026-09-26",
-    "name": "Just what I needed",
-    "miles": 13,
-    "pace": "7:28"
+    "date": "2026-09-27",
+    "name": "Arrested Development is my #1 show of the 21st century",
+    "miles": 13.1,
+    "pace": "7:23"
   }
 }
