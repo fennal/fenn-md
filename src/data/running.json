@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "source": "Strava",
-  "streakDays": 2363,
+  "streakDays": 2364,
   "streakStart": "2020-04-09",
-  "streakMiles": 20589,
+  "streakMiles": 20601,
   "restDays": 0,
-  "totalMiles": 25158,
-  "totalRuns": 3447,
-  "ytdMiles": 2838,
-  "ytdRuns": 275,
+  "totalMiles": 25169,
+  "totalRuns": 3448,
+  "ytdMiles": 2849,
+  "ytdRuns": 276,
   "lastRun": {
-    "date": "2026-09-27",
-    "name": "Arrested Development is my #1 show of the 21st century",
-    "miles": 13.1,
+    "date": "2026-09-28",
+    "name": "Jon Scheyer sighting",
+    "miles": 11.3,
     "pace": "7:23"
   }
 }
