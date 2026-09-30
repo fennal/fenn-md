@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "source": "Strava",
-  "streakDays": 2364,
+  "streakDays": 2365,
   "streakStart": "2020-04-09",
-  "streakMiles": 20601,
+  "streakMiles": 20609,
   "restDays": 0,
-  "totalMiles": 25169,
-  "totalRuns": 3448,
-  "ytdMiles": 2849,
-  "ytdRuns": 276,
+  "totalMiles": 25177,
+  "totalRuns": 3449,
+  "ytdMiles": 2857,
+  "ytdRuns": 277,
   "lastRun": {
-    "date": "2026-09-28",
-    "name": "Jon Scheyer sighting",
-    "miles": 11.3,
+    "date": "2026-09-29",
+    "name": "Spring Into Summer",
+    "miles": 8,
     "pace": "7:23"
   }
 }
