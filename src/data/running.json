@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "source": "Strava",
-  "streakDays": 2365,
+  "streakDays": 2366,
   "streakStart": "2020-04-09",
-  "streakMiles": 20609,
+  "streakMiles": 20617,
   "restDays": 0,
-  "totalMiles": 25177,
-  "totalRuns": 3449,
-  "ytdMiles": 2857,
-  "ytdRuns": 277,
+  "totalMiles": 25186,
+  "totalRuns": 3450,
+  "ytdMiles": 2866,
+  "ytdRuns": 278,
   "lastRun": {
-    "date": "2026-09-29",
-    "name": "Spring Into Summer",
-    "miles": 8,
-    "pace": "7:23"
+    "date": "2026-09-30",
+    "name": "Stochastic parrot",
+    "miles": 8.5,
+    "pace": "7:03"
   }
 }
