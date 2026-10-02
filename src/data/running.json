@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "source": "Strava",
-  "streakDays": 2366,
+  "streakDays": 2367,
   "streakStart": "2020-04-09",
-  "streakMiles": 20617,
+  "streakMiles": 20625,
   "restDays": 0,
-  "totalMiles": 25186,
-  "totalRuns": 3450,
-  "ytdMiles": 2866,
-  "ytdRuns": 278,
+  "totalMiles": 25194,
+  "totalRuns": 3451,
+  "ytdMiles": 2874,
+  "ytdRuns": 279,
   "lastRun": {
-    "date": "2026-09-30",
-    "name": "Stochastic parrot",
-    "miles": 8.5,
-    "pace": "7:03"
+    "date": "2026-10-01",
+    "name": "On Repeat",
+    "miles": 8.2,
+    "pace": "7:17"
   }
 }
