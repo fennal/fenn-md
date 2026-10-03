@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "source": "Strava",
-  "streakDays": 2367,
+  "streakDays": 2368,
   "streakStart": "2020-04-09",
-  "streakMiles": 20625,
+  "streakMiles": 20633,
   "restDays": 0,
-  "totalMiles": 25194,
-  "totalRuns": 3451,
-  "ytdMiles": 2874,
-  "ytdRuns": 279,
+  "totalMiles": 25202,
+  "totalRuns": 3452,
+  "ytdMiles": 2882,
+  "ytdRuns": 280,
   "lastRun": {
-    "date": "2026-10-01",
-    "name": "On Repeat",
-    "miles": 8.2,
-    "pace": "7:17"
+    "date": "2026-10-02",
+    "name": "Rigatoni. Heavy marinara.",
+    "miles": 8,
+    "pace": "7:31"
   }
 }
