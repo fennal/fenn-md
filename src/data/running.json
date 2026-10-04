@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "source": "Strava",
-  "streakDays": 2368,
+  "streakDays": 2369,
   "streakStart": "2020-04-09",
-  "streakMiles": 20633,
+  "streakMiles": 20641,
   "restDays": 0,
-  "totalMiles": 25202,
-  "totalRuns": 3452,
-  "ytdMiles": 2882,
-  "ytdRuns": 280,
+  "totalMiles": 25210,
+  "totalRuns": 3453,
+  "ytdMiles": 2890,
+  "ytdRuns": 281,
   "lastRun": {
-    "date": "2026-10-02",
-    "name": "Rigatoni. Heavy marinara.",
+    "date": "2026-10-03",
+    "name": "How many hours have I run while listening to Pablo Torre talk about Aspiration?",
     "miles": 8,
-    "pace": "7:31"
+    "pace": "7:37"
   }
 }
