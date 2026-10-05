@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "source": "Strava",
-  "streakDays": 2369,
+  "streakDays": 2370,
   "streakStart": "2020-04-09",
-  "streakMiles": 20641,
+  "streakMiles": 20649,
   "restDays": 0,
-  "totalMiles": 25210,
-  "totalRuns": 3453,
-  "ytdMiles": 2890,
-  "ytdRuns": 281,
+  "totalMiles": 25218,
+  "totalRuns": 3454,
+  "ytdMiles": 2898,
+  "ytdRuns": 282,
   "lastRun": {
-    "date": "2026-10-03",
-    "name": "How many hours have I run while listening to Pablo Torre talk about Aspiration?",
-    "miles": 8,
-    "pace": "7:37"
+    "date": "2026-10-04",
+    "name": "Reptilia",
+    "miles": 8.1,
+    "pace": "7:27"
   }
 }
