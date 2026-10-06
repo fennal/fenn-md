@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "source": "Strava",
-  "streakDays": 2370,
+  "streakDays": 2371,
   "streakStart": "2020-04-09",
-  "streakMiles": 20649,
+  "streakMiles": 20659,
   "restDays": 0,
-  "totalMiles": 25218,
-  "totalRuns": 3454,
-  "ytdMiles": 2898,
-  "ytdRuns": 282,
+  "totalMiles": 25228,
+  "totalRuns": 3455,
+  "ytdMiles": 2907,
+  "ytdRuns": 283,
   "lastRun": {
-    "date": "2026-10-04",
-    "name": "Reptilia",
-    "miles": 8.1,
-    "pace": "7:27"
+    "date": "2026-10-05",
+    "name": "Monday Night Taper Club",
+    "miles": 9.3,
+    "pace": "7:15"
   }
 }
