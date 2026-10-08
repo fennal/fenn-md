@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "source": "Strava",
-  "streakDays": 2372,
+  "streakDays": 2373,
   "streakStart": "2020-04-09",
-  "streakMiles": 20664,
+  "streakMiles": 20669,
   "restDays": 0,
-  "totalMiles": 25233,
-  "totalRuns": 3456,
-  "ytdMiles": 2913,
-  "ytdRuns": 284,
+  "totalMiles": 25238,
+  "totalRuns": 3457,
+  "ytdMiles": 2918,
+  "ytdRuns": 285,
   "lastRun": {
-    "date": "2026-10-06",
-    "name": "Music taste looking like the Pitchfork front page",
-    "miles": 5.3,
-    "pace": "7:41"
+    "date": "2026-10-07",
+    "name": "Daily dose",
+    "miles": 5,
+    "pace": "7:05"
   }
 }
