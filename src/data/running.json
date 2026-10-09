@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "source": "Strava",
-  "streakDays": 2373,
+  "streakDays": 2374,
   "streakStart": "2020-04-09",
-  "streakMiles": 20669,
+  "streakMiles": 20673,
   "restDays": 0,
-  "totalMiles": 25238,
-  "totalRuns": 3457,
-  "ytdMiles": 2918,
-  "ytdRuns": 285,
+  "totalMiles": 25241,
+  "totalRuns": 3458,
+  "ytdMiles": 2921,
+  "ytdRuns": 286,
   "lastRun": {
-    "date": "2026-10-07",
-    "name": "Daily dose",
-    "miles": 5,
-    "pace": "7:05"
+    "date": "2026-10-08",
+    "name": "So much room for activities",
+    "miles": 3.4,
+    "pace": "7:28"
   }
 }
