@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "source": "Strava",
-  "streakDays": 2374,
+  "streakDays": 2375,
   "streakStart": "2020-04-09",
-  "streakMiles": 20673,
+  "streakMiles": 20675,
   "restDays": 0,
-  "totalMiles": 25241,
-  "totalRuns": 3458,
-  "ytdMiles": 2921,
-  "ytdRuns": 286,
+  "totalMiles": 25243,
+  "totalRuns": 3459,
+  "ytdMiles": 2923,
+  "ytdRuns": 287,
   "lastRun": {
-    "date": "2026-10-08",
-    "name": "So much room for activities",
-    "miles": 3.4,
-    "pace": "7:28"
+    "date": "2026-10-09",
+    "name": "Me: Man I really hope my race isn’t too warm \n*monkey’s paw curls and predicts 1.5 inches of rain*",
+    "miles": 2,
+    "pace": "7:48"
   }
 }
