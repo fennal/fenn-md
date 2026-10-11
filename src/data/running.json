@@ -1,18 +1,18 @@
 {
   "updated": "2026-10-11",
   "source": "Strava",
-  "streakDays": 0,
-  "streakStart": "2026-10-11",
-  "streakMiles": 0,
+  "streakDays": 2377,
+  "streakStart": "2020-04-09",
+  "streakMiles": 20798,
   "restDays": 0,
-  "totalMiles": 25243,
-  "totalRuns": 3459,
-  "ytdMiles": 2923,
-  "ytdRuns": 287,
+  "totalMiles": 25367,
+  "totalRuns": 3460,
+  "ytdMiles": 3047,
+  "ytdRuns": 288,
   "lastRun": {
-    "date": "2026-10-09",
-    "name": "Me: Man I really hope my race isn’t too warm \n*monkey’s paw curls and predicts 1.5 inches of rain*",
-    "miles": 2,
-    "pace": "7:48"
+    "date": "2026-10-10",
+    "name": "Gonna be a while until I can create my OnlyFeet account after this one",
+    "miles": 123.5,
+    "pace": "11:01"
   }
 }
