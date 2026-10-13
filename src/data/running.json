@@ -1,18 +1,18 @@
 {
   "updated": "2026-10-13",
   "source": "Strava",
-  "streakDays": 2378,
+  "streakDays": 2379,
   "streakStart": "2020-04-09",
-  "streakMiles": 20800,
+  "streakMiles": 20803,
   "restDays": 0,
-  "totalMiles": 25369,
-  "totalRuns": 3461,
-  "ytdMiles": 3049,
-  "ytdRuns": 289,
+  "totalMiles": 25372,
+  "totalRuns": 3462,
+  "ytdMiles": 3052,
+  "ytdRuns": 290,
   "lastRun": {
-    "date": "2026-10-12",
-    "name": "Monday Night Hobble Club",
-    "miles": 2.1,
-    "pace": "9:37"
+    "date": "2026-10-13",
+    "name": "I’m wide awake, it’s morning",
+    "miles": 3.2,
+    "pace": "8:15"
   }
 }
