@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "source": "Strava",
-  "streakDays": 2377,
+  "streakDays": 2378,
   "streakStart": "2020-04-09",
-  "streakMiles": 20798,
+  "streakMiles": 20800,
   "restDays": 0,
-  "totalMiles": 25367,
-  "totalRuns": 3460,
-  "ytdMiles": 3047,
-  "ytdRuns": 288,
+  "totalMiles": 25369,
+  "totalRuns": 3461,
+  "ytdMiles": 3049,
+  "ytdRuns": 289,
   "lastRun": {
-    "date": "2026-10-10",
-    "name": "Gonna be a while until I can create my OnlyFeet account after this one",
-    "miles": 123.5,
-    "pace": "11:01"
+    "date": "2026-10-12",
+    "name": "Monday Night Hobble Club",
+    "miles": 2.1,
+    "pace": "9:37"
   }
 }
