@@ -1,18 +1,18 @@
 {
   "updated": "2026-10-14",
   "source": "Strava",
-  "streakDays": 2379,
+  "streakDays": 2380,
   "streakStart": "2020-04-09",
-  "streakMiles": 20803,
+  "streakMiles": 20808,
   "restDays": 0,
-  "totalMiles": 25372,
-  "totalRuns": 3462,
-  "ytdMiles": 3052,
-  "ytdRuns": 290,
+  "totalMiles": 25377,
+  "totalRuns": 3463,
+  "ytdMiles": 3057,
+  "ytdRuns": 291,
   "lastRun": {
-    "date": "2026-10-13",
-    "name": "I’m wide awake, it’s morning",
-    "miles": 3.2,
-    "pace": "8:15"
+    "date": "2026-10-14",
+    "name": "Feels very Southern",
+    "miles": 5,
+    "pace": "7:55"
   }
 }
