@@ -1,18 +1,18 @@
 {
   "updated": "2026-10-15",
   "source": "Strava",
-  "streakDays": 2380,
+  "streakDays": 2381,
   "streakStart": "2020-04-09",
-  "streakMiles": 20808,
+  "streakMiles": 20815,
   "restDays": 0,
-  "totalMiles": 25377,
-  "totalRuns": 3463,
-  "ytdMiles": 3057,
-  "ytdRuns": 291,
+  "totalMiles": 25384,
+  "totalRuns": 3464,
+  "ytdMiles": 3063,
+  "ytdRuns": 292,
   "lastRun": {
-    "date": "2026-10-14",
-    "name": "Feels very Southern",
-    "miles": 5,
-    "pace": "7:55"
+    "date": "2026-10-15",
+    "name": "The Joy",
+    "miles": 6.4,
+    "pace": "7:50"
   }
 }
