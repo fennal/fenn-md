@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "source": "Strava",
-  "streakDays": 2382,
+  "streakDays": 2383,
   "streakStart": "2020-04-09",
-  "streakMiles": 20822,
+  "streakMiles": 20830,
   "restDays": 0,
-  "totalMiles": 25391,
-  "totalRuns": 3465,
-  "ytdMiles": 3071,
-  "ytdRuns": 293,
+  "totalMiles": 25398,
+  "totalRuns": 3466,
+  "ytdMiles": 3078,
+  "ytdRuns": 294,
   "lastRun": {
-    "date": "2026-10-16",
-    "name": "Post loooooong car ride",
-    "miles": 7.6,
-    "pace": "8:11"
+    "date": "2026-10-17",
+    "name": "You Can See Everything",
+    "miles": 7.2,
+    "pace": "7:54"
   }
 }
