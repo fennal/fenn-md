@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "source": "Strava",
-  "streakDays": 2383,
+  "streakDays": 2384,
   "streakStart": "2020-04-09",
-  "streakMiles": 20830,
+  "streakMiles": 20837,
   "restDays": 0,
-  "totalMiles": 25398,
-  "totalRuns": 3466,
-  "ytdMiles": 3078,
-  "ytdRuns": 294,
+  "totalMiles": 25406,
+  "totalRuns": 3467,
+  "ytdMiles": 3085,
+  "ytdRuns": 295,
   "lastRun": {
-    "date": "2026-10-17",
-    "name": "You Can See Everything",
-    "miles": 7.2,
-    "pace": "7:54"
+    "date": "2026-10-18",
+    "name": "Recovery week done",
+    "miles": 7.3,
+    "pace": "7:46"
   }
 }
