@@ -1,18 +1,18 @@
 {
   "updated": "2026-10-19",
   "source": "Strava",
-  "streakDays": 2384,
+  "streakDays": 2385,
   "streakStart": "2020-04-09",
-  "streakMiles": 20837,
+  "streakMiles": 20845,
   "restDays": 0,
-  "totalMiles": 25406,
-  "totalRuns": 3467,
-  "ytdMiles": 3085,
-  "ytdRuns": 295,
+  "totalMiles": 25414,
+  "totalRuns": 3468,
+  "ytdMiles": 3093,
+  "ytdRuns": 296,
   "lastRun": {
-    "date": "2026-10-18",
-    "name": "Recovery week done",
-    "miles": 7.3,
-    "pace": "7:46"
+    "date": "2026-10-19",
+    "name": "Everything’s coming up Milhouse",
+    "miles": 8.1,
+    "pace": "7:36"
   }
 }
