@@ -1,18 +1,18 @@
 {
   "updated": "2026-10-20",
   "source": "Strava",
-  "streakDays": 2385,
+  "streakDays": 2386,
   "streakStart": "2020-04-09",
-  "streakMiles": 20845,
+  "streakMiles": 20852,
   "restDays": 0,
-  "totalMiles": 25414,
-  "totalRuns": 3468,
-  "ytdMiles": 3093,
-  "ytdRuns": 296,
+  "totalMiles": 25420,
+  "totalRuns": 3469,
+  "ytdMiles": 3100,
+  "ytdRuns": 297,
   "lastRun": {
-    "date": "2026-10-19",
-    "name": "Everything’s coming up Milhouse",
-    "miles": 8.1,
-    "pace": "7:36"
+    "date": "2026-10-20",
+    "name": "Lunch Run",
+    "miles": 6.8,
+    "pace": "7:48"
   }
 }
