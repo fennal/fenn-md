@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "source": "Strava",
-  "streakDays": 2386,
+  "streakDays": 2387,
   "streakStart": "2020-04-09",
-  "streakMiles": 20852,
+  "streakMiles": 20860,
   "restDays": 0,
-  "totalMiles": 25420,
-  "totalRuns": 3469,
-  "ytdMiles": 3100,
-  "ytdRuns": 297,
+  "totalMiles": 25429,
+  "totalRuns": 3470,
+  "ytdMiles": 3109,
+  "ytdRuns": 298,
   "lastRun": {
-    "date": "2026-10-20",
-    "name": "Swear I’m busier on my off days",
-    "miles": 6.8,
-    "pace": "7:48"
+    "date": "2026-10-21",
+    "name": "Checking in on Hope Valley Halloween decorations",
+    "miles": 8.4,
+    "pace": "7:40"
   }
 }
