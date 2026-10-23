@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "source": "Strava",
-  "streakDays": 2387,
+  "streakDays": 2388,
   "streakStart": "2020-04-09",
-  "streakMiles": 20860,
+  "streakMiles": 20869,
   "restDays": 0,
-  "totalMiles": 25429,
-  "totalRuns": 3470,
-  "ytdMiles": 3109,
-  "ytdRuns": 298,
+  "totalMiles": 25438,
+  "totalRuns": 3471,
+  "ytdMiles": 3117,
+  "ytdRuns": 299,
   "lastRun": {
-    "date": "2026-10-21",
-    "name": "Checking in on Hope Valley Halloween decorations",
-    "miles": 8.4,
-    "pace": "7:40"
+    "date": "2026-10-22",
+    "name": "Sorry to disappoint the followers, skewed from The Loop today",
+    "miles": 8.6,
+    "pace": "7:01"
   }
 }
