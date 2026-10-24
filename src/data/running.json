@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "source": "Strava",
-  "streakDays": 2388,
+  "streakDays": 2389,
   "streakStart": "2020-04-09",
-  "streakMiles": 20869,
+  "streakMiles": 20875,
   "restDays": 0,
-  "totalMiles": 25438,
-  "totalRuns": 3471,
-  "ytdMiles": 3117,
-  "ytdRuns": 299,
+  "totalMiles": 25444,
+  "totalRuns": 3472,
+  "ytdMiles": 3124,
+  "ytdRuns": 300,
   "lastRun": {
-    "date": "2026-10-22",
-    "name": "Sorry to disappoint the followers, skewed from The Loop today",
-    "miles": 8.6,
-    "pace": "7:01"
+    "date": "2026-10-23",
+    "name": "Too much work",
+    "miles": 6.4,
+    "pace": "7:49"
   }
 }
