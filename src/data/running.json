@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "source": "Strava",
-  "streakDays": 2389,
+  "streakDays": 2390,
   "streakStart": "2020-04-09",
-  "streakMiles": 20875,
+  "streakMiles": 20884,
   "restDays": 0,
-  "totalMiles": 25444,
-  "totalRuns": 3472,
-  "ytdMiles": 3124,
-  "ytdRuns": 300,
+  "totalMiles": 25453,
+  "totalRuns": 3473,
+  "ytdMiles": 3133,
+  "ytdRuns": 301,
   "lastRun": {
-    "date": "2026-10-23",
-    "name": "Too much work",
-    "miles": 6.4,
-    "pace": "7:49"
+    "date": "2026-10-24",
+    "name": "Paying the cat tax",
+    "miles": 9,
+    "pace": "7:35"
   }
 }
