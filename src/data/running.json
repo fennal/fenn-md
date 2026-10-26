@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "source": "Strava",
-  "streakDays": 2390,
+  "streakDays": 2391,
   "streakStart": "2020-04-09",
-  "streakMiles": 20884,
+  "streakMiles": 20894,
   "restDays": 0,
-  "totalMiles": 25453,
-  "totalRuns": 3473,
-  "ytdMiles": 3133,
-  "ytdRuns": 301,
+  "totalMiles": 25463,
+  "totalRuns": 3474,
+  "ytdMiles": 3143,
+  "ytdRuns": 302,
   "lastRun": {
-    "date": "2026-10-24",
-    "name": "Paying the cat tax",
-    "miles": 9,
-    "pace": "7:35"
+    "date": "2026-10-25",
+    "name": "I think I prefer Halloween decorations to Christmas decorations",
+    "miles": 10,
+    "pace": "7:32"
   }
 }
