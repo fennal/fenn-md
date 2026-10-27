@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "source": "Strava",
-  "streakDays": 2391,
+  "streakDays": 2392,
   "streakStart": "2020-04-09",
-  "streakMiles": 20894,
+  "streakMiles": 20902,
   "restDays": 0,
-  "totalMiles": 25463,
-  "totalRuns": 3474,
-  "ytdMiles": 3143,
-  "ytdRuns": 302,
+  "totalMiles": 25471,
+  "totalRuns": 3475,
+  "ytdMiles": 3151,
+  "ytdRuns": 303,
   "lastRun": {
-    "date": "2026-10-25",
-    "name": "I think I prefer Halloween decorations to Christmas decorations",
-    "miles": 10,
-    "pace": "7:32"
+    "date": "2026-10-26",
+    "name": "Pushing it down and praying",
+    "miles": 8.2,
+    "pace": "6:37"
   }
 }
