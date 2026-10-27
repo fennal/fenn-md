@@ -1,18 +1,18 @@
 {
   "updated": "2026-10-27",
   "source": "Strava",
-  "streakDays": 2392,
+  "streakDays": 2393,
   "streakStart": "2020-04-09",
-  "streakMiles": 20902,
+  "streakMiles": 20912,
   "restDays": 0,
-  "totalMiles": 25471,
-  "totalRuns": 3475,
-  "ytdMiles": 3151,
-  "ytdRuns": 303,
+  "totalMiles": 25481,
+  "totalRuns": 3476,
+  "ytdMiles": 3161,
+  "ytdRuns": 304,
   "lastRun": {
-    "date": "2026-10-26",
-    "name": "Pushing it down and praying",
-    "miles": 8.2,
-    "pace": "6:37"
+    "date": "2026-10-27",
+    "name": "Lunch Run",
+    "miles": 10.1,
+    "pace": "7:41"
   }
 }
