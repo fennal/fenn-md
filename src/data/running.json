@@ -1,18 +1,18 @@
 {
   "updated": "2026-10-28",
   "source": "Strava",
-  "streakDays": 2393,
+  "streakDays": 2394,
   "streakStart": "2020-04-09",
-  "streakMiles": 20912,
+  "streakMiles": 20920,
   "restDays": 0,
-  "totalMiles": 25481,
-  "totalRuns": 3476,
-  "ytdMiles": 3161,
-  "ytdRuns": 304,
+  "totalMiles": 25488,
+  "totalRuns": 3477,
+  "ytdMiles": 3168,
+  "ytdRuns": 305,
   "lastRun": {
-    "date": "2026-10-27",
-    "name": "Loving the weather",
-    "miles": 10.1,
-    "pace": "7:41"
+    "date": "2026-10-28",
+    "name": "Afternoon Run",
+    "miles": 7.2,
+    "pace": "7:48"
   }
 }
