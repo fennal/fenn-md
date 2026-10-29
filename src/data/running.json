@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "source": "Strava",
   "streakDays": 2394,
   "streakStart": "2020-04-09",
@@ -11,7 +11,7 @@
   "ytdRuns": 305,
   "lastRun": {
     "date": "2026-10-28",
-    "name": "Afternoon Run",
+    "name": "Pusher",
     "miles": 7.2,
     "pace": "7:48"
   }
