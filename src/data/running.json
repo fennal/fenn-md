@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "source": "Strava",
-  "streakDays": 2394,
+  "streakDays": 2395,
   "streakStart": "2020-04-09",
-  "streakMiles": 20920,
+  "streakMiles": 20929,
   "restDays": 0,
-  "totalMiles": 25488,
-  "totalRuns": 3477,
-  "ytdMiles": 3168,
-  "ytdRuns": 305,
+  "totalMiles": 25498,
+  "totalRuns": 3478,
+  "ytdMiles": 3178,
+  "ytdRuns": 306,
   "lastRun": {
-    "date": "2026-10-28",
-    "name": "Pusher",
-    "miles": 7.2,
-    "pace": "7:48"
+    "date": "2026-10-29",
+    "name": "Brain fried",
+    "miles": 9.7,
+    "pace": "7:22"
   }
 }
