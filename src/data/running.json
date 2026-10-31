@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "source": "Strava",
-  "streakDays": 2395,
+  "streakDays": 2396,
   "streakStart": "2020-04-09",
-  "streakMiles": 20929,
+  "streakMiles": 20937,
   "restDays": 0,
-  "totalMiles": 25498,
-  "totalRuns": 3478,
-  "ytdMiles": 3178,
-  "ytdRuns": 306,
+  "totalMiles": 25506,
+  "totalRuns": 3479,
+  "ytdMiles": 3186,
+  "ytdRuns": 307,
   "lastRun": {
-    "date": "2026-10-29",
-    "name": "Brain fried",
-    "miles": 9.7,
-    "pace": "7:22"
+    "date": "2026-10-30",
+    "name": "No Bad Memories",
+    "miles": 8,
+    "pace": "7:37"
   }
 }
