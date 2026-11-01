@@ -1,18 +1,18 @@
 {
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "source": "Strava",
-  "streakDays": 2396,
+  "streakDays": 2397,
   "streakStart": "2020-04-09",
-  "streakMiles": 20937,
+  "streakMiles": 20951,
   "restDays": 0,
-  "totalMiles": 25506,
-  "totalRuns": 3479,
-  "ytdMiles": 3186,
-  "ytdRuns": 307,
+  "totalMiles": 25520,
+  "totalRuns": 3480,
+  "ytdMiles": 3200,
+  "ytdRuns": 308,
   "lastRun": {
-    "date": "2026-10-30",
-    "name": "No Bad Memories",
-    "miles": 8,
-    "pace": "7:37"
+    "date": "2026-10-31",
+    "name": "Big day for dudes who like loops (and bridges)",
+    "miles": 14.1,
+    "pace": "7:50"
   }
 }
