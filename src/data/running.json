@@ -1,18 +1,18 @@
 {
   "updated": "2026-11-02",
   "source": "Strava",
-  "streakDays": 2398,
+  "streakDays": 2399,
   "streakStart": "2020-04-09",
-  "streakMiles": 20961,
+  "streakMiles": 20969,
   "restDays": 0,
-  "totalMiles": 25530,
-  "totalRuns": 3481,
-  "ytdMiles": 3210,
-  "ytdRuns": 309,
+  "totalMiles": 25538,
+  "totalRuns": 3482,
+  "ytdMiles": 3218,
+  "ytdRuns": 310,
   "lastRun": {
-    "date": "2026-11-01",
-    "name": "AGI Chronicles",
-    "miles": 10,
-    "pace": "7:36"
+    "date": "2026-11-02",
+    "name": "Getting dark so early ☹️",
+    "miles": 8,
+    "pace": "7:38"
   }
 }
