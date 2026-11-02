@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "source": "Strava",
-  "streakDays": 2397,
+  "streakDays": 2398,
   "streakStart": "2020-04-09",
-  "streakMiles": 20951,
+  "streakMiles": 20961,
   "restDays": 0,
-  "totalMiles": 25520,
-  "totalRuns": 3480,
-  "ytdMiles": 3200,
-  "ytdRuns": 308,
+  "totalMiles": 25530,
+  "totalRuns": 3481,
+  "ytdMiles": 3210,
+  "ytdRuns": 309,
   "lastRun": {
-    "date": "2026-10-31",
-    "name": "Big day for dudes who like loops (and bridges)",
-    "miles": 14.1,
-    "pace": "7:50"
+    "date": "2026-11-01",
+    "name": "AGI Chronicles",
+    "miles": 10,
+    "pace": "7:36"
   }
 }
