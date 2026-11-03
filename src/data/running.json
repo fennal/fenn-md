@@ -1,17 +1,17 @@
 {
   "updated": "2026-11-03",
   "source": "Strava",
-  "streakDays": 2399,
+  "streakDays": 2400,
   "streakStart": "2020-04-09",
-  "streakMiles": 20969,
+  "streakMiles": 20977,
   "restDays": 0,
-  "totalMiles": 25538,
-  "totalRuns": 3482,
-  "ytdMiles": 3218,
-  "ytdRuns": 310,
+  "totalMiles": 25546,
+  "totalRuns": 3483,
+  "ytdMiles": 3226,
+  "ytdRuns": 311,
   "lastRun": {
-    "date": "2026-11-02",
-    "name": "Getting dark so early ☹️",
+    "date": "2026-11-03",
+    "name": "Vote!",
     "miles": 8,
     "pace": "7:38"
   }
