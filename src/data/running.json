@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "source": "Strava",
-  "streakDays": 2400,
+  "streakDays": 2401,
   "streakStart": "2020-04-09",
-  "streakMiles": 20977,
+  "streakMiles": 20986,
   "restDays": 0,
-  "totalMiles": 25546,
-  "totalRuns": 3483,
-  "ytdMiles": 3226,
-  "ytdRuns": 311,
+  "totalMiles": 25555,
+  "totalRuns": 3484,
+  "ytdMiles": 3235,
+  "ytdRuns": 312,
   "lastRun": {
-    "date": "2026-11-03",
-    "name": "Vote!",
-    "miles": 8,
-    "pace": "7:38"
+    "date": "2026-11-04",
+    "name": "🌊🌊🌊",
+    "miles": 9,
+    "pace": "7:39"
   }
 }
