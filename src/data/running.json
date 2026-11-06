@@ -1,18 +1,18 @@
 {
   "updated": "2026-11-06",
   "source": "Strava",
-  "streakDays": 2402,
+  "streakDays": 2403,
   "streakStart": "2020-04-09",
-  "streakMiles": 20996,
+  "streakMiles": 21003,
   "restDays": 0,
-  "totalMiles": 25565,
-  "totalRuns": 3485,
-  "ytdMiles": 3245,
-  "ytdRuns": 313,
+  "totalMiles": 25572,
+  "totalRuns": 3486,
+  "ytdMiles": 3252,
+  "ytdRuns": 314,
   "lastRun": {
-    "date": "2026-11-05",
-    "name": "Excellent colors",
-    "miles": 10,
-    "pace": "7:31"
+    "date": "2026-11-06",
+    "name": "Afternoon Run",
+    "miles": 7,
+    "pace": "7:34"
   }
 }
