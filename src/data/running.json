@@ -1,18 +1,18 @@
 {
   "updated": "2026-11-07",
   "source": "Strava",
-  "streakDays": 2403,
+  "streakDays": 2404,
   "streakStart": "2020-04-09",
-  "streakMiles": 21003,
+  "streakMiles": 21013,
   "restDays": 0,
-  "totalMiles": 25572,
-  "totalRuns": 3486,
-  "ytdMiles": 3252,
-  "ytdRuns": 314,
+  "totalMiles": 25582,
+  "totalRuns": 3487,
+  "ytdMiles": 3262,
+  "ytdRuns": 315,
   "lastRun": {
-    "date": "2026-11-06",
-    "name": "Dreary loops",
-    "miles": 7,
-    "pace": "7:34"
+    "date": "2026-11-07",
+    "name": "Lunch Run",
+    "miles": 10,
+    "pace": "7:31"
   }
 }
