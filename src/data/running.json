@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "source": "Strava",
-  "streakDays": 2404,
+  "streakDays": 2405,
   "streakStart": "2020-04-09",
-  "streakMiles": 21013,
+  "streakMiles": 21023,
   "restDays": 0,
-  "totalMiles": 25582,
-  "totalRuns": 3487,
-  "ytdMiles": 3262,
-  "ytdRuns": 315,
+  "totalMiles": 25592,
+  "totalRuns": 3488,
+  "ytdMiles": 3271,
+  "ytdRuns": 316,
   "lastRun": {
-    "date": "2026-11-07",
-    "name": "Bold Batch pregame",
-    "miles": 10,
-    "pace": "7:31"
+    "date": "2026-11-08",
+    "name": "Perpetual leaf peepin",
+    "miles": 9.4,
+    "pace": "7:27"
   }
 }
