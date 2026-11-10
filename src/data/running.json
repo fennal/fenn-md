@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "source": "Strava",
-  "streakDays": 2405,
+  "streakDays": 2406,
   "streakStart": "2020-04-09",
-  "streakMiles": 21023,
+  "streakMiles": 21034,
   "restDays": 0,
-  "totalMiles": 25592,
-  "totalRuns": 3488,
-  "ytdMiles": 3271,
-  "ytdRuns": 316,
+  "totalMiles": 25603,
+  "totalRuns": 3489,
+  "ytdMiles": 3282,
+  "ytdRuns": 317,
   "lastRun": {
-    "date": "2026-11-08",
-    "name": "Perpetual leaf peepin",
-    "miles": 9.4,
-    "pace": "7:27"
+    "date": "2026-11-09",
+    "name": "Back on track",
+    "miles": 11.1,
+    "pace": "7:26"
   }
 }
