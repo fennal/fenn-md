@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "source": "Strava",
-  "streakDays": 2406,
+  "streakDays": 2407,
   "streakStart": "2020-04-09",
-  "streakMiles": 21034,
+  "streakMiles": 21042,
   "restDays": 0,
-  "totalMiles": 25603,
-  "totalRuns": 3489,
-  "ytdMiles": 3282,
-  "ytdRuns": 317,
+  "totalMiles": 25611,
+  "totalRuns": 3490,
+  "ytdMiles": 3290,
+  "ytdRuns": 318,
   "lastRun": {
-    "date": "2026-11-09",
-    "name": "Back on track",
-    "miles": 11.1,
-    "pace": "7:26"
+    "date": "2026-11-10",
+    "name": "Night watch",
+    "miles": 8,
+    "pace": "8:00"
   }
 }
