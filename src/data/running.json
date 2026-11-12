@@ -1,18 +1,18 @@
 {
   "updated": "2026-11-12",
   "source": "Strava",
-  "streakDays": 2408,
+  "streakDays": 2409,
   "streakStart": "2020-04-09",
-  "streakMiles": 21049,
+  "streakMiles": 21059,
   "restDays": 0,
-  "totalMiles": 25618,
-  "totalRuns": 3491,
-  "ytdMiles": 3297,
-  "ytdRuns": 319,
+  "totalMiles": 25628,
+  "totalRuns": 3492,
+  "ytdMiles": 3307,
+  "ytdRuns": 320,
   "lastRun": {
-    "date": "2026-11-11",
-    "name": "Chunky boi spotted",
-    "miles": 7,
-    "pace": "7:54"
+    "date": "2026-11-12",
+    "name": "Yog with dad",
+    "miles": 10,
+    "pace": "10:03"
   }
 }
