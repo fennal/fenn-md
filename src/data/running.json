@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "source": "Strava",
-  "streakDays": 2407,
+  "streakDays": 2408,
   "streakStart": "2020-04-09",
-  "streakMiles": 21042,
+  "streakMiles": 21049,
   "restDays": 0,
-  "totalMiles": 25611,
-  "totalRuns": 3490,
-  "ytdMiles": 3290,
-  "ytdRuns": 318,
+  "totalMiles": 25618,
+  "totalRuns": 3491,
+  "ytdMiles": 3297,
+  "ytdRuns": 319,
   "lastRun": {
-    "date": "2026-11-10",
-    "name": "Night watch",
-    "miles": 8,
-    "pace": "8:00"
+    "date": "2026-11-11",
+    "name": "Chunky boi spotted",
+    "miles": 7,
+    "pace": "7:54"
   }
 }
