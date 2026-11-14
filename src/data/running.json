@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "source": "Strava",
-  "streakDays": 2409,
+  "streakDays": 2410,
   "streakStart": "2020-04-09",
-  "streakMiles": 21059,
+  "streakMiles": 21066,
   "restDays": 0,
-  "totalMiles": 25628,
-  "totalRuns": 3492,
-  "ytdMiles": 3307,
-  "ytdRuns": 320,
+  "totalMiles": 25635,
+  "totalRuns": 3493,
+  "ytdMiles": 3314,
+  "ytdRuns": 321,
   "lastRun": {
-    "date": "2026-11-12",
-    "name": "Yog with dad",
-    "miles": 10,
-    "pace": "10:03"
+    "date": "2026-11-13",
+    "name": "Generalized malaise",
+    "miles": 7,
+    "pace": "7:55"
   }
 }
