@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "source": "Strava",
-  "streakDays": 2410,
+  "streakDays": 2411,
   "streakStart": "2020-04-09",
-  "streakMiles": 21066,
+  "streakMiles": 21076,
   "restDays": 0,
-  "totalMiles": 25635,
-  "totalRuns": 3493,
-  "ytdMiles": 3314,
-  "ytdRuns": 321,
+  "totalMiles": 25645,
+  "totalRuns": 3494,
+  "ytdMiles": 3324,
+  "ytdRuns": 322,
   "lastRun": {
-    "date": "2026-11-13",
-    "name": "Generalized malaise",
-    "miles": 7,
-    "pace": "7:55"
+    "date": "2026-11-14",
+    "name": "Fabienk",
+    "miles": 10,
+    "pace": "7:29"
   }
 }
