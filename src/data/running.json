@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "source": "Strava",
-  "streakDays": 2411,
+  "streakDays": 2412,
   "streakStart": "2020-04-09",
-  "streakMiles": 21076,
+  "streakMiles": 21084,
   "restDays": 0,
-  "totalMiles": 25645,
-  "totalRuns": 3494,
-  "ytdMiles": 3324,
-  "ytdRuns": 322,
+  "totalMiles": 25653,
+  "totalRuns": 3495,
+  "ytdMiles": 3332,
+  "ytdRuns": 323,
   "lastRun": {
-    "date": "2026-11-14",
-    "name": "Fabienk",
-    "miles": 10,
-    "pace": "7:29"
+    "date": "2026-11-15",
+    "name": "Compute constrained",
+    "miles": 8,
+    "pace": "7:23"
   }
 }
