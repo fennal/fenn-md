@@ -1,18 +1,18 @@
 {
   "updated": "2026-11-16",
   "source": "Strava",
-  "streakDays": 2412,
+  "streakDays": 2413,
   "streakStart": "2020-04-09",
-  "streakMiles": 21084,
+  "streakMiles": 21096,
   "restDays": 0,
-  "totalMiles": 25653,
-  "totalRuns": 3495,
-  "ytdMiles": 3332,
-  "ytdRuns": 323,
+  "totalMiles": 25665,
+  "totalRuns": 3496,
+  "ytdMiles": 3344,
+  "ytdRuns": 324,
   "lastRun": {
-    "date": "2026-11-15",
-    "name": "Compute constrained",
-    "miles": 8,
-    "pace": "7:23"
+    "date": "2026-11-16",
+    "name": "A tale of two paces",
+    "miles": 11.8,
+    "pace": "8:36"
   }
 }
