@@ -1,18 +1,18 @@
 {
   "updated": "2026-11-18",
   "source": "Strava",
-  "streakDays": 2414,
+  "streakDays": 2415,
   "streakStart": "2020-04-09",
-  "streakMiles": 21103,
+  "streakMiles": 21112,
   "restDays": 0,
-  "totalMiles": 25672,
-  "totalRuns": 3497,
-  "ytdMiles": 3351,
-  "ytdRuns": 325,
+  "totalMiles": 25681,
+  "totalRuns": 3498,
+  "ytdMiles": 3360,
+  "ytdRuns": 326,
   "lastRun": {
-    "date": "2026-11-17",
-    "name": "Multitasking",
-    "miles": 7,
-    "pace": "8:00"
+    "date": "2026-11-18",
+    "name": "Daycare crud",
+    "miles": 9,
+    "pace": "7:34"
   }
 }
