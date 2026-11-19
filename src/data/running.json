@@ -1,18 +1,18 @@
 {
   "updated": "2026-11-19",
   "source": "Strava",
-  "streakDays": 2415,
+  "streakDays": 2416,
   "streakStart": "2020-04-09",
-  "streakMiles": 21112,
+  "streakMiles": 21122,
   "restDays": 0,
-  "totalMiles": 25681,
-  "totalRuns": 3498,
-  "ytdMiles": 3360,
-  "ytdRuns": 326,
+  "totalMiles": 25691,
+  "totalRuns": 3499,
+  "ytdMiles": 3370,
+  "ytdRuns": 327,
   "lastRun": {
-    "date": "2026-11-18",
-    "name": "Daycare crud",
-    "miles": 9,
-    "pace": "7:34"
+    "date": "2026-11-19",
+    "name": "Ready for the GTAVI law abiding citizen playthrough",
+    "miles": 10,
+    "pace": "7:42"
   }
 }
