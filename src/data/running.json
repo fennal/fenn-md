@@ -1,18 +1,18 @@
 {
   "updated": "2026-11-20",
   "source": "Strava",
-  "streakDays": 2416,
+  "streakDays": 2417,
   "streakStart": "2020-04-09",
-  "streakMiles": 21122,
+  "streakMiles": 21131,
   "restDays": 0,
-  "totalMiles": 25691,
-  "totalRuns": 3499,
-  "ytdMiles": 3370,
-  "ytdRuns": 327,
+  "totalMiles": 25700,
+  "totalRuns": 3500,
+  "ytdMiles": 3379,
+  "ytdRuns": 328,
   "lastRun": {
-    "date": "2026-11-19",
-    "name": "Ready for the GTAVI law abiding citizen playthrough",
-    "miles": 10,
-    "pace": "7:42"
+    "date": "2026-11-20",
+    "name": "Monk’s Dream",
+    "miles": 9,
+    "pace": "7:38"
   }
 }
