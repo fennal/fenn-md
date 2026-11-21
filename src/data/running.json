@@ -1,18 +1,18 @@
 {
   "updated": "2026-11-21",
   "source": "Strava",
-  "streakDays": 2417,
+  "streakDays": 2418,
   "streakStart": "2020-04-09",
-  "streakMiles": 21131,
+  "streakMiles": 21141,
   "restDays": 0,
-  "totalMiles": 25700,
-  "totalRuns": 3500,
-  "ytdMiles": 3379,
-  "ytdRuns": 328,
+  "totalMiles": 25710,
+  "totalRuns": 3501,
+  "ytdMiles": 3389,
+  "ytdRuns": 329,
   "lastRun": {
-    "date": "2026-11-20",
-    "name": "Monk’s Dream",
-    "miles": 9,
-    "pace": "7:38"
+    "date": "2026-11-21",
+    "name": "Lunch Run",
+    "miles": 10,
+    "pace": "7:33"
   }
 }
