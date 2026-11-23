@@ -1,18 +1,18 @@
 {
   "updated": "2026-11-23",
   "source": "Strava",
-  "streakDays": 2419,
+  "streakDays": 2420,
   "streakStart": "2020-04-09",
-  "streakMiles": 21150,
+  "streakMiles": 21158,
   "restDays": 0,
-  "totalMiles": 25718,
-  "totalRuns": 3502,
-  "ytdMiles": 3398,
-  "ytdRuns": 330,
+  "totalMiles": 25726,
+  "totalRuns": 3503,
+  "ytdMiles": 3406,
+  "ytdRuns": 331,
   "lastRun": {
-    "date": "2026-11-22",
-    "name": "Gross out",
-    "miles": 8.7,
-    "pace": "7:56"
+    "date": "2026-11-23",
+    "name": "Clown country",
+    "miles": 8,
+    "pace": "7:34"
   }
 }
