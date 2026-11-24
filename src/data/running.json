@@ -1,18 +1,18 @@
 {
   "updated": "2026-11-24",
   "source": "Strava",
-  "streakDays": 2420,
+  "streakDays": 2421,
   "streakStart": "2020-04-09",
-  "streakMiles": 21158,
+  "streakMiles": 21168,
   "restDays": 0,
-  "totalMiles": 25726,
-  "totalRuns": 3503,
-  "ytdMiles": 3406,
-  "ytdRuns": 331,
+  "totalMiles": 25736,
+  "totalRuns": 3504,
+  "ytdMiles": 3416,
+  "ytdRuns": 332,
   "lastRun": {
-    "date": "2026-11-23",
-    "name": "Clown country",
-    "miles": 8,
-    "pace": "7:34"
+    "date": "2026-11-24",
+    "name": "Unc still got it",
+    "miles": 10,
+    "pace": "7:02"
   }
 }
