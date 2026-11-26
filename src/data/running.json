@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "source": "Strava",
-  "streakDays": 2421,
+  "streakDays": 2422,
   "streakStart": "2020-04-09",
-  "streakMiles": 21168,
+  "streakMiles": 21175,
   "restDays": 0,
-  "totalMiles": 25736,
-  "totalRuns": 3504,
-  "ytdMiles": 3416,
-  "ytdRuns": 332,
+  "totalMiles": 25744,
+  "totalRuns": 3505,
+  "ytdMiles": 3424,
+  "ytdRuns": 333,
   "lastRun": {
-    "date": "2026-11-24",
-    "name": "Unc still got it",
-    "miles": 10,
-    "pace": "7:02"
+    "date": "2026-11-25",
+    "name": "Rainy trot",
+    "miles": 7.5,
+    "pace": "7:56"
   }
 }
