@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "source": "Strava",
-  "streakDays": 2422,
+  "streakDays": 2423,
   "streakStart": "2020-04-09",
-  "streakMiles": 21175,
+  "streakMiles": 21185,
   "restDays": 0,
-  "totalMiles": 25744,
-  "totalRuns": 3505,
-  "ytdMiles": 3424,
-  "ytdRuns": 333,
+  "totalMiles": 25754,
+  "totalRuns": 3506,
+  "ytdMiles": 3433,
+  "ytdRuns": 334,
   "lastRun": {
-    "date": "2026-11-25",
-    "name": "Rainy trot",
-    "miles": 7.5,
-    "pace": "7:56"
+    "date": "2026-11-26",
+    "name": "🦃",
+    "miles": 9.8,
+    "pace": "8:06"
   }
 }
