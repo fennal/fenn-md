@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "source": "Strava",
-  "streakDays": 2423,
+  "streakDays": 2424,
   "streakStart": "2020-04-09",
-  "streakMiles": 21185,
+  "streakMiles": 21195,
   "restDays": 0,
-  "totalMiles": 25754,
-  "totalRuns": 3506,
-  "ytdMiles": 3433,
-  "ytdRuns": 334,
+  "totalMiles": 25764,
+  "totalRuns": 3507,
+  "ytdMiles": 3444,
+  "ytdRuns": 335,
   "lastRun": {
-    "date": "2026-11-26",
-    "name": "🦃",
-    "miles": 9.8,
-    "pace": "8:06"
+    "date": "2026-11-27",
+    "name": "Kitchen break",
+    "miles": 10.2,
+    "pace": "7:41"
   }
 }
